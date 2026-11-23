@@ -1,0 +1,60 @@
+[
+  {
+    "id": "eksempel-daglegvare",
+    "namn": "Eksempel Daglegvare",
+    "kategori": "daglegvare",
+    "stad": "Sandane",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte daglegvarebutikk.",
+    "skildring": "Dette er eit oppdikta døme som viser korleis ei bedriftsside ser ut. Opne src/app/data/bedrifter.json og byt ut med ekte bedrifter.",
+    "adresse": "Eksempelvegen 1, 6823 Sandane",
+    "opningstider": "Måndag–fredag 8–21, laurdag 8–20",
+    "stikkord": ["mat", "matbutikk", "frukt", "brød"],
+    "eksempel": true
+  },
+  {
+    "id": "eksempel-kafe",
+    "namn": "Eksempel Kafé",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte kafé eller restaurant.",
+    "opningstider": "Tysdag–laurdag 10–17",
+    "stikkord": ["kaffi", "lunsj", "kaker"],
+    "eksempel": true
+  },
+  {
+    "id": "eksempel-sportsbutikk",
+    "namn": "Eksempel Sport",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte butikk.",
+    "stikkord": ["ski", "tur", "klede", "sko"],
+    "eksempel": true
+  },
+  {
+    "id": "eksempel-frisor",
+    "namn": "Eksempel Frisør",
+    "kategori": "helse-og-velvere",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte frisør eller helseteneste.",
+    "stikkord": ["hår", "klipp"],
+    "eksempel": true
+  },
+  {
+    "id": "eksempel-snekkar",
+    "namn": "Eksempel Snekkar",
+    "kategori": "bygg-og-handverk",
+    "stad": "Breim",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte handverkar.",
+    "stikkord": ["oppussing", "tømrar", "hus"],
+    "eksempel": true
+  },
+  {
+    "id": "eksempel-bilverkstad",
+    "namn": "Eksempel Bilverkstad",
+    "kategori": "bil-og-transport",
+    "stad": "Hyen",
+    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte verkstad eller transportør.",
+    "stikkord": ["EU-kontroll", "dekk", "service"],
+    "eksempel": true
+  }
+]

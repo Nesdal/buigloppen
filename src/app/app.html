@@ -1,0 +1,25 @@
+<a class="hopp-til-innhald" href="#hovudinnhald">Hopp til innhaldet</a>
+
+<header class="topp">
+  <div class="innhald topp-rad">
+    <a routerLink="/" class="logo">Bu i <strong>Gloppen</strong></a>
+    <nav aria-label="Hovudmeny">
+      <a routerLink="/bedrifter" routerLinkActive="aktiv">Bedrifter</a>
+      <a routerLink="/ny-i-gloppen" routerLinkActive="aktiv">Ny i Gloppen</a>
+      <a routerLink="/om" routerLinkActive="aktiv">Om</a>
+    </nav>
+  </div>
+</header>
+
+<main id="hovudinnhald">
+  <router-outlet />
+</main>
+
+<footer class="botn">
+  <div class="innhald">
+    <p>
+      © {{ aar }} Bu i Gloppen · Opplevingar og turar finn du på
+      <a href="https://www.visit-gloppen.no" target="_blank" rel="noopener">Visit Gloppen</a>
+    </p>
+  </div>
+</footer>

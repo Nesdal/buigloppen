@@ -1,0 +1,427 @@
+/* Felles stil for heile sida. Fargane er inspirerte av fjord og fjell. */
+
+:root {
+  --fjord: #1f4e5a;
+  --fjord-mork: #153840;
+  --fjord-lys: #e6f0f1;
+  --gras: #4f7a3a;
+  --bakgrunn: #fbfaf7;
+  --flate: #ffffff;
+  --tekst: #1d2426;
+  --tekst-svak: #5a6669;
+  --kant: #dde3e4;
+  --merke: #f4e3b5;
+  --merke-tekst: #5c4708;
+
+  --radius: 0.75rem;
+  --skugge: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 12px rgb(0 0 0 / 5%);
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fjord: #7fb8c4;
+    --fjord-mork: #a9d3dc;
+    --fjord-lys: #1c2f33;
+    --gras: #9cc585;
+    --bakgrunn: #121718;
+    --flate: #1a2123;
+    --tekst: #e7ecec;
+    --tekst-svak: #a2aeb0;
+    --kant: #2d3a3d;
+    --merke: #4a3d14;
+    --merke-tekst: #f4e3b5;
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--tekst);
+  background: var(--bakgrunn);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--fjord-mork);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 2rem 0 0.75rem;
+}
+
+a {
+  color: var(--fjord);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--gras);
+  outline-offset: 2px;
+}
+
+.skjult {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.hopp-til-innhald {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+  background: var(--flate);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+
+  &:focus {
+    left: 0.5rem;
+  }
+}
+
+.innhald {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.smal {
+  max-width: 44rem;
+}
+
+.seksjon {
+  padding-block: 2.5rem;
+}
+
+.ingress {
+  font-size: 1.2rem;
+  color: var(--tekst-svak);
+  margin-top: 0;
+}
+
+/* Topp og botn */
+
+.topp {
+  background: var(--flate);
+  border-bottom: 1px solid var(--kant);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topp-rad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  min-height: 4rem;
+  padding-block: 0.5rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--fjord-mork);
+
+  strong {
+    color: var(--fjord);
+  }
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+
+  a {
+    text-decoration: none;
+    color: var(--tekst);
+    padding-block: 0.25rem;
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &.aktiv {
+      color: var(--fjord);
+      border-bottom-color: currentColor;
+    }
+  }
+}
+
+.botn {
+  border-top: 1px solid var(--kant);
+  color: var(--tekst-svak);
+  font-size: 0.95rem;
+  padding-block: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Framside */
+
+.hero {
+  background: linear-gradient(160deg, var(--fjord-lys), var(--bakgrunn));
+  padding-block: clamp(2.5rem, 8vw, 5rem);
+
+  .ingress {
+    max-width: 40rem;
+  }
+}
+
+.sok {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 38rem;
+  margin-top: 1.5rem;
+
+  input {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+input,
+select {
+  font: inherit;
+  color: var(--tekst);
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  width: 100%;
+}
+
+button,
+.knapp {
+  font: inherit;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0.7rem 1.3rem;
+  background: var(--fjord);
+  color: var(--flate);
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    background: var(--fjord-mork);
+  }
+}
+
+.kategori-rutenett {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.75rem;
+}
+
+.kategori {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--tekst);
+  transition: border-color 0.15s, transform 0.15s;
+
+  &:hover {
+    border-color: var(--fjord);
+    transform: translateY(-1px);
+  }
+}
+
+.kategori-ikon {
+  font-size: 1.5rem;
+}
+
+.kategori-namn {
+  flex: 1;
+  font-weight: 600;
+}
+
+.kategori-tal {
+  color: var(--tekst-svak);
+  font-size: 0.9rem;
+}
+
+.boks {
+  background: var(--fjord-lys);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+/* Bedriftsoversikt */
+
+.filter {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.75rem;
+  margin-block: 1.5rem 0.5rem;
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.treff {
+  color: var(--tekst-svak);
+  margin-block: 0.5rem 1rem;
+}
+
+.kort-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+}
+
+.kort {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  padding: 1.25rem;
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: var(--radius);
+  box-shadow: var(--skugge);
+  text-decoration: none;
+  color: var(--tekst);
+  transition: border-color 0.15s;
+
+  &:hover {
+    border-color: var(--fjord);
+  }
+}
+
+.kort-ikon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.kort-innhald {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.kort-tittel {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--fjord-mork);
+}
+
+.kort-meta {
+  font-size: 0.9rem;
+  color: var(--tekst-svak);
+}
+
+.kort-tekst {
+  margin-top: 0.25rem;
+}
+
+.merke {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--merke);
+  color: var(--merke-tekst);
+}
+
+/* Bedriftsside */
+
+.tilbake {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.fakta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.6rem 1.5rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-radius: var(--radius);
+
+  @media (max-width: 30rem) {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+
+    dd {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}

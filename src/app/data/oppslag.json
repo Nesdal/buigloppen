@@ -1,0 +1,23 @@
+[
+  {
+    "id": "gloppen-hotell-ny-meny",
+    "bedriftId": "gloppen-hotell",
+    "type": "ny-meny",
+    "tittel": "Ny meny på Restaurant Stovene",
+    "tekst": "Restaurant Stovene på Gloppen Hotell har fått ny meny, med heimelaga mat av lokale råvarer frå Nordfjord og omegn.",
+    "fra": "2026-11-23",
+    "lenkje": "https://gloppenhotell.no/restaurant-stovene/",
+    "kjelde": "https://gloppenhotell.no/restaurant-stovene/"
+  },
+  {
+    "id": "forktap-juleburger",
+    "bedriftId": "forktap",
+    "type": "spesial",
+    "tittel": "Juleburger med svineribbe",
+    "tekst": "Årets siste menyskifte: svineribbeburger med sylta gulrot, karamellisert løk og ramsløkmajones. I tillegg loaded fries med pulled kylling og BBQ-saus.",
+    "fra": "2026-11-11",
+    "til": "2026-12-31",
+    "lenkje": "https://www.forktapsandane.no/menus",
+    "kjelde": "https://www.facebook.com/p/Forktap-61577711395676/"
+  }
+]

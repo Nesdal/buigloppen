@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Bedrift, KategoriId, Stad } from '../models/bedrift';
+import { Bedrift, BedriftType, harKategori, KategoriId, Stad } from '../models/bedrift';
 import bedrifterData from '../data/bedrifter.json';
 
 export interface Filter {
   sok?: string;
   kategori?: KategoriId | null;
   stad?: Stad | null;
+  type?: BedriftType | null;
 }
 
 /** Gjer tekst samanliknbar: små bokstavar og utan diakritiske teikn (é → e). æ, ø og å vert ikkje endra. */
@@ -25,12 +26,13 @@ export function filtrer(bedrifter: readonly Bedrift[], filter: Filter): Bedrift[
     .filter(Boolean);
 
   return bedrifter
-    .filter((b) => !filter.kategori || b.kategori === filter.kategori)
+    .filter((b) => !filter.kategori || harKategori(b, filter.kategori))
     .filter((b) => !filter.stad || b.stad === filter.stad)
+    .filter((b) => !filter.type || b.type === filter.type)
     .filter((b) => {
       if (ord.length === 0) return true;
       const tekst = normaliser(
-        [b.namn, b.kortSkildring, b.skildring, b.stad, b.adresse, ...(b.stikkord ?? [])]
+        [b.namn, b.kortSkildring, b.skildring, b.stad, b.adresse, ...b.tilbyr, ...(b.stikkord ?? [])]
           .filter(Boolean)
           .join(' '),
       );
@@ -56,6 +58,6 @@ export class BedriftService {
   }
 
   tal(kategori: KategoriId): number {
-    return this.bedrifter.filter((b) => b.kategori === kategori).length;
+    return this.bedrifter.filter((b) => harKategori(b, kategori)).length;
   }
 }

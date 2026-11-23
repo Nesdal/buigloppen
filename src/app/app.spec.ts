@@ -16,6 +16,6 @@ describe('App', () => {
     const el = fixture.nativeElement as HTMLElement;
     expect(el.querySelector('.logo')?.textContent).toContain('Gloppen');
     const lenkjer = Array.from(el.querySelectorAll('nav a')).map((a) => a.textContent?.trim());
-    expect(lenkjer).toEqual(['Bedrifter', 'Ny i Gloppen', 'Om']);
+    expect(lenkjer).toEqual(['Bedrifter', 'Kva skjer', 'Lokalmat', 'Ny i Gloppen', 'Om']);
   });
 });

@@ -1,38 +1,97 @@
-/* Felles stil for heile sida. Fargane er inspirerte av fjord og fjell. */
+/*
+ * Felles stil for heile sida.
+ * Fargane er henta frå Gloppen: djup fjord, grøne bøar, bre og snø på tindane,
+ * og kveldssola over Gloppefjorden.
+ */
 
 :root {
-  --fjord: #1f4e5a;
-  --fjord-mork: #153840;
-  --fjord-lys: #e6f0f1;
-  --gras: #4f7a3a;
-  --bakgrunn: #fbfaf7;
+  /* Fjord og vatn */
+  --fjord: #1a5566;
+  --fjord-mork: #0e3441;
+  --fjord-lys: #e3eff0;
+  --bre: #8fcac4;
+
+  /* Bøar, bjørk og skog */
+  --gras: #4a7d36;
+  --mose: #2e5631;
+  --gras-lys: #e8f0df;
+
+  /* Fjell, snø og kveldssol */
+  --fjell: #6d8a90;
+  --sol: #e8b04a;
+  --varm: #b4471c;
+  --varm-lys: #fbeae2;
+
+  --bakgrunn: #f6f5f0;
   --flate: #ffffff;
-  --tekst: #1d2426;
-  --tekst-svak: #5a6669;
-  --kant: #dde3e4;
+  --tekst: #18252a;
+  --tekst-svak: #56656a;
+  --kant: #dbe3e2;
   --merke: #f4e3b5;
   --merke-tekst: #5c4708;
 
-  --radius: 0.75rem;
-  --skugge: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 12px rgb(0 0 0 / 5%);
+  /* Landskapet i toppen og botnen */
+  --himmel-1: #0b2a35;
+  --himmel-2: #134656;
+  --himmel-3: #2c6f76;
+  --himmel-4: #8dbdb5;
+  --solglod: rgb(232 176 74 / 45%);
+  --fjell-fjern: #5f8f95;
+  --fjell-sno: #eef5f4;
+  --fjell-naer: #295b5d;
+  --fjordvatn: #3f8088;
+  --fjordglans: #a8d3cd;
+  --bakke: #3d6b3a;
+  --bakke-mork: #2b5230;
+  --botn-flate: #0e3441;
+
+  --radius: 1rem;
+  --radius-liten: 0.6rem;
+  --skugge: 0 1px 2px rgb(14 52 65 / 6%), 0 6px 18px rgb(14 52 65 / 6%);
+  --skugge-loft: 0 2px 4px rgb(14 52 65 / 8%), 0 14px 32px rgb(14 52 65 / 12%);
   --font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-overskrift: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
 
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fjord: #7fb8c4;
-    --fjord-mork: #a9d3dc;
-    --fjord-lys: #1c2f33;
+    --fjord: #84c1cb;
+    --fjord-mork: #b4dde4;
+    --fjord-lys: #17303a;
+    --bre: #8fcac4;
     --gras: #9cc585;
-    --bakgrunn: #121718;
-    --flate: #1a2123;
-    --tekst: #e7ecec;
-    --tekst-svak: #a2aeb0;
-    --kant: #2d3a3d;
+    --mose: #b9d8a8;
+    --gras-lys: #1d2c1f;
+    --fjell: #8fa7ac;
+    --sol: #efbf62;
+    --varm: #f0a07a;
+    --varm-lys: #3a2219;
+    --bakgrunn: #0f1719;
+    --flate: #172124;
+    --tekst: #e6ecec;
+    --tekst-svak: #9fadb0;
+    --kant: #29383c;
     --merke: #4a3d14;
     --merke-tekst: #f4e3b5;
+
+    --himmel-1: #050f14;
+    --himmel-2: #0a2029;
+    --himmel-3: #143a42;
+    --himmel-4: #2b5b5b;
+    --solglod: rgb(239 191 98 / 22%);
+    --fjell-fjern: #2c4d53;
+    --fjell-sno: #b9cfcf;
+    --fjell-naer: #173538;
+    --fjordvatn: #1f4a50;
+    --fjordglans: #4f8580;
+    --bakke: #1f3a22;
+    --bakke-mork: #172d1a;
+    --botn-flate: #0a1a20;
+
+    --skugge: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 18px rgb(0 0 0 / 20%);
+    --skugge-loft: 0 2px 4px rgb(0 0 0 / 35%), 0 14px 32px rgb(0 0 0 / 35%);
     color-scheme: dark;
   }
 }
@@ -53,6 +112,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
 }
 
 app-root {
@@ -65,26 +125,56 @@ main {
   flex: 1;
 }
 
+/* Eit svakt høgdekurve-mønster øvst, som på eit turkart. Framsida dekkjer det med landskapet. */
+main {
+  background:
+    linear-gradient(to bottom, transparent 35%, var(--bakgrunn)) top / 100% 320px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320'%3E%3Cg fill='none' stroke='%231a5566' stroke-opacity='.09' stroke-width='1.2'%3E%3Cpath d='M-20 260C60 230 110 170 190 165s140 50 220 30 140-90 210-80'/%3E%3Cpath d='M-20 225C50 200 100 140 180 132s150 45 230 22 140-95 210-88'/%3E%3Cpath d='M-20 190C40 168 95 112 172 100s160 38 238 14 140-98 210-96'/%3E%3Cpath d='M-20 155C35 136 90 86 165 70s166 30 244 6 140-100 210-104'/%3E%3Cpath d='M-20 120C30 104 85 62 160 42s170 22 250-2 140-102 210-112'/%3E%3Cpath d='M-20 300C70 270 130 214 205 212s130 52 210 36 140-80 210-62'/%3E%3C/g%3E%3C/svg%3E")
+      top center / 600px auto repeat-x;
+}
+
+@media (prefers-color-scheme: dark) {
+  main {
+    background:
+      linear-gradient(to bottom, transparent 35%, var(--bakgrunn)) top / 100% 320px no-repeat,
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='320' viewBox='0 0 600 320'%3E%3Cg fill='none' stroke='%2384c1cb' stroke-opacity='.08' stroke-width='1.2'%3E%3Cpath d='M-20 260C60 230 110 170 190 165s140 50 220 30 140-90 210-80'/%3E%3Cpath d='M-20 225C50 200 100 140 180 132s150 45 230 22 140-95 210-88'/%3E%3Cpath d='M-20 190C40 168 95 112 172 100s160 38 238 14 140-98 210-96'/%3E%3Cpath d='M-20 155C35 136 90 86 165 70s166 30 244 6 140-100 210-104'/%3E%3Cpath d='M-20 120C30 104 85 62 160 42s170 22 250-2 140-102 210-112'/%3E%3Cpath d='M-20 300C70 270 130 214 205 212s130 52 210 36 140-80 210-62'/%3E%3C/g%3E%3C/svg%3E")
+        top center / 600px auto repeat-x;
+  }
+}
+
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--fjord-mork);
   text-wrap: balance;
 }
 
+h1,
+h2 {
+  font-family: var(--font-overskrift);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
 h1 {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(2rem, 4.5vw, 3rem);
   margin: 0 0 0.75rem;
 }
 
 h2 {
-  font-size: 1.35rem;
+  font-size: clamp(1.4rem, 2.4vw, 1.75rem);
   margin: 2rem 0 0.75rem;
 }
 
 a {
   color: var(--fjord);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
 }
 
 a:focus-visible,
@@ -141,8 +231,10 @@ select:focus-visible {
 /* Topp og botn */
 
 .topp {
-  background: var(--flate);
-  border-bottom: 1px solid var(--kant);
+  background: color-mix(in srgb, var(--flate) 82%, transparent);
+  backdrop-filter: saturate(1.4) blur(12px);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 1px solid color-mix(in srgb, var(--kant) 70%, transparent);
   position: sticky;
   top: 0;
   z-index: 5;
@@ -159,58 +251,230 @@ select:focus-visible {
 }
 
 .logo {
-  font-size: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-overskrift);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
   text-decoration: none;
   color: var(--fjord-mork);
 
   strong {
+    font-weight: 700;
     color: var(--fjord);
   }
+}
+
+.logo-merke {
+  flex: none;
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
+  gap: 0.25rem;
 
   a {
     text-decoration: none;
     color: var(--tekst);
-    padding-block: 0.25rem;
-    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: 0.98rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    transition:
+      background 0.15s,
+      color 0.15s;
 
-    &:hover,
+    &:hover {
+      background: var(--fjord-lys);
+      color: var(--fjord-mork);
+    }
+
     &.aktiv {
-      color: var(--fjord);
-      border-bottom-color: currentColor;
+      background: var(--fjord);
+      color: var(--flate);
     }
   }
 }
 
 .botn {
-  border-top: 1px solid var(--kant);
-  color: var(--tekst-svak);
+  margin-top: 3rem;
+  color: color-mix(in srgb, #ffffff 78%, var(--botn-flate));
   font-size: 0.95rem;
-  padding-block: 1.5rem;
-  margin-top: 2rem;
+
+  a {
+    color: var(--bre);
+  }
 }
 
-/* Framside */
+.botn-fjell {
+  display: block;
+  width: 100%;
+  height: clamp(3rem, 7vw, 5.5rem);
+  color: var(--botn-flate);
+}
+
+.botn-fjell .fjern {
+  fill: color-mix(in srgb, var(--botn-flate) 55%, var(--bakgrunn));
+}
+
+.botn-innhald {
+  background: var(--botn-flate);
+  margin-top: -1px;
+  padding-block: 0.5rem 2rem;
+
+  p {
+    margin: 0.25rem 0;
+  }
+}
+
+.botn-logo {
+  font-family: var(--font-overskrift);
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+/* Framside: landskap med fjord og fjell */
 
 .hero {
-  background: linear-gradient(160deg, var(--fjord-lys), var(--bakgrunn));
-  padding-block: clamp(2.5rem, 8vw, 5rem);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    radial-gradient(ellipse 45% 55% at 78% 100%, var(--solglod), transparent 70%),
+    linear-gradient(
+      180deg,
+      var(--himmel-1) 0%,
+      var(--himmel-2) 40%,
+      var(--himmel-3) 72%,
+      var(--himmel-4) 100%
+    );
+  padding-top: clamp(2.5rem, 7vw, 5rem);
+
+  > .innhald {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    color: #ffffff;
+    max-width: 18ch;
+    font-size: clamp(2.3rem, 6vw, 3.8rem);
+  }
 
   .ingress {
     max-width: 40rem;
+    color: rgb(255 255 255 / 84%);
   }
+
+  .snarvegar a {
+    color: var(--bre);
+    font-weight: 500;
+  }
+
+  .sok {
+    background: var(--flate);
+    border-radius: 999px;
+    padding: 0.35rem;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+
+    input {
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      padding-inline: 1.1rem;
+
+      &:focus-visible {
+        outline-offset: 0;
+      }
+    }
+
+    button {
+      border-radius: 999px;
+      background: var(--sol);
+      color: #0e3441;
+
+      &:hover {
+        background: color-mix(in srgb, var(--sol) 85%, #ffffff);
+      }
+    }
+  }
+}
+
+.hero-merkelapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bre);
+
+  &::before {
+    content: '';
+    width: 1.75rem;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+  }
+}
+
+.landskap {
+  display: block;
+  width: 100%;
+  height: clamp(7rem, 17vw, 14rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
+  margin-bottom: -1px;
+}
+
+.landskap .fjell-fjern {
+  fill: var(--fjell-fjern);
+}
+
+.landskap .fjell-sno {
+  fill: var(--fjell-sno);
+}
+
+.landskap .fjell-naer {
+  fill: var(--fjell-naer);
+}
+
+.landskap .fjordvatn {
+  fill: var(--fjordvatn);
+}
+
+.landskap .fjordglans {
+  stroke: var(--fjordglans);
+  stroke-width: 2;
+  stroke-linecap: round;
+  fill: none;
+  opacity: 0.7;
+}
+
+.landskap .bakke {
+  fill: var(--bakke);
+}
+
+.landskap .bakke-mork {
+  fill: var(--bakke-mork);
+}
+
+.landskap .grunn {
+  fill: var(--bakgrunn);
 }
 
 .sok {
   display: flex;
   gap: 0.5rem;
   max-width: 38rem;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 
   input {
     flex: 1;
@@ -224,9 +488,14 @@ select {
   color: var(--tekst);
   background: var(--flate);
   border: 1px solid var(--kant);
-  border-radius: var(--radius);
+  border-radius: var(--radius-liten);
   padding: 0.7rem 0.9rem;
   width: 100%;
+  transition: border-color 0.15s;
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--fjord) 40%, var(--kant));
+  }
 }
 
 button,
@@ -235,15 +504,22 @@ button,
   display: inline-block;
   cursor: pointer;
   border: 0;
-  border-radius: var(--radius);
-  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
   background: var(--fjord);
   color: var(--flate);
   text-decoration: none;
   font-weight: 600;
+  transition:
+    background 0.15s,
+    transform 0.15s;
 
   &:hover {
     background: var(--fjord-mork);
+  }
+
+  &:active {
+    transform: translateY(1px);
   }
 }
 
@@ -260,22 +536,33 @@ button,
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem;
+  padding: 0.85rem 1rem;
   background: var(--flate);
   border: 1px solid var(--kant);
   border-radius: var(--radius);
   text-decoration: none;
   color: var(--tekst);
-  transition: border-color 0.15s, transform 0.15s;
+  transition:
+    border-color 0.15s,
+    transform 0.15s,
+    box-shadow 0.15s;
 
   &:hover {
-    border-color: var(--fjord);
-    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--fjord) 50%, var(--kant));
+    transform: translateY(-2px);
+    box-shadow: var(--skugge);
   }
 }
 
 .kategori-ikon {
-  font-size: 1.5rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.35rem;
+  border-radius: 50%;
+  background: var(--fjord-lys);
 }
 
 .kategori-namn {
@@ -284,8 +571,14 @@ button,
 }
 
 .kategori-tal {
+  min-width: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
   color: var(--tekst-svak);
-  font-size: 0.9rem;
+  background: var(--bakgrunn);
 }
 
 .boks {
@@ -298,13 +591,66 @@ button,
   }
 }
 
+/* «Ny i Gloppen»-banneret på framsida: fjord og fjell i miniatyr. */
+.boks-velkomen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  padding-right: clamp(1.75rem, 30vw, 22rem);
+  color: rgb(255 255 255 / 88%);
+  background: linear-gradient(135deg, var(--mose), var(--fjord-mork) 85%);
+
+  h2 {
+    color: #ffffff;
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+  }
+
+  p {
+    max-width: 34rem;
+  }
+
+  .knapp {
+    background: var(--sol);
+    color: #0e3441;
+
+    &:hover {
+      background: color-mix(in srgb, var(--sol) 85%, #ffffff);
+    }
+  }
+
+  @media (max-width: 40rem) {
+    padding-right: clamp(1.75rem, 4vw, 2.75rem);
+    padding-bottom: 6rem;
+  }
+}
+
+.boks-velkomen-fjell {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: min(100%, 30rem);
+  height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .boks-velkomen {
+    background: linear-gradient(135deg, #1d3a22, #0b2a35 85%);
+  }
+}
+
 /* Bedriftsoversikt */
 
 .filter {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   margin-block: 1.5rem 0.5rem;
+
+  .felt-brei {
+    grid-column: 1 / -1;
+  }
 
   @media (max-width: 40rem) {
     grid-template-columns: 1fr;
@@ -315,6 +661,18 @@ button,
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+  }
+}
+
+.filter-4 {
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 56rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -343,16 +701,28 @@ button,
   box-shadow: var(--skugge);
   text-decoration: none;
   color: var(--tekst);
-  transition: border-color 0.15s;
+  transition:
+    border-color 0.15s,
+    transform 0.15s,
+    box-shadow 0.15s;
 
   &:hover {
-    border-color: var(--fjord);
+    border-color: color-mix(in srgb, var(--fjord) 50%, var(--kant));
+    transform: translateY(-2px);
+    box-shadow: var(--skugge-loft);
   }
 }
 
 .kort-ikon {
-  font-size: 1.75rem;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
   line-height: 1;
+  border-radius: 50%;
+  background: var(--fjord-lys);
 }
 
 .kort-innhald {
@@ -364,6 +734,7 @@ button,
 .kort-tittel {
   font-weight: 700;
   font-size: 1.1rem;
+  line-height: 1.3;
   color: var(--fjord-mork);
 }
 
@@ -389,7 +760,74 @@ button,
   color: var(--merke-tekst);
 }
 
+.type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.05rem 0.5rem;
+  margin-right: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+
+.type-butikk {
+  color: var(--gras);
+}
+
+.type-servering {
+  color: var(--varm);
+}
+
+.type-bedrift {
+  color: var(--fjord);
+}
+
+.brikker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.brikke {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--fjord-lys);
+  color: var(--fjord-mork);
+}
+
+.snarvegar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1rem;
+}
+
 /* Bedriftsside */
+
+.tilbyr {
+  columns: 2 14rem;
+  padding-left: 1.25rem;
+
+  li {
+    break-inside: avoid;
+  }
+}
+
+.praktisk {
+  padding-left: 1.25rem;
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+}
+
+.kjelde {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--tekst-svak);
+}
 
 .tilbake {
   display: inline-block;
@@ -423,5 +861,378 @@ button,
   dd {
     margin: 0;
     overflow-wrap: anywhere;
+  }
+}
+
+/* Aktivitetar */
+
+.seksjon-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-block: 2rem 0.75rem;
+
+  h2 {
+    margin: 0;
+  }
+
+  > a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.seksjon > .seksjon-topp:first-child {
+  margin-top: 0;
+}
+
+.manad {
+  font-size: 1.05rem;
+  text-transform: none;
+  color: var(--tekst-svak);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.datoblokk {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.75rem;
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--fjord), var(--fjord-mork));
+  color: var(--flate);
+  line-height: 1.1;
+}
+
+.datoblokk-dag {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.datoblokk-manad {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.kort-naar {
+  font-weight: 600;
+  color: var(--gras);
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.handlingar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.knapp-sekundar {
+  background: transparent;
+  color: var(--fjord);
+  border: 1px solid currentColor;
+
+  &:hover {
+    background: var(--fjord-lys);
+  }
+}
+
+.tips {
+  margin-top: 3rem;
+}
+
+/* Ting å gjere (framsida) */
+
+.framheving-rutenett {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+}
+
+.framheving {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 1.4rem;
+  background: linear-gradient(165deg, var(--fjord-lys), var(--flate) 65%);
+  border: 1px solid var(--kant);
+  border-radius: calc(var(--radius) * 1.25);
+  box-shadow: var(--skugge);
+  text-decoration: none;
+  color: var(--tekst);
+  transition:
+    border-color 0.15s,
+    transform 0.15s,
+    box-shadow 0.15s;
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--fjord) 50%, var(--kant));
+    transform: translateY(-3px);
+    box-shadow: var(--skugge-loft);
+  }
+}
+
+.framheving-ikon {
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background: var(--flate);
+  box-shadow: inset 0 0 0 1px var(--kant);
+}
+
+.framheving-tittel {
+  font-family: var(--font-overskrift);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--fjord-mork);
+}
+
+.framheving-meta {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--tekst-svak);
+}
+
+.framheving-nytt {
+  font-weight: 600;
+  color: var(--varm);
+}
+
+.seksjon-ingress {
+  color: var(--tekst-svak);
+  margin: 0 0 1rem;
+  max-width: 40rem;
+}
+
+/* Oppslag: ny meny, tilbod og anna nytt */
+
+.oppslag {
+  height: 100%;
+  padding: 1.25rem;
+  background: var(--flate);
+  border: 1px solid var(--kant);
+  border-left: 4px solid var(--varm);
+  border-radius: var(--radius);
+  box-shadow: var(--skugge);
+
+  p {
+    margin: 0;
+  }
+}
+
+.oppslag-ferskt {
+  background: linear-gradient(160deg, var(--varm-lys), var(--flate) 60%);
+}
+
+.oppslag-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.oppslag-type {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--varm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.merke-nytt {
+  background: var(--varm);
+  color: var(--flate);
+}
+
+.oppslag-tittel {
+  font-size: 1.15rem;
+  margin: 0.4rem 0 0.15rem;
+  color: var(--fjord-mork);
+}
+
+.oppslag-bedrift {
+  font-size: 0.9rem;
+  color: var(--tekst-svak);
+}
+
+.oppslag .oppslag-tekst {
+  margin-top: 0.5rem;
+}
+
+.oppslag .oppslag-dato {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--tekst-svak);
+}
+
+.oppslag-liste {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.kort-nytt {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--varm-lys);
+  color: var(--varm);
+}
+
+/* Lokalmat */
+
+.filter-2 {
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.matslag-val {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.matslag-knapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--kant);
+  border-radius: 999px;
+  background: var(--flate);
+  color: var(--tekst);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+
+  &:hover {
+    border-color: var(--gras);
+  }
+
+  &[aria-pressed='true'] {
+    background: var(--gras);
+    border-color: var(--gras);
+    color: var(--flate);
+
+    .matslag-tal {
+      color: inherit;
+    }
+  }
+}
+
+.matslag-tal {
+  font-size: 0.8rem;
+  color: var(--tekst-svak);
+}
+
+.brikke-gardsutsal,
+.brikke-sjolvbetent {
+  background: color-mix(in srgb, var(--gras) 16%, var(--flate));
+  color: var(--gras);
+  font-weight: 600;
+}
+
+.kort-sesong {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--tekst-svak);
+}
+
+.framheving-lokalmat {
+  background: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--gras) 16%, var(--flate)),
+    var(--flate) 65%
+  );
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--gras) 60%, var(--kant));
+  }
+}
+
+.lokalmat-boks {
+  margin-block: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gras);
+  background: color-mix(in srgb, var(--gras) 8%, var(--flate));
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-block: 1rem 0.25rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.lokalmat-matslag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  font-weight: 600;
+}
+
+.lokalmat-sal {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.lokalmat-tips {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+  align-items: start;
+
+  @media (max-width: 48rem) {
+    grid-template-columns: 1fr;
+  }
+
+  .fakta {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    margin-top: 1rem;
+
+    dd {
+      margin: 0 0 0.75rem;
+    }
   }
 }

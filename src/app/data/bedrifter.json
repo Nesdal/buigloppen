@@ -1,60 +1,2520 @@
 [
   {
-    "id": "eksempel-daglegvare",
-    "namn": "Eksempel Daglegvare",
-    "kategori": "daglegvare",
+    "id": "frydenbo-bil-sandane",
+    "namn": "Frydenbø Bil Sandane",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
     "stad": "Sandane",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte daglegvarebutikk.",
-    "skildring": "Dette er eit oppdikta døme som viser korleis ei bedriftsside ser ut. Opne src/app/data/bedrifter.json og byt ut med ekte bedrifter.",
-    "adresse": "Eksempelvegen 1, 6823 Sandane",
-    "opningstider": "Måndag–fredag 8–21, laurdag 8–20",
-    "stikkord": ["mat", "matbutikk", "frukt", "brød"],
-    "eksempel": true
+    "kortSkildring": "Bilforhandlar og merkeverkstad for Volvo på Sandane.",
+    "tilbyr": [
+      "Sal av nye Volvo-bilar",
+      "Sal av bruktbilar",
+      "Service og reparasjon",
+      "Originaldelar og tilbehøyr",
+      "Dekkhotell og hjulskift"
+    ],
+    "adresse": "Industrivegen 23, 6823 Sandane",
+    "telefon": "+47 57 86 61 00",
+    "nettstad": "https://www.frydenbo-bil.no/avdelinger/sandane",
+    "opningstider": "Sal: måndag–fredag 8–16, laurdag 10–14. Verkstad og delelager: måndag–fredag 8–16",
+    "stikkord": [
+      "bilforhandlar",
+      "Volvo",
+      "Polestar",
+      "bilverkstad",
+      "Intakt Bilskade"
+    ],
+    "kjelde": "https://www.frydenbo-bil.no/avdelinger/sandane",
+    "sjekka": "2026-11-23"
   },
   {
-    "id": "eksempel-kafe",
-    "namn": "Eksempel Kafé",
-    "kategori": "mat-og-servering",
+    "id": "gloppen-trafikkskule",
+    "namn": "Gloppen Trafikkskule AS",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
     "stad": "Sandane",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte kafé eller restaurant.",
-    "opningstider": "Tysdag–laurdag 10–17",
-    "stikkord": ["kaffi", "lunsj", "kaker"],
-    "eksempel": true
+    "kortSkildring": "Trafikkskule på Sandane med opplæring til førarkort for bil og tilhengar.",
+    "tilbyr": [
+      "Trafikalt grunnkurs",
+      "Køyretimar med manuell og automatgir",
+      "Opplæring for bil og hengar (BE)",
+      "Tryggleikskurs på veg og bane",
+      "Lastsikringskurs"
+    ],
+    "adresse": "Nordstrandsvegen 13, 6823 Sandane",
+    "telefon": "+47 57 86 57 75",
+    "epost": "post@gloppentrafikkskule.no",
+    "nettstad": "https://gloppentrafikkskule.no",
+    "stikkord": [
+      "trafikkskule",
+      "køyreskule",
+      "førarkort",
+      "lappen"
+    ],
+    "kjelde": "https://gloppentrafikkskule.no",
+    "sjekka": "2026-11-23"
   },
   {
-    "id": "eksempel-sportsbutikk",
-    "namn": "Eksempel Sport",
+    "id": "hetle-auto",
+    "namn": "Hetle Auto ANR AS",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Breim",
+    "kortSkildring": "Bruktbilforhandlar og autorisert verkstad på Reed i Breim, langs E39.",
+    "tilbyr": [
+      "Sal av bruktbilar og varebilar",
+      "Service og reparasjon",
+      "EU-kontroll",
+      "Bilpleie (Breim Bilpleie)"
+    ],
+    "adresse": "Breimsvegen 1280, 6827 Breim",
+    "telefon": "+47 57 86 82 30",
+    "nettstad": "https://www.hetleauto.no",
+    "opningstider": "Måndag–fredag 8.30–16.30, laurdag 10–13",
+    "stikkord": [
+      "bruktbil",
+      "bilverkstad",
+      "Reed",
+      "bilpleie"
+    ],
+    "kjelde": "https://www.hetleauto.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "leiv-austrheim",
+    "namn": "Leiv Austrheim AS",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Sandane",
+    "kortSkildring": "Bilverkstad på Sandane i MECA-kjeda.",
+    "tilbyr": [
+      "Service på bil",
+      "Reparasjonar",
+      "EU-kontroll"
+    ],
+    "adresse": "Nordstrandsvegen 40, 6823 Sandane",
+    "telefon": "+47 57 86 58 60",
+    "stikkord": [
+      "bilverkstad",
+      "MECA",
+      "EU-kontroll",
+      "Leiv Austrheim Bilverkstad"
+    ],
+    "kjelde": "https://www.1881.no/bilverksted/bilverksted-vestland/bilverksted-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sandane-taxisentral",
+    "namn": "Sandane Taxisentral ANS",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Sandane",
+    "kortSkildring": "Drosjesentral på Sandane.",
+    "tilbyr": [
+      "Drosjetransport",
+      "Persontransport i Gloppen",
+      "Bestilling av drosje"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "telefon": "+47 94 85 55 55",
+    "stikkord": [
+      "taxi",
+      "drosje"
+    ],
+    "kjelde": "https://www.1881.no/?query=Sandane+Taxisentral",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "aagard-sko-sandane",
+    "namn": "Aagård Sko",
+    "type": "butikk",
     "kategori": "butikk-og-handel",
     "stad": "Sandane",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte butikk.",
-    "stikkord": ["ski", "tur", "klede", "sko"],
-    "eksempel": true
+    "kortSkildring": "Skobutikk i sentrum av Sandane.",
+    "tilbyr": [
+      "Sko",
+      "Skotilbehøyr"
+    ],
+    "adresse": "Grandavegen 11, 6823 Sandane",
+    "stikkord": [
+      "sko",
+      "skobutikk"
+    ],
+    "kjelde": "https://www.1881.no/sko-og-tilbehoer-detalj/sko-og-tilbehoer-detalj-vestland/sko-og-tilbehoer-detalj-sandane/aagaard-sko-as_101473247S1/",
+    "sjekka": "2026-11-23"
   },
   {
-    "id": "eksempel-frisor",
-    "namn": "Eksempel Frisør",
-    "kategori": "helse-og-velvere",
+    "id": "apotek-1-sandane",
+    "namn": "Apotek 1 Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Apotek i Apotek 1-kjeda på Sandane.",
+    "tilbyr": [
+      "Reseptbelagde legemiddel",
+      "Reseptfrie legemiddel",
+      "Hud- og kroppspleie",
+      "Rettleiing om legemiddel"
+    ],
+    "adresse": "Grandavegen 14, 6823 Sandane",
+    "nettstad": "https://www.apotek1.no/vaare-apotek/vestland/sandane-580",
+    "stikkord": [
+      "apotek",
+      "medisin",
+      "resept"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/underenheter/973168835",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "byggern-sandane",
+    "namn": "Bygger'n Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Byggevarehus i Bygger'n-kjeda på Nordstranda i Sandane, for både privatkundar og handverkarar.",
+    "tilbyr": [
+      "Byggevarer og trelast",
+      "Verktøy",
+      "Utleige av verktøy og maskiner",
+      "Rettleiing frå fagfolk"
+    ],
+    "adresse": "Nordstrandsvegen 33, 6823 Sandane",
+    "telefon": "+47 57 88 46 60",
+    "nettstad": "https://www.byggern.no/butikker/byggern-sandane",
+    "opningstider": "Måndag–fredag 7.30–17, laurdag 9–14, sundag stengt",
+    "stikkord": [
+      "byggevare",
+      "trelast",
+      "jernvare",
+      "Byggern",
+      "verktøyutleige"
+    ],
+    "kjelde": "https://www.byggern.no/butikker/byggern-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "byggtorget-byrkjelo",
+    "namn": "Byggtorget Byrkjelo",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
     "stad": "Byrkjelo",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte frisør eller helseteneste.",
-    "stikkord": ["hår", "klipp"],
-    "eksempel": true
+    "kortSkildring": "Byggevarebutikk i Byggtorget-kjeda på Byrkjelo, driven av Byggevaren Byrkjelo AS.",
+    "tilbyr": [
+      "Byggevarer og trelast",
+      "Verktøy",
+      "Jernvarer",
+      "Materiell til hus og hytte"
+    ],
+    "adresse": "Gamlevegen 2, 6826 Byrkjelo",
+    "nettstad": "https://www.byggtorget.no/butikker/byggevaren-byrkjelo-as",
+    "stikkord": [
+      "byggevare",
+      "trelast",
+      "jernvare",
+      "Byggevaren",
+      "Breim"
+    ],
+    "kjelde": "https://www.byggevaren.no/",
+    "sjekka": "2026-11-23"
   },
   {
-    "id": "eksempel-snekkar",
-    "namn": "Eksempel Snekkar",
+    "id": "daiva-sin-butikk-sandane",
+    "namn": "Daiva sin butikk",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Liten butikk i Grandavegen som sel handverksprodukt importerte frå Litauen.",
+    "tilbyr": [
+      "Handverksprodukt frå Litauen",
+      "Gåver",
+      "Importvarer frå Litauen"
+    ],
+    "adresse": "Grandavegen 36, 6823 Sandane",
+    "stikkord": [
+      "handverk",
+      "Litauen",
+      "gåver"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/oppslag/enheter/980237028",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "elon-sandane",
+    "namn": "Elon Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Elektronikk- og kvitevarebutikk i Elon-kjeda i sentrum av Sandane.",
+    "tilbyr": [
+      "Kvitevarer",
+      "TV og lyd",
+      "Mobiltelefonar og abonnement",
+      "PC og nettverk",
+      "Heimlevering og installasjon"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "telefon": "+47 57 99 90 09",
+    "nettstad": "https://www.elon.no/butikker/sandane/elon-sandane",
+    "opningstider": "Måndag–fredag 10–17, laurdag 10–15, sundag stengt",
+    "stikkord": [
+      "elektronikk",
+      "kvitevarer",
+      "kjøkken",
+      "LH Kjøkken & Hvitevare"
+    ],
+    "kjelde": "https://www.elon.no/butikker/sandane/elon-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "europris-sandane",
+    "namn": "Europris Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Lågprisvarehus i Europris-kjeda i sentrum av Sandane.",
+    "tilbyr": [
+      "Husholdningsartiklar",
+      "Interiør og dekor",
+      "Hage og fritid",
+      "Snacks og drikke"
+    ],
+    "adresse": "Grandavegen 14, 6823 Sandane",
+    "stikkord": [
+      "lågpris",
+      "varehus",
+      "Europris"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/underenheter/998910927",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "fantasi-hobby-fritid-og-bad-sandane",
+    "namn": "Fantasi Hobby Fritid og Bad",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Hobbybutikk og nettbutikk på Sandane med broderi, strikking, quilting, scrapbooking og baderomsutstyr.",
+    "tilbyr": [
+      "Broderi og broderitråd",
+      "Garn og strikkeutstyr",
+      "Stoff og quilting",
+      "Scrapbooking og papirhobby",
+      "Baderomsutstyr",
+      "Månadlege hobbykit"
+    ],
+    "adresse": "Nordstrandsvegen 6, 6823 Sandane",
+    "telefon": "+47 974 01 077",
+    "epost": "post@rhr.no",
+    "nettstad": "https://fantasihobby.no",
+    "opningstider": "Tysdag–fredag 11–16.30, laurdag 11–14",
+    "stikkord": [
+      "hobby",
+      "broderi",
+      "garn",
+      "strikking",
+      "scrapbooking",
+      "nettbutikk"
+    ],
+    "kjelde": "https://fantasihobby.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "fargerike-sandane",
+    "namn": "Fargerike Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Fargehandel i Fargerike-kjeda på Nordstranda i Sandane, driven av Henden Fargehandel.",
+    "tilbyr": [
+      "Måling og beis",
+      "Tapet",
+      "Golv",
+      "Solskjerming",
+      "Fargerettleiing og interiørkonsulent"
+    ],
+    "adresse": "Nordstrandsvegen 17E, 6823 Sandane",
+    "telefon": "+47 57 86 91 95",
+    "nettstad": "https://www.fargerike.no/fargehandel/sandane/",
+    "opningstider": "Måndag–fredag 8–16.30, laurdag 10–14, sundag stengt",
+    "stikkord": [
+      "maling",
+      "fargehandel",
+      "tapet",
+      "interiør",
+      "Henden Fargehandel"
+    ],
+    "kjelde": "https://www.fargerike.no/fargehandel/sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "felleskjopet-sandane",
+    "namn": "Felleskjøpet Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Butikk frå Felleskjøpet på Sandane med varer til gard, hage, dyr og fritid.",
+    "tilbyr": [
+      "Landbruksvarer",
+      "Dyrefôr og utstyr til kjæledyr",
+      "Hagevarer",
+      "Arbeidsklede",
+      "Verktøy og småmaskiner"
+    ],
+    "adresse": "Kattahamrane 15, 6823 Sandane",
+    "telefon": "+47 99 28 79 85",
+    "nettstad": "https://fka.felleskjopet.no/finn-oss/",
+    "opningstider": "Måndag–fredag 8–17, laurdag 10–15",
+    "stikkord": [
+      "landbruk",
+      "gard",
+      "dyrefôr",
+      "hage",
+      "FK"
+    ],
+    "kjelde": "https://fka.felleskjopet.no/finn-oss/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "intersport-sandane",
+    "namn": "Intersport Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Sportsbutikk i Intersport-kjeda på Sandane, driven av Henden Sport.",
+    "tilbyr": [
+      "Sportsklede",
+      "Sko",
+      "Turutstyr",
+      "Utstyr til trening og friluftsliv"
+    ],
+    "adresse": "Sørstrandsvegen 6, 6823 Sandane",
+    "telefon": "+47 57 88 46 00",
+    "nettstad": "https://www.intersport.no/butikker/intersport-sandane",
+    "opningstider": "Måndag–fredag 10–18, laurdag 10–15, sundag stengt",
+    "stikkord": [
+      "sport",
+      "Henden Sport",
+      "friluftsliv",
+      "trening"
+    ],
+    "kjelde": "https://www.intersport.no/butikker/intersport-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "modehjornet-sandane",
+    "namn": "Modehjørnet",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Klede- og tekstilbutikk i sentrum av Sandane.",
+    "tilbyr": [
+      "Klede",
+      "Mote",
+      "Tekstilvarer"
+    ],
+    "adresse": "Sørstrandsvegen 9, 6823 Sandane",
+    "telefon": "+47 57 86 57 71",
+    "stikkord": [
+      "klede",
+      "mote",
+      "tekstil"
+    ],
+    "kjelde": "https://www.proff.no/selskap/modehj%C3%B8rnet/sandane/tekstiler-og-tilbeh%C3%B8r/IEF2JF207R0",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "mobelringen-sandane",
+    "namn": "Møbelringen Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Møbelbutikk i Møbelringen-kjeda på Sandane, driven av Sandane Møbel AS.",
+    "tilbyr": [
+      "Møblar til stove og soverom",
+      "Spisestovemøblar",
+      "Senger og madrassar",
+      "Interiør"
+    ],
+    "adresse": "Krånavegen 15, 6823 Sandane",
+    "stikkord": [
+      "møblar",
+      "interiør",
+      "Sandane Møbel"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/979950365",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "norli-sandane",
+    "namn": "Norli Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Bokhandel på Sandane med Kontorspar og Ringo i same butikk.",
+    "tilbyr": [
+      "Bøker",
+      "Kontorrekvisita (Kontorspar)",
+      "Leiker og spel (Ringo)",
+      "Gåver og kort"
+    ],
+    "adresse": "Nordstrandsvegen 10, 6823 Sandane",
+    "telefon": "+47 57 88 44 10",
+    "nettstad": "https://www.norli.no/butikker/vestland/norli-vestland-sandane",
+    "opningstider": "Måndag–fredag 10–18, laurdag 10–15",
+    "stikkord": [
+      "bokhandel",
+      "bøker",
+      "Eikenæs",
+      "kontor",
+      "Kontorspar",
+      "leiker",
+      "Ringo"
+    ],
+    "kjelde": "https://www.norli.no/butikker/vestland/norli-vestland-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sandane-gullsmed-skinlo",
+    "namn": "Sandane Gullsmed Skinlo",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Gullsmed i sentrum av Sandane som lagar og sel smykke.",
+    "tilbyr": [
+      "Smykke",
+      "Gull- og sølvvarer",
+      "Gåver"
+    ],
+    "adresse": "Nordstrandsvegen 8, 6823 Sandane",
+    "stikkord": [
+      "gullsmed",
+      "smykke",
+      "gull",
+      "sølv"
+    ],
+    "kjelde": "https://www.1881.no/gull-og-soelvvarer-produksjon/gull-og-soelvvarer-produksjon-vestland/gull-og-soelvvarer-produksjon-sandane/sandane-gullsmed-skinlo_106452460S0/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sesong-sandane",
+    "namn": "Sesong",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Klesbutikk i sentrum av Sandane.",
+    "tilbyr": [
+      "Klede",
+      "Tilbehøyr"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "stikkord": [
+      "klede",
+      "mote",
+      "klesbutikk"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/underenheter/983570593",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "skinlo-og-co-sandane",
+    "namn": "Skinlo & Co",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Klesbutikk på Sandane.",
+    "tilbyr": [
+      "Klede",
+      "Tilbehøyr"
+    ],
+    "adresse": "Firdavegen 12, 6823 Sandane",
+    "stikkord": [
+      "klede",
+      "mote",
+      "klesbutikk"
+    ],
+    "kjelde": "https://www.1881.no/klesbutikk/klesbutikk-vestland/klesbutikk-sandane/skinlo-og-co-as_103759245S1/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sport-1-chatlet-sandane",
+    "namn": "Sport 1 Chatlet Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Sportsbutikk i Sport 1-kjeda på Sandane, driven av Chatlet Sport.",
+    "tilbyr": [
+      "Sportsklede",
+      "Sko og løpesko",
+      "Turutstyr",
+      "Utstyr til trening og friluftsliv"
+    ],
+    "adresse": "Nordstrandsvegen 11, 6823 Sandane",
+    "telefon": "+47 57 86 62 50",
+    "nettstad": "https://www.sport1.no/butikker/sport-1-chatlet-sandane",
+    "opningstider": "Måndag–onsdag 10–17, torsdag 10–17.30, fredag 10–17, laurdag 10–15, sundag stengt",
+    "stikkord": [
+      "sport",
+      "Chatlet",
+      "friluftsliv",
+      "trening"
+    ],
+    "kjelde": "https://www.sport1.no/butikker/sport-1-chatlet-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "tystad-blomster",
+    "namn": "Tystad Blomster AS",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Blomebutikk i sentrum av Sandane.",
+    "tilbyr": [
+      "Snittblomar og buketter",
+      "Potteplantar",
+      "Binderi",
+      "Gåveartiklar"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "telefon": "+47 57 86 63 90",
+    "stikkord": [
+      "blomar",
+      "blomster",
+      "gåver"
+    ],
+    "kjelde": "https://www.1881.no/blomsterbutikk/blomsterbutikk-vestland/blomsterbutikk-sandane/tystad-blomster-as_103967650S2/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "upscale-sandane",
+    "namn": "Upscale",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Gjenbruksbutikk på Sandane med brukte klede, redesign og sykurs.",
+    "tilbyr": [
+      "Brukte klede og sko",
+      "Klesabonnement",
+      "Redesign-produkt",
+      "Syoppdrag og reparasjonar",
+      "Sykurs for born og vaksne"
+    ],
+    "adresse": "Grandavegen 32, 6823 Sandane",
+    "telefon": "+47 48 47 68 77",
+    "nettstad": "https://upscaledesign.no/",
+    "stikkord": [
+      "brukt",
+      "gjenbruk",
+      "bruktbutikk",
+      "redesign"
+    ],
+    "kjelde": "https://upscaledesign.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "vereide-blomster",
+    "namn": "Vereide Blomster AS",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Blomebutikk på Sandane og medlem av Interflora, med blomar, plantar og binderi.",
+    "tilbyr": [
+      "Snittblomar og buketter",
+      "Potteplantar",
+      "Sorgbinderi",
+      "Bryllaupsblomar og dekorering",
+      "Blomsterlevering via Interflora"
+    ],
+    "adresse": "Kattahamrane 13, 6823 Sandane",
+    "telefon": "+47 90 69 94 70",
+    "nettstad": "https://www.vereideblomster.no/",
+    "opningstider": "Måndag–fredag 9–17, laurdag 10–15",
+    "stikkord": [
+      "blomar",
+      "blomster",
+      "Interflora",
+      "Hageland",
+      "gåver"
+    ],
+    "kjelde": "https://www.vereideblomster.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "vinmonopolet-sandane",
+    "namn": "Vinmonopolet Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Polutsal på Sandane Senter som sel vin, øl og brennevin.",
+    "tilbyr": [
+      "Vin",
+      "Brennevin",
+      "Sterkøl og sider",
+      "Alkoholfrie alternativ"
+    ],
+    "adresse": "Grandavegen 10, 6823 Sandane",
+    "nettstad": "https://www.vinmonopolet.no/butikk/346",
+    "opningstider": "Måndag stengt, tysdag–torsdag 11–17, fredag 10–18, laurdag 10–16, sundag stengt",
+    "stikkord": [
+      "polet",
+      "vinmonopol",
+      "alkohol",
+      "Sandane Senter"
+    ],
+    "kjelde": "https://www.vinmonopolet.no/butikk/346",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "yx-breim",
+    "namn": "YX Breim",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bensinstasjon med butikk, matservering og hurtiglading ved E39 på Byrkjelo.",
+    "tilbyr": [
+      "Drivstoff og AdBlue",
+      "Kioskvarer",
+      "Pizza og hamburgarar",
+      "Hurtiglading for elbil",
+      "Bilvask"
+    ],
+    "adresse": "Breimsvegen 1803, 6826 Byrkjelo",
+    "telefon": "+47 97 99 70 24",
+    "nettstad": "https://www.yx.no/stasjon/yx-breim-10400565",
+    "opningstider": "Måndag–fredag 7.30–22, laurdag 8–22, sundag 9–22 (drivstoff heile døgnet)",
+    "stikkord": [
+      "bensinstasjon",
+      "drivstoff",
+      "kiosk",
+      "Breim Energi",
+      "Breim",
+      "lading"
+    ],
+    "kjelde": "https://www.yx.no/stasjon/yx-breim-10400565",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "yx-sandane",
+    "namn": "YX Sandane",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Sandane",
+    "kortSkildring": "Bensinstasjon med butikk og matservering på Sandane.",
+    "tilbyr": [
+      "Drivstoff",
+      "Kioskvarer",
+      "Mat og hamburgarar",
+      "Bilvask",
+      "Propan"
+    ],
+    "adresse": "Kleivedammen 11, 6823 Sandane",
+    "telefon": "+47 91 90 47 60",
+    "nettstad": "https://www.yx.no/stasjon/yx-sandane-10400563",
+    "opningstider": "Måndag–fredag 7–22, laurdag 9–22, sundag 9–22 (drivstoff heile døgnet)",
+    "stikkord": [
+      "bensinstasjon",
+      "drivstoff",
+      "kiosk",
+      "bilvask",
+      "Auto-Senteret"
+    ],
+    "kjelde": "https://www.yx.no/stasjon/yx-sandane-10400563",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "byggmester-seime",
+    "namn": "Byggmester Seime AS",
+    "type": "bedrift",
     "kategori": "bygg-og-handverk",
     "stad": "Breim",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte handverkar.",
-    "stikkord": ["oppussing", "tømrar", "hus"],
-    "eksempel": true
+    "kortSkildring": "Byggmeisterfirma i Breim som set opp bygningar.",
+    "tilbyr": [
+      "Oppføring av bygningar",
+      "Tømrararbeid",
+      "Godkjend lærebedrift"
+    ],
+    "adresse": "Skinlovegen 28, 6827 Breim",
+    "stikkord": [
+      "byggmeister",
+      "tømrar",
+      "snikkar",
+      "lærebedrift"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/929819624",
+    "sjekka": "2026-11-23"
   },
   {
-    "id": "eksempel-bilverkstad",
-    "namn": "Eksempel Bilverkstad",
-    "kategori": "bil-og-transport",
+    "id": "byrkjelo-maskin",
+    "namn": "Byrkjelo Maskin AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Maskinentreprenør på Byrkjelo som tek på seg grunn- og anleggsarbeid.",
+    "tilbyr": [
+      "Graving og planering",
+      "Drenering og kummar",
+      "Sprenging og riving",
+      "Vegbygging",
+      "Massetransport",
+      "Brøyting og strøing"
+    ],
+    "adresse": "Fjellvegen 3, 6826 Byrkjelo",
+    "telefon": "+47 97 62 58 08",
+    "epost": "post@byrkjelomaskin.no",
+    "nettstad": "https://www.byrkjelomaskin.no",
+    "stikkord": [
+      "maskinentreprenør",
+      "graving",
+      "anlegg"
+    ],
+    "kjelde": "https://www.byrkjelomaskin.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "firda-elektro",
+    "namn": "Firda Elektro AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Elektroinstallatør på Sandane for private og bedrifter.",
+    "tilbyr": [
+      "Elektriske installasjonar og service",
+      "Elbillading",
+      "Solceller",
+      "Varmepumper og varmestyring",
+      "Elkontroll og energimerking",
+      "Alarm og tryggleik"
+    ],
+    "adresse": "Nordstrandsvegen 17 A, 6823 Sandane",
+    "telefon": "+47 57 86 87 70",
+    "epost": "post@firda-elektro.no",
+    "nettstad": "https://www.firda-elektro.no",
+    "stikkord": [
+      "elektrikar",
+      "elektriker",
+      "smarthus"
+    ],
+    "kjelde": "https://www.firda-elektro.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "henden-elektro",
+    "namn": "Henden Elektro AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Elektroentreprenør på Sandane, del av ElteraGruppen.",
+    "tilbyr": [
+      "Elektro i nybygg og rehabilitering",
+      "Elbilladar for private",
+      "Utelys",
+      "Elektrotenester for næring og landbruk",
+      "Serviceavtale og internkontroll"
+    ],
+    "adresse": "Sørstrandsvegen 6, 6823 Sandane",
+    "telefon": "+47 57 88 46 10",
+    "epost": "post@hendenelektro.no",
+    "nettstad": "https://www.hendenelektro.no",
+    "stikkord": [
+      "elektrikar",
+      "elektriker",
+      "Eltera"
+    ],
+    "kjelde": "https://www.hendenelektro.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "mardal-ror",
+    "namn": "Mardal Rør AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Røyrleggarfirma på Sandane, medlem av Rørkjøp-kjeda.",
+    "tilbyr": [
+      "Service og reparasjon av røyr og armatur",
+      "Bad, kjøkken og vaskerom",
+      "Røyrlegging i nybygg",
+      "Varmepumpe og golvvarme",
+      "Vassreinsing",
+      "Inspeksjon og spyling av røyr"
+    ],
+    "adresse": "Sørstrandsvegen 184, 6823 Sandane",
+    "telefon": "+47 57 86 57 91",
+    "nettstad": "https://www.mardalror.no",
+    "stikkord": [
+      "røyrleggar",
+      "rørlegger",
+      "Rørkjøp",
+      "bad"
+    ],
+    "kjelde": "https://www.rorkjop.no/finn-rorlegger/vestland/gloppen/mardal-ror-as",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "olav-hjelmeset",
+    "namn": "Olav Hjelmeset AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Maskinentreprenør på Sandane med graving, sprenging og transport.",
+    "tilbyr": [
+      "Graving og grunnarbeid",
+      "Sprenging",
+      "Massetransport og tungtransport",
+      "Muring med naturstein",
+      "Riving",
+      "Brøyting og strøing"
+    ],
+    "adresse": "Øvre Sørstranda 14, 6823 Sandane",
+    "telefon": "+47 91 37 26 49",
+    "nettstad": "https://hjelmeset.no",
+    "opningstider": "Måndag–fredag 7–16",
+    "stikkord": [
+      "maskinentreprenør",
+      "gravemaskin",
+      "tomtearbeid"
+    ],
+    "kjelde": "https://hjelmeset.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "asiamat-sandane",
+    "namn": "Asiamat Sandane",
+    "type": "butikk",
+    "kategori": "daglegvare",
+    "stad": "Sandane",
+    "kortSkildring": "Daglegvarebutikk med asiatiske matvarer i Nordstrandsvegen på Sandane.",
+    "tilbyr": [
+      "Asiatiske matvarer",
+      "Daglegvarer",
+      "Kolonialvarer"
+    ],
+    "adresse": "Nordstrandsvegen 36, 6823 Sandane",
+    "stikkord": [
+      "asiatisk mat",
+      "matbutikk"
+    ],
+    "kjelde": "https://www.1881.no/dagligvare/dagligvare-vestland/dagligvare-sandane/asiamat-sandane-as_107314649S0/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "bunnpris-sandane",
+    "namn": "Bunnpris Sandane",
+    "type": "butikk",
+    "kategori": "daglegvare",
+    "stad": "Sandane",
+    "kortSkildring": "Daglegvarebutikk i Bunnpris-kjeda på Sandane, med post i butikk og pakkeutlevering.",
+    "tilbyr": [
+      "Daglegvarer",
+      "Post i butikk",
+      "PostNord-pakkar",
+      "Helthjem-pakkar"
+    ],
+    "adresse": "Gotevegen 2, 6823 Sandane",
+    "telefon": "+47 57 86 50 57",
+    "nettstad": "https://www.bunnpris.no/butikker/bunnpris-sandane",
+    "opningstider": "Måndag–fredag 8–22, laurdag 9–20, sundag stengt",
+    "stikkord": [
+      "matbutikk",
+      "post",
+      "pakkeutlevering",
+      "kolonial"
+    ],
+    "kjelde": "https://www.bunnpris.no/butikker/bunnpris-sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "coop-prix-byrkjelo",
+    "namn": "Coop Prix Byrkjelo",
+    "type": "butikk",
+    "kategori": "daglegvare",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Daglegvarebutikk i Coop Prix-kjeda på Byrkjelo, med post og lading for elbil.",
+    "tilbyr": [
+      "Daglegvarer",
+      "Post i butikk",
+      "PostNord-pakkar",
+      "Norsk Tipping",
+      "Lading av elbil"
+    ],
+    "adresse": "Gamlevegen 2, 6826 Byrkjelo",
+    "telefon": "+47 57 86 88 90",
+    "nettstad": "https://www.coop.no/butikker/coop-prix/coop-prix-byrkjelo-1467",
+    "opningstider": "Måndag–fredag 8–22, laurdag 8–21, sundag stengt",
+    "stikkord": [
+      "matbutikk",
+      "Coop",
+      "Prix",
+      "Breim",
+      "post",
+      "kolonial"
+    ],
+    "kjelde": "https://www.coop.no/butikker/coop-prix/coop-prix-byrkjelo-1467",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "extra-sandane",
+    "namn": "Extra Sandane",
+    "type": "butikk",
+    "kategori": "daglegvare",
+    "stad": "Sandane",
+    "kortSkildring": "Daglegvarebutikk i Extra-kjeda (Coop) i sentrum av Sandane, med lange opningstider.",
+    "tilbyr": [
+      "Daglegvarer",
+      "Ferskvarer og frukt",
+      "Post i butikk",
+      "Norsk Tipping",
+      "Medlemsfordelar for Coop-medlemer"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "telefon": "+47 97 99 13 80",
+    "nettstad": "https://www.coop.no/butikker/extra/extra-sandane-1386",
+    "opningstider": "Måndag–laurdag 7–23, sundag stengt",
+    "stikkord": [
+      "matbutikk",
+      "Coop",
+      "Extra",
+      "post",
+      "kolonial"
+    ],
+    "kjelde": "https://www.coop.no/butikker/extra/extra-sandane-1386",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "joker-hyen",
+    "namn": "Joker Hyen",
+    "type": "butikk",
+    "kategori": "daglegvare",
     "stad": "Hyen",
-    "kortSkildring": "Oppdikta døme. Byt ut med ein ekte verkstad eller transportør.",
-    "stikkord": ["EU-kontroll", "dekk", "service"],
-    "eksempel": true
+    "kortSkildring": "Nærbutikk i Joker-kjeda i Hyen, med post i butikk og pakketenester.",
+    "tilbyr": [
+      "Daglegvarer",
+      "Post i butikk",
+      "PostNord- og DHL-pakkar",
+      "Kontanttenester"
+    ],
+    "adresse": "Straumsvegen 12, 6829 Hyen",
+    "telefon": "+47 57 86 98 04",
+    "nettstad": "https://joker.no/finn-butikk/joker-hyen",
+    "opningstider": "Måndag–onsdag 9–17, torsdag–fredag 9–18, laurdag 9–14, sundag stengt",
+    "stikkord": [
+      "matbutikk",
+      "nærbutikk",
+      "post",
+      "kolonial"
+    ],
+    "kjelde": "https://joker.no/finn-butikk/joker-hyen",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "rema-1000-sandane",
+    "namn": "REMA 1000 Sandane",
+    "type": "butikk",
+    "kategori": "daglegvare",
+    "stad": "Sandane",
+    "kortSkildring": "Daglegvarebutikk i REMA 1000-kjeda på Sandane Senter.",
+    "tilbyr": [
+      "Daglegvarer",
+      "Ferskvarer og frukt",
+      "Brød og bakevarer",
+      "Drikkevarer"
+    ],
+    "adresse": "Grandavegen 10, 6823 Sandane",
+    "telefon": "+47 57 86 65 70",
+    "nettstad": "https://www.rema.no/butikker/vestland/gloppen/rema-1000-sandane/",
+    "opningstider": "Måndag–laurdag 7–23, sundag stengt",
+    "stikkord": [
+      "matbutikk",
+      "Rema",
+      "Sandane Senter",
+      "kolonial"
+    ],
+    "kjelde": "https://www.rema.no/butikker/vestland/gloppen/rema-1000-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "din-frisor-sandane",
+    "namn": "Din Frisør",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong på Sandane med hårklipp og hårpleie.",
+    "tilbyr": [
+      "Hårklipp",
+      "Frisørtenester",
+      "Hårpleie"
+    ],
+    "telefon": "+47 91 61 49 95",
+    "stikkord": [
+      "frisør",
+      "hår",
+      "frisørsalong"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/din-frisoer-ann-kristin-eikrem_100234096S1/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "dyrlege-brede-seim",
+    "namn": "Dyrlege Brede Seim AS",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Veterinærpraksis med base på Sandane.",
+    "tilbyr": [
+      "Veterinærtenester",
+      "Behandling av dyr",
+      "Konsultasjon etter avtale"
+    ],
+    "adresse": "Gotevegen 44, 6823 Sandane",
+    "telefon": "+47 57 86 57 86",
+    "stikkord": [
+      "veterinær",
+      "dyrlege",
+      "dyreklinikk"
+    ],
+    "kjelde": "https://www.1881.no/veterinaer/veterinaer-vestland/veterinaer-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "firda-fysikalsk-medisinsk-senter",
+    "namn": "Firda Fysikalsk-medisinsk Senter AS",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Senter for fysioterapi, manuellterapi og trening på Sandane.",
+    "tilbyr": [
+      "Fysioterapi",
+      "Manuellterapi",
+      "Medisinsk trening",
+      "Treningssal",
+      "Utgreiing og rehabilitering av nakkeskadar"
+    ],
+    "adresse": "Krånavegen 9, 6823 Sandane",
+    "telefon": "+47 57 86 64 22",
+    "epost": "post@firdafysmed.no",
+    "nettstad": "https://www.firdafysmed.no",
+    "stikkord": [
+      "fysioterapeut",
+      "manuellterapeut",
+      "treningssenter",
+      "badstu"
+    ],
+    "kjelde": "https://www.firdafysmed.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gloppen-tannhelse",
+    "namn": "Gloppen Tannhelse AS",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Privat tannlegekontor i Skarsteintunet på Sandane.",
+    "tilbyr": [
+      "Tannundersøking og kontroll",
+      "Tannbehandling",
+      "Timebestilling"
+    ],
+    "adresse": "Nordstrandsvegen 13, 6823 Sandane",
+    "telefon": "+47 57 00 40 00",
+    "epost": "post@gloppentannhelse.no",
+    "nettstad": "https://www.gloppentannhelse.no",
+    "opningstider": "Måndag–fredag 8–15.30",
+    "stikkord": [
+      "tannlege",
+      "tannklinikk"
+    ],
+    "kjelde": "https://www.gloppentannhelse.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gretes-frisorsenter",
+    "namn": "Gretes Frisørsenter AS",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong i Grandavegen på Sandane.",
+    "tilbyr": [
+      "Hårklipp",
+      "Frisørtenester",
+      "Sal av hårprodukt"
+    ],
+    "adresse": "Grandavegen 21, 6823 Sandane",
+    "telefon": "+47 57 86 58 66",
+    "stikkord": [
+      "frisør",
+      "hårklipp",
+      "salong"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "luggen-frisor-og-parfyme-sandane",
+    "namn": "Luggen Frisør & Parfyme",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong på Sandane som også sel parfyme og pleieprodukt.",
+    "tilbyr": [
+      "Hårklipp",
+      "Farging",
+      "Parfyme",
+      "Hårpleieprodukt"
+    ],
+    "telefon": "+47 57 86 56 80",
+    "stikkord": [
+      "frisør",
+      "parfyme",
+      "hår"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/luggen-frisoer-og-parfyme-as_100229581S1/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "oris-dental-sandane",
+    "namn": "Oris Dental Sandane",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Tannklinikk på Sandane som er del av den landsdekkande Oris Dental-kjeda.",
+    "tilbyr": [
+      "Allmenn tannbehandling",
+      "Tannpleiar",
+      "Tannlege",
+      "Tilvising til spesialist"
+    ],
+    "adresse": "Sagevegen 3, 6823 Sandane",
+    "telefon": "+47 57 86 50 24",
+    "nettstad": "https://www.orisdental.no/klinikker/sandane/",
+    "stikkord": [
+      "tannlege",
+      "tannpleiar"
+    ],
+    "kjelde": "https://www.1881.no/tannlege/tannlege-vestland/tannlege-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "pikant-frisor-sandane",
+    "namn": "Pikant Frisør",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong i Nordstrandsvegen på Sandane.",
+    "tilbyr": [
+      "Hårklipp",
+      "Farging",
+      "Styling"
+    ],
+    "adresse": "Nordstrandsvegen 13, 6823 Sandane",
+    "telefon": "+47 57 86 57 97",
+    "stikkord": [
+      "frisør",
+      "hår"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/pikant-frisoer-17-as_106143509S1/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sveisen-frisor-sandane",
+    "namn": "Sveisen Frisør",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong i Grandavegen på Sandane med timebestilling på nett.",
+    "tilbyr": [
+      "Hårklipp",
+      "Farging",
+      "Styling",
+      "Timebestilling på nett"
+    ],
+    "adresse": "Grandavegen 3, 6823 Sandane",
+    "telefon": "+47 57 86 66 10",
+    "stikkord": [
+      "frisør",
+      "hår"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/sveisen-frisoer-tone-larsen-eveboe_100222809S1/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "tora-frisor",
+    "namn": "Tora Frisør AS",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Frisørsalong på Nordstranda på Sandane.",
+    "tilbyr": [
+      "Hårklipp",
+      "Frisørtenester",
+      "Sal av hårprodukt"
+    ],
+    "adresse": "Nordstrandsvegen 21, 6823 Sandane",
+    "telefon": "+47 57 86 60 86",
+    "stikkord": [
+      "frisør",
+      "hårklipp",
+      "salong"
+    ],
+    "kjelde": "https://www.1881.no/frisoer/frisoer-vestland/frisoer-sandane/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "vest-optik-sandane",
+    "namn": "Vest Optik",
+    "type": "butikk",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Optikarforretning i Skarsteintunet på Sandane, tilknytt Alliance Optikk.",
+    "tilbyr": [
+      "Synsundersøking",
+      "Briller",
+      "Kontaktlinser",
+      "Solbriller"
+    ],
+    "adresse": "Nordstrandsvegen 13, 6823 Sandane",
+    "telefon": "+47 57 86 52 66",
+    "stikkord": [
+      "optikar",
+      "optiker",
+      "Alliance Optikk",
+      "brille"
+    ],
+    "kjelde": "https://www.1881.no/optiker/optiker-vestland/optiker-sandane/vest-optik-as_100869191S2/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "fjellestad-gardskjoken",
+    "namn": "Fjellestad Gardskjøken",
+    "type": "bedrift",
+    "kategori": "lokalmat",
+    "stad": "Sandane",
+    "kortSkildring": "Gardskjøken i Fjellbygda over Sandane som lagar tradisjonsmat av mjølk frå eigen gard: gombe, lefser og rømmegraut.",
+    "tilbyr": [
+      "Gombe (søtost av kumjølk)",
+      "Snekalefse og fiskelefse",
+      "Rømmegraut til catering og selskap"
+    ],
+    "adresse": "Kleivane 25, 6823 Sandane",
+    "telefon": "+47 913 93 578",
+    "epost": "fjellestade@gmail.com",
+    "nettstad": "https://www.fjellestadgardskjoken.no",
+    "stikkord": [
+      "gombe",
+      "lefse",
+      "snekalefse",
+      "fiskelefse",
+      "rømmegraut",
+      "tradisjonsmat",
+      "Fjellbygda"
+    ],
+    "lokalmat": [
+      "meieri",
+      "bakst"
+    ],
+    "sal": [
+      "butikk",
+      "bestilling"
+    ],
+    "kjopTekst": "Gombe og lefser vert selde i butikkar i store delar av landet. Rømmegraut kan bestillast til catering og større selskap. Ta kontakt om du vil kjøpe direkte.",
+    "kjelde": "https://www.fjellestadgardskjoken.no/omoss/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gloppen-produsentlag",
+    "namn": "Gloppen Produsentlag",
+    "type": "bedrift",
+    "kategori": "lokalmat",
+    "stad": "Sandane",
+    "kortSkildring": "Samvirke for bærprodusentar i Gloppen, mest jordbær og bringebær. Alt vert selt lokalt.",
+    "tilbyr": [
+      "Jordbær og bringebær",
+      "Eple og plomme om hausten",
+      "Gulrot og potet om hausten"
+    ],
+    "nettstad": "https://www.facebook.com/gloppenprodusentlag",
+    "stikkord": [
+      "jordbær",
+      "bringebær",
+      "bær",
+      "eple",
+      "plomme",
+      "samvirke",
+      "Kattahamrane"
+    ],
+    "lokalmat": [
+      "frukt-og-bar",
+      "gront"
+    ],
+    "sal": [
+      "marknad"
+    ],
+    "kjopTekst": "Produsentlaget sel sesongens bær og grønt lokalt, mellom anna på Kattahamrane i Sandane under Matamål. Sjå Facebook-sida for kvar og når dei sel.",
+    "sesong": "Jordbær og bringebær om sommaren, eple, plomme og grønsaker om hausten",
+    "kjelde": "https://www.xn--mataml-mua.no/torgdag",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "kandal-kjot",
+    "namn": "Kandal Kjøt",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Kandal",
+    "kortSkildring": "Familiebedrift i Kandal som har foredla geit- og kjekjøt sidan 1997, med tørrsalting og tørking på stabbur.",
+    "tilbyr": [
+      "Spekepølser og speka geitelår",
+      "Grillprodukt av kje",
+      "Pinnekjøt av geit og kje",
+      "Julepølse og pinnebog",
+      "Sjølvbetent gardsutsal med varer frå fleire småprodusentar"
+    ],
+    "adresse": "Kandalsvegen 1464, 6823 Sandane",
+    "telefon": "+47 41 45 79 98",
+    "epost": "post@kandalkjott.no",
+    "nettstad": "https://kandalkjott.no",
+    "stikkord": [
+      "geit",
+      "kje",
+      "spekemat",
+      "pinnekjøt",
+      "pølser",
+      "kjerizo",
+      "Kandal Kjøtt"
+    ],
+    "lokalmat": [
+      "kjot"
+    ],
+    "sal": [
+      "sjolvbetent",
+      "butikk",
+      "marknad",
+      "bestilling"
+    ],
+    "kjopTekst": "Sjølvbetent utsal på garden i Kandal. I Gloppen får du produkta òg på Extra Sandane, Coop Prix Byrkjelo og hos Bakar Jon. Dei står på marknader, og spekemat kan sendast i posten.",
+    "kjelde": "https://kandalkjott.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "kandal-ysteri",
+    "namn": "Kandal Ysteri og Gardsmat",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Kandal",
+    "kortSkildring": "Gardsysteri i Kandal som lagar brunost av mjølk frå eigne geiter, med sommarkafeen Sara Kaffibar på tunet.",
+    "tilbyr": [
+      "Geitebrunost frå eigen gard",
+      "Gardsmat",
+      "Sommarkafé (Sara Kaffibar) i helgane",
+      "Dyr på garden",
+      "Ysteripark ved Kandalsfossen"
+    ],
+    "adresse": "Kandalsvegen 1362, 6823 Sandane",
+    "telefon": "+47 954 63 034",
+    "epost": "kontakt@kandalysteri.no",
+    "opningstider": "Sara Kaffibar: sommarope laurdag–sundag 11–16",
+    "stikkord": [
+      "ysteri",
+      "brunost",
+      "geitost",
+      "Sara Kaffibar",
+      "Kandal",
+      "gardsmat"
+    ],
+    "lokalmat": [
+      "meieri",
+      "kjot"
+    ],
+    "sal": [
+      "gardsutsal",
+      "butikk",
+      "marknad"
+    ],
+    "kjopTekst": "Kjøp ost og kjøt på garden i Kandal eller hos Bakar Jon på Byrkjelo. Ysteriet står òg på torgdagen under Matamål i Sandane.",
+    "sesong": "Februar–oktober",
+    "kjelde": "https://www.visit-gloppen.no/kandal-ysteri",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "nordfjord-distillery",
+    "namn": "Nordfjord Distillery",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Sandane",
+    "kortSkildring": "Handverksdestilleri og siderprodusent med røter i Gardsbrenneriet på Nordstranda, med fabrikkutsal på Kleivedammen.",
+    "tilbyr": [
+      "Sider og alkoholfri Frisider",
+      "Akevitt, eplebrennevin, gin og likørar",
+      "Omvising og smaking"
+    ],
+    "adresse": "Industrivegen 12, 6823 Sandane",
+    "telefon": "+47 95 16 20 28",
+    "epost": "kontakt@nordfjorddistillery.no",
+    "nettstad": "https://nordfjorddistillery.no",
+    "stikkord": [
+      "sider",
+      "akevitt",
+      "brennevin",
+      "Gardsbrenneriet",
+      "eple",
+      "Kleivedammen"
+    ],
+    "lokalmat": [
+      "drikke"
+    ],
+    "sal": [
+      "gardsutsal",
+      "butikk"
+    ],
+    "kjopTekst": "Alkoholfritt og drikke opp til 4,7 % vert selt i butikken på Kleivedammen. Sterkare produkt får du på Vinmonopolet. Sjekk opningstidene på nettsida før du dreg.",
+    "kjelde": "https://nordfjorddistillery.no/butikken.php?lang=nn",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "paldtun",
+    "namn": "Påldtun",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Nordstranda",
+    "kortSkildring": "Frukt- og bærgard på Nordstranda med heimelaga saft og syltetøy, sjølvbetent gardsutsal og hytter i frukthagen.",
+    "tilbyr": [
+      "Saft, syltetøy og gelé",
+      "Ferske eple og bær i sesong",
+      "Sjølvbetent gardsutsal (Syltekottet)",
+      "Hytter i frukthagen",
+      "Sauna og båtutleige"
+    ],
+    "adresse": "Nordstrandsvegen 264, 6823 Sandane",
+    "telefon": "+47 41 20 60 16",
+    "epost": "veronica@paaldtun.no",
+    "nettstad": "https://www.paaldtun.no",
+    "opningstider": "Gardsutsalet er sjølvbetent og sesongope mai–oktober",
+    "stikkord": [
+      "gardsutsal",
+      "lokalmat",
+      "saft",
+      "syltetøy",
+      "eple",
+      "Nordstranda"
+    ],
+    "lokalmat": [
+      "frukt-og-bar",
+      "drikke"
+    ],
+    "sal": [
+      "sjolvbetent",
+      "butikk",
+      "bestilling"
+    ],
+    "sesong": "Syltekottet er ope mai–oktober",
+    "kjopTekst": "Det sjølvbetente utsalet Syltekottet ved tunet sel Påldtun sine produkt og varer frå andre lokale produsentar, betal med Vipps. Produkta finst òg hos Bakar Jon, Extra Sandane og Coop Prix Byrkjelo. Utanom sesongen kan du avtale kjøp direkte.",
+    "kjelde": "https://www.paaldtun.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sjure-eplemost",
+    "namn": "Sjure Eplemost",
+    "type": "bedrift",
+    "kategori": "lokalmat",
+    "stad": "Anna stad i Gloppen",
+    "kortSkildring": "Eplemost frå Sjure Gard i Gloppen, der det har vore fruktdyrking sidan 1800-talet. Mosten har fått Spesialitet-merket.",
+    "tilbyr": [
+      "Eplemost av Aroma, Discovery og Summerred"
+    ],
+    "stikkord": [
+      "eplemost",
+      "eple",
+      "Spesialitet",
+      "most",
+      "Sjure Eplepresseri"
+    ],
+    "lokalmat": [
+      "drikke"
+    ],
+    "sal": [
+      "marknad"
+    ],
+    "kjopTekst": "Sjure Eplemost har stått på torgdagen under Matamål i Sandane.",
+    "kjelde": "https://kommunikasjon.ntb.no/pressemelding/18057649/hardanger-telemark-gloppen-og-sunnmore-med-lokal-drikke-i-saerklasse?lang=no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "stoylen-egg",
+    "namn": "Støylen Egg",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Hyen",
+    "kortSkildring": "Økologisk eggprodusent i Austredalen i Hyen med om lag 7500 frittgåande høner og sjølvbetent eggbu på garden.",
+    "tilbyr": [
+      "Økologiske egg i fleire storleikar",
+      "Sjølvbetent eggbu på garden",
+      "Utlevering på REKO-ringen i Sandane"
+    ],
+    "adresse": "Austredalen 570, 6829 Hyen",
+    "telefon": "+47 476 17 741",
+    "epost": "bjorn@stoylenegg.no",
+    "stikkord": [
+      "egg",
+      "økologisk",
+      "Debio",
+      "eggbua",
+      "REKO"
+    ],
+    "lokalmat": [
+      "egg"
+    ],
+    "sal": [
+      "sjolvbetent",
+      "reko"
+    ],
+    "kjopTekst": "Kjøp i den sjølvbetente Eggbua i Austredalen, eller bestill i Facebook-gruppa til REKO-ringen og hent på Heradsplassen i Sandane.",
+    "kjelde": "https://localfood.no/producer/stoylen-egg",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "tystad-fruktgard",
+    "namn": "Tystad Fruktgard",
+    "type": "butikk",
+    "kategori": "lokalmat",
+    "stad": "Nordstranda",
+    "kortSkildring": "Fruktgard på Nordstranda som dyrkar eple og lagar eplemost, med sjølvbetent gardsutsal.",
+    "tilbyr": [
+      "Mange eplesortar",
+      "Eplemost utan tilsetjingar",
+      "Sjølvbetent gardsutsal"
+    ],
+    "adresse": "Nordstrandsvegen 407, 6823 Sandane",
+    "stikkord": [
+      "eple",
+      "eplemost",
+      "gardsutsal",
+      "frukt",
+      "Nordstranda"
+    ],
+    "lokalmat": [
+      "frukt-og-bar",
+      "drikke"
+    ],
+    "sal": [
+      "sjolvbetent",
+      "butikk"
+    ],
+    "kjopTekst": "Eple og eplemost i det sjølvbetente utsalet på garden. Mosten får du òg kjøpt på Gloppen Hotell, Lauget Kaffibar og i gardsutsalet på Kvitfella.",
+    "kjelde": "https://www.visit-gloppen.no/tystad-fruktgard",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "bakar-jon",
+    "namn": "Bakar Jon",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bakeri, kafé og lokalmatbutikk på Byrkjelo.",
+    "tilbyr": [
+      "Ferskt brød og bakst",
+      "Knekkebrød og havrekjeks",
+      "Kafé med lunsj og middag",
+      "Kaker på bestilling",
+      "Lokalmat frå Nordfjord og Sunnfjord"
+    ],
+    "adresse": "Byrkjelovegen 12, 6826 Byrkjelo",
+    "telefon": "+47 57 86 75 00",
+    "epost": "post@bakarjon.no",
+    "nettstad": "https://www.bakarjon.no",
+    "opningstider": "Måndag–fredag 8–20, laurdag 9–18, sundag 12–18",
+    "stikkord": [
+      "bakeri",
+      "kafé",
+      "lokalmat",
+      "kaker"
+    ],
+    "lokalmat": [
+      "bakst",
+      "meieri",
+      "kjot",
+      "drikke"
+    ],
+    "sal": [
+      "butikk"
+    ],
+    "kjopTekst": "Lokalmatbutikken har varer frå produsentar i Nordfjord og Sunnfjord, mellom anna ost frå Kandal Ysteri, geit- og kjeprodukt frå Kandal Kjøt og saft og syltetøy frå Påldtun, i tillegg til eige brød, knekkebrød og havrekjeks.",
+    "kjelde": "https://www.bakarjon.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "forktap",
+    "namn": "Forktap",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Restaurant og pub i Sandane med smashburgarar, fries og snacks.",
+    "tilbyr": [
+      "Smashburgarar",
+      "Fries og snacks",
+      "Pub",
+      "Glutenfritt brød på alle burgarar"
+    ],
+    "adresse": "Nordstrandsvegen 17, 6823 Sandane",
+    "telefon": "+47 457 34 303",
+    "epost": "mattisrest@outlook.com",
+    "nettstad": "https://www.forktapsandane.no",
+    "stikkord": [
+      "restaurant",
+      "pub",
+      "burger",
+      "hamburgar",
+      "smashburger",
+      "fries"
+    ],
+    "kjelde": "https://www.facebook.com/p/Forktap-61577711395676/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "kleppenes-gard",
+    "namn": "Kleppenes Gard",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Hyen",
+    "kortSkildring": "Catering og selskapslokale på ein gard ved Hyefjorden.",
+    "tilbyr": [
+      "Catering",
+      "Heimelaga tapas",
+      "Selskapslokale i Fjøsen og Stabburet",
+      "Bryllaup, konfirmasjon og bursdagar",
+      "Restaurantbesøk for mindre grupper etter avtale"
+    ],
+    "adresse": "Hyevegen 1140, 6829 Hyen",
+    "nettstad": "https://stabbursliv.com",
+    "stikkord": [
+      "selskapslokale",
+      "catering",
+      "tapas",
+      "Stabbursliv",
+      "Hyefjorden"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/kleppenes",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "lauget-kaffibar",
+    "namn": "Lauget Kaffibar",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Kaffibar og lite bakeri i Sandane sentrum med heimelaga bakst og lunsj.",
+    "tilbyr": [
+      "Kaffi",
+      "Heimelaga søtbakst",
+      "Brød frå eige bakeri",
+      "Lunsjmat",
+      "Bordbestilling for grupper på kvardagar"
+    ],
+    "adresse": "Grandavegen 28, 6823 Sandane",
+    "telefon": "+47 923 40 403",
+    "epost": "hei@kaffibar.no",
+    "nettstad": "https://www.kaffibar.no",
+    "opningstider": "Måndag–torsdag 07.45–17, fredag 07.45–18, laurdag 9–15",
+    "stikkord": [
+      "kafé",
+      "kaffi",
+      "bakeri",
+      "lunsj",
+      "Lauget"
+    ],
+    "kjelde": "https://www.kaffibar.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "mona-lisa-sandane",
+    "namn": "Mona Lisa Sandane",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Restaurant og pizzeria i Sandane sentrum med pizza, kebab, burgarar og kjøttrettar.",
+    "tilbyr": [
+      "Steinomnsbakt pizza",
+      "Kebab og burgarar",
+      "Kjøtt-, fisk- og pastarettar",
+      "Barnemeny",
+      "Servering inne og ute"
+    ],
+    "adresse": "Grandavegen 1, 6823 Sandane",
+    "telefon": "+47 57 86 66 23",
+    "nettstad": "https://monalisasandane.no",
+    "opningstider": "Måndag–laurdag 12–23, sundag 13–23",
+    "stikkord": [
+      "pizza",
+      "pizzeria",
+      "kebab",
+      "restaurant"
+    ],
+    "kjelde": "https://monalisasandane.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "solvane-matbar",
+    "namn": "Sølvane Matbar",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Restaurant, lounge og bar i Sandane sentrum med smårettar, hovudrettar og søndagsbuffet.",
+    "tilbyr": [
+      "Smårettar og hovudrettar",
+      "Søndagsbuffet",
+      "Lounge og bar",
+      "Bordbestilling",
+      "Selskap og private arrangement"
+    ],
+    "adresse": "Sørstrandsvegen 9, 6823 Sandane",
+    "telefon": "+47 40 15 28 99",
+    "epost": "booking@solvanematbar.no",
+    "nettstad": "https://www.solvanematbar.no",
+    "opningstider": "Haustopningstider: onsdag–torsdag 15–21, fredag–laurdag 18–23, sundag 13–17, måndag–tysdag stengt",
+    "stikkord": [
+      "restaurant",
+      "bar",
+      "brunsj",
+      "middag"
+    ],
+    "kjelde": "https://www.solvanematbar.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "vereide-bakeri",
+    "namn": "Vereide Bakeri",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Sandane",
+    "kortSkildring": "Bakeri med kafé i Sandane sentrum.",
+    "tilbyr": [
+      "Ferskt brød",
+      "Skulebollar og anna bakst",
+      "Påsmurt lunsj",
+      "Kafé"
+    ],
+    "adresse": "Firdavegen 14, 6823 Sandane",
+    "opningstider": "Måndag–fredag 10–16.30, laurdag 10–15, sundag og heilagdagar stengt",
+    "stikkord": [
+      "bakeri",
+      "kafé",
+      "skulebollar"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/vereide-bakeri",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "breimsbygda-skisenter",
+    "namn": "Breimsbygda Skisenter",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Familievenleg skisenter på Utvikfjellet ved Byrkjelo med heisar og lysløyper.",
+    "tilbyr": [
+      "Skiheisar med lyssette nedfartar",
+      "Barneheis",
+      "Lysløype og preparerte langrennsløyper",
+      "Kafé og varmestove",
+      "Skiutleige"
+    ],
+    "epost": "skisenter@breim.no",
+    "nettstad": "https://www.breimsbygdaskisenter.no",
+    "stikkord": [
+      "skisenter",
+      "alpint",
+      "langrenn",
+      "Utvikfjellet",
+      "vinter"
+    ],
+    "kjelde": "https://www.nordfjord.no/en/breimsbygda-ski-center",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "myklebust-gard",
+    "namn": "Myklebust Gard",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Gard i Myklebustdalen med alpakkaer og andre dyr, og kårhus til leige.",
+    "tilbyr": [
+      "Alpakkafôring",
+      "Gåtur med alpakkaer",
+      "Møte med høner, geiter og kyr",
+      "Overnatting i kårhuset"
+    ],
+    "adresse": "Dalevegen 983, 6826 Byrkjelo",
+    "telefon": "+47 90 97 15 93",
+    "stikkord": [
+      "alpakka",
+      "gardsbesøk",
+      "dyr",
+      "familie",
+      "Myklebustdalen"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/myklebustgard",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sandane-fjordsauna",
+    "namn": "Sandane Fjordsauna",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Heilårsope sauna ved Gloppefjorden, kort gåtur frå Sandane sentrum.",
+    "tilbyr": [
+      "Sauna ved fjorden",
+      "Fjordbad",
+      "Booking på nett",
+      "Reed Sauna ved Breimsvatnet"
+    ],
+    "adresse": "Elvaneset 11, 6823 Sandane",
+    "nettstad": "https://sandanefjordsauna.no",
+    "stikkord": [
+      "sauna",
+      "badstove",
+      "fjordbad",
+      "Reed Sauna"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/sauna-sandane-fjordsauna",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "spenst-gloppen",
+    "namn": "Spenst Gloppen",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Treningssenter på Sandane med styrke, kondisjon og gruppetimar.",
+    "tilbyr": [
+      "Styrke- og kondisjonstrening",
+      "Gruppetimar",
+      "Personleg trenar",
+      "Treningslappen for 13–15-åringar"
+    ],
+    "adresse": "Krånavegen 5, 6823 Sandane",
+    "telefon": "+47 47 65 13 99",
+    "epost": "gloppen@spenst.no",
+    "nettstad": "https://gloppen.spenst.no",
+    "stikkord": [
+      "treningssenter",
+      "gym",
+      "PT",
+      "trening"
+    ],
+    "kjelde": "https://gloppen.spenst.no/kontakt-oss/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "stall-rygg",
+    "namn": "Stall Rygg",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Anna stad i Gloppen",
+    "kortSkildring": "Familiedriven ridestall på sørsida av Gloppefjorden med ridetimar og turridning.",
+    "tilbyr": [
+      "Ridetimar for born og vaksne",
+      "Turridning og fjellturar",
+      "Hesteutleige",
+      "Ridehelg med overnatting i støylshus"
+    ],
+    "telefon": "+47 415 10 424",
+    "epost": "mortenrygg@gmail.com",
+    "nettstad": "https://www.stallrygg.no",
+    "stikkord": [
+      "ridning",
+      "hest",
+      "ridestall",
+      "turridning",
+      "Rygg"
+    ],
+    "kjelde": "https://www.stallrygg.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "trivselshagen-bad-og-idrett",
+    "namn": "Trivselshagen bad og idrett",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Symjehall og idrettsanlegg i Trivselshagen på Sandane.",
+    "tilbyr": [
+      "25-metersbasseng, varmtvassbasseng og sklie",
+      "Babybasseng og badstove",
+      "Boblebad",
+      "Klatrevegg",
+      "Fleirbrukshall og turnhall",
+      "Treningsrom"
+    ],
+    "praktisk": [
+      "Pris: Det kostar å bade, men prisane står ikkje på nettsida. Ring resepsjonen på 90 81 96 43 om du vil vite det før du dreg.",
+      "Heilag- og feriedagar: Opningstidene vert ofte endra i feriar og på heilagdagar. Sjekk Facebook-sida til Trivselshagen bad og idrett før du dreg.",
+      "Parkering: Det er som regel god plass på parkeringa ved idrettsdelen av Trivselshagen.",
+      "Booking av hall og bane: Bad og idrett har eigen bookingportal på gloppen.goactivebooking.com."
+    ],
+    "adresse": "Gota 14, 6823 Sandane",
+    "telefon": "+47 90 81 96 43",
+    "nettstad": "https://www.trivselshagen.no",
+    "opningstider": "Resepsjon: tysdag–fredag 16–21, laurdag–sundag 12–17 (kan endrast i feriar og på heilagdagar)",
+    "stikkord": [
+      "symjehall",
+      "basseng",
+      "bading",
+      "klatring",
+      "idrettshall"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/trivselshallen",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "trivselshagen-kino",
+    "namn": "Trivselshagen kino",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Kommunal kino i kulturhuset Trivselshagen på Sandane.",
+    "tilbyr": [
+      "Kinoframsyningar",
+      "Billettar via eBillett",
+      "Kinoklubb"
+    ],
+    "praktisk": [
+      "Pris: Barn under 15 år 110 kr, ungdom og studentar (15–18 år) 120 kr, vaksne 150 kr. Gjeld frå 1. januar 2026. Premierar og spesialvisingar kan ha anna pris.",
+      "Billettar: Kjøp på ebillett.no, i eBillett-appen, i Trivselskafeen eller på Servicetorget i heradshuset. Billettgebyret er med i prisen, og billettar vert ikkje refunderte.",
+      "Reservering: Ring Servicetorget på 57 88 38 00 kvardagar 08–15. Reserverte billettar må hentast og betalast innan 3 dagar, og seinast ein halv time før filmen om du reserverer same dag.",
+      "Aldersgrense: Barn kan sjå filmen saman med ein vaksen om dei er inntil 3 år yngre enn aldersgrensa. 18-årsgrensa gjeld utan unntak.",
+      "Rullestol: Plassane er på bakarste rad i Kultursalen, med flatt golv utan trapper frå hovudinngangen. Desse billettane kan ikkje kjøpast på nett, men i kafeen, på Servicetorget eller ved å reservere.",
+      "Ledsagarbevis: Følgjet ditt går gratis. Vis beviset i døra eller når du kjøper billett.",
+      "Kinoklubb: Medlemskap kostar 179 kr i året og gjev halv pris på minst 12 filmar. Meld deg inn på kinoklubb.no.",
+      "Parkering: Ved store arrangement er det ofte best plass ved idrettsdelen av Trivselshagen. Det er òg parkering ved Stilstova og i sentrum."
+    ],
+    "telefon": "+47 57 88 38 00",
+    "epost": "trivselshagen@gloppen.kommune.no",
+    "nettstad": "https://www.trivselshagen.no",
+    "stikkord": [
+      "kino",
+      "film",
+      "Gloppen kino",
+      "kulturhus"
+    ],
+    "kjelde": "https://www.trivselshagen.no/kulturhus/billettinformasjon/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "trivselsskogen",
+    "namn": "Trivselsskogen",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Nærturområde ved Sandane med turstiar, gapahukar og gratis treningspark.",
+    "skildring": "Trivselsskogen er eit nærturområde like ved sentrum på Sandane, med stiar for ulike formnivå, møteplassar og utsiktspunkt. Stien frå parkeringsplassen opp mot Utsikten har trefigurar langs vegen som motiverer borna. Høgdepunktet er Fosseteateret, ei rampe 80 meter over Holvikfossen.",
+    "tilbyr": [
+      "Familievenlege turstiar",
+      "Utsiktspunkt over Holvikfossen",
+      "Gapahukar og bålplassar i TIN-Campen",
+      "Gratis utandørs treningspark",
+      "Utsikten med benk og bord over Sandane og fjorden",
+      "Draumekvila med dagsturhytte",
+      "Inngjerda hundepark ved parkeringa",
+      "Lyslotto: finn 20 dyrefigurar langs den gule løypa",
+      "Kjærleiksskogen, der du kan hengje opp eit hjarte"
+    ],
+    "praktisk": [
+      "Pris: Det er gratis å bruke området på dagtid.",
+      "Parkering: 50 kr per dag, betalt digitalt via lenkja på trivselsskogen.no/parking. Sesongkort til 300 kr vert selt hos Heime, Nordstrandsvegen 15, Sandane.",
+      "Start: Alle stiane startar frå parkeringsplassen. Hundeparken ligg rett ved.",
+      "Ikkje overnatting på parkeringa: Bubil, campingbil, campingvogn og telt kan ikkje stå der over natta.",
+      "Grill og bål: Engangsgrill er forbode i heile Trivselsskogen. Bruk bålplassane.",
+      "Overnatting i TIN-Campen: 100 kr per person per natt, betalt med Vipps til 75456. Bestill på e-post til post@trivselsskogen.no med namn og kontaktinfo til den som er ansvarleg. Det er 6 gapahukar med minst 6 plassar kvar, og du kan òg sove i hengekøye, telt eller under open himmel.",
+      "Selskap og skuleleir: Bursdag, bryllaup, firmatur og skuleleir i TIN-Campen kan avtalast. Ta kontakt for pris. Campen har bakeomnar for pizza og brød.",
+      "Lyslotto: Ta med lommelykt når det er mørkt, eller sjå godt etter på dagtid. Kupong og kart ligg på trivselsskogen.no.",
+      "Treningsparken: Utstyr kan lånast frå skapet på KK-flata. Legg det attende og heng opp tauet etter bruk, så det ikkje vert vått."
+    ],
+    "telefon": "+47 40 88 58 76",
+    "epost": "post@trivselsskogen.no",
+    "nettstad": "https://www.trivselsskogen.no",
+    "opningstider": "Turområdet er ope heile året. Treningsparken er open heile døgnet.",
+    "stikkord": [
+      "tur",
+      "friluft",
+      "gapahuk",
+      "treningspark",
+      "Holvikfossen",
+      "TIN-Camp",
+      "hundepark",
+      "overnatting",
+      "Fosseteateret",
+      "Utsikten"
+    ],
+    "kjelde": "https://www.trivselsskogen.no/general-8-7",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "byrkjelo-camping",
+    "namn": "Byrkjelo Camping",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Campingplass på Byrkjelo med hytter, vogn- og teltplassar og oppvarma basseng om sommaren.",
+    "tilbyr": [
+      "Hytter i tre storleikar",
+      "Plassar for campingvogn og bubil",
+      "Teltplassar ved elva",
+      "Oppvarma utebasseng om sommaren",
+      "Leikeplass og grillhytte"
+    ],
+    "adresse": "Breimsvegen 1823, 6826 Byrkjelo",
+    "telefon": "+47 917 36 597",
+    "epost": "camping@breim.no",
+    "nettstad": "https://www.byrkjelocamping.no",
+    "opningstider": "Sesongope; stengt for sesongen og opnar att 12. april 2027",
+    "stikkord": [
+      "camping",
+      "hytter",
+      "bubil",
+      "basseng"
+    ],
+    "kjelde": "https://www.byrkjelocamping.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "engeset-trehytter",
+    "namn": "Engeset Trehytter",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Sandane",
+    "kortSkildring": "Tre trehytter av ulik storleik på nordsida av Gloppefjorden, nær Sandane sentrum.",
+    "tilbyr": [
+      "Trehytter for 2–7 personar",
+      "Ei hytte med trinnfri tilkomst",
+      "Nær tur-, sykkel- og skiløyper"
+    ],
+    "stikkord": [
+      "trehytte",
+      "hytter",
+      "Engeset"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/engeset-trehytter",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gloppen-camping",
+    "namn": "Gloppen Camping og Fritidssenter",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Sandane",
+    "kortSkildring": "Campingplass ved Gloppefjorden i gangavstand frå Sandane sentrum.",
+    "tilbyr": [
+      "Hytter",
+      "Telt-, vogn- og bubilplassar",
+      "Basseng",
+      "Leikeplass og strand"
+    ],
+    "adresse": "Sørstrandsvegen 195, 6823 Sandane",
+    "telefon": "+47 948 00 309",
+    "epost": "post@gloppen-camping.no",
+    "nettstad": "https://www.gloppen-camping.no",
+    "stikkord": [
+      "camping",
+      "hytter",
+      "bubil",
+      "campingvogn"
+    ],
+    "kjelde": "https://www.gloppen-camping.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gloppen-hotell",
+    "namn": "Gloppen Hotell",
+    "type": "servering",
+    "kategori": "overnatting",
+    "ekstraKategoriar": [
+      "mat-og-servering"
+    ],
+    "stad": "Sandane",
+    "kortSkildring": "Familiedrive hotell i Sandane sentrum med rom frå tre ulike tidsepokar, restaurant og selskapslokale.",
+    "tilbyr": [
+      "60 hotellrom",
+      "Restaurant Stovene med lokal mat",
+      "Bar og uteservering",
+      "Konferanse- og selskapslokale",
+      "Julebord",
+      "Fiske- og friluftspakkar"
+    ],
+    "adresse": "Sørstrandsvegen 16, 6823 Sandane",
+    "telefon": "+47 57 86 53 33",
+    "epost": "post@gloppenhotell.no",
+    "nettstad": "https://www.gloppenhotell.no",
+    "stikkord": [
+      "hotell",
+      "restaurant",
+      "Stovene",
+      "konferanse",
+      "julebord"
+    ],
+    "kjelde": "https://www.gloppenhotell.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "hjelle-panoramahytter",
+    "namn": "Hjelle Panoramahytter",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Breim",
+    "kortSkildring": "Moderne minihytte på garden Erketunet i Breim med utsikt mot Eggenipa.",
+    "tilbyr": [
+      "Minihytte med panoramautsikt",
+      "Jacuzzi",
+      "Sauna mot tillegg",
+      "Gardsutsal med øl frå eige gardsbryggeri og egg"
+    ],
+    "adresse": "Hjellevegen 115, 6826 Byrkjelo",
+    "telefon": "+47 915 84 784",
+    "epost": "post@hjellepanoramahytter.no",
+    "nettstad": "https://www.hjellepanoramahytter.no",
+    "stikkord": [
+      "hytte",
+      "Eggenipa",
+      "gardsbryggeri",
+      "Hjelle"
+    ],
+    "kjelde": "https://www.hjellepanoramahytter.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "kvitfella-feriehytter",
+    "namn": "Kvitfella Feriehytter",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Sørstranda",
+    "kortSkildring": "Feriehytter på sørsida av Gloppefjorden med båtutleige og sjølvbetent gardsutsal.",
+    "tilbyr": [
+      "To feriehytter med åtte senger",
+      "Båtutleige",
+      "Sjølvbetent gardsutsal med Angus-kjøt og lokalmat",
+      "Fjord- og fjellturar"
+    ],
+    "adresse": "Øvre Sørstranda 642, 6823 Sandane",
+    "telefon": "+47 957 42 281",
+    "epost": "post@kvitfella.no",
+    "nettstad": "https://www.kvitfella.no",
+    "opningstider": "Gardsutsalet er sjølvbetent og ope heile døgnet",
+    "stikkord": [
+      "hytter",
+      "båtutleige",
+      "gardsutsal",
+      "Storstad Angus",
+      "Sørstranda"
+    ],
+    "lokalmat": [
+      "kjot",
+      "frukt-og-bar",
+      "drikke"
+    ],
+    "sal": [
+      "sjolvbetent"
+    ],
+    "kjopTekst": "Gardsutsalet i låven sel Angus-kjøt frå Storstad Angus, hjort og storfe frå Sårheim Gard, eplemost frå Tystad Fruktgard og saft og syltetøy frå Påldtun. Utvalet varierer med sesongen.",
+    "kjelde": "https://www.visit-gloppen.no/kvitfella-feriehytter",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "nesholmen-leirstad",
+    "namn": "Nesholmen Leirstad",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Hyen",
+    "kortSkildring": "Leirstad i Hyen med enkel overnatting for grupper og utleige til arrangement.",
+    "tilbyr": [
+      "Enkel overnatting for om lag 100 personar",
+      "Utleige av leirstaden",
+      "Bade- og fiskeplassar",
+      "Turterreng"
+    ],
+    "adresse": "Hyevegen 3602, 6829 Hyen",
+    "telefon": "+47 909 24 500",
+    "epost": "post@nesholmen.no",
+    "nettstad": "https://www.nesholmen.no",
+    "stikkord": [
+      "leirstad",
+      "gruppeovernatting",
+      "leir",
+      "Hyen"
+    ],
+    "kjelde": "https://www.nesholmen.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "reed-camping",
+    "namn": "Reed Camping",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Breim",
+    "kortSkildring": "Campingplass på Reed i Breim, nær Breimsvatnet.",
+    "tilbyr": [
+      "Hytter",
+      "Plassar for bubil, campingvogn og telt",
+      "Fiske i Breimsvatnet",
+      "Turområde"
+    ],
+    "nettstad": "https://reed-camping.no",
+    "stikkord": [
+      "camping",
+      "Breimsvatnet",
+      "Reed",
+      "hytter"
+    ],
+    "kjelde": "https://www.visit-gloppen.no/overnatting/reed-camping",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "solvane-gard",
+    "namn": "Sølvane Gard",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Kandal",
+    "kortSkildring": "Gard i Kandal med suiter i Kandal Klyngetun, restaurant og konsertar i Operalåven.",
+    "tilbyr": [
+      "Rom og suiter i Kandal Klyngetun",
+      "Restaurant",
+      "Konsertar og vinkveldar",
+      "Møte og selskap",
+      "Støylshytter og leilegheiter"
+    ],
+    "adresse": "Kandalsvegen 1340, 6823 Sandane",
+    "epost": "booking@solvanegard.no",
+    "nettstad": "https://www.solvanegard.no",
+    "stikkord": [
+      "Operalåven",
+      "Kandal",
+      "suite",
+      "restaurant",
+      "konsert"
+    ],
+    "kjelde": "https://www.solvanegard.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "advokat-jan-erik-mardal",
+    "namn": "Advokat Jan Erik Mardal AS",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Advokatkontor på Sandane med vekt på arv, fast eigedom og forvaltningsrett.",
+    "tilbyr": [
+      "Arv og skifte",
+      "Testament og framtidsfullmakt",
+      "Fast eigedom og grannerett",
+      "Plan- og bygningsrett",
+      "Eigedomsmekling"
+    ],
+    "adresse": "Grandavegen 26, 6823 Sandane",
+    "telefon": "+47 57 88 44 00",
+    "nettstad": "https://www.advokatmardal.no",
+    "opningstider": "Måndag–fredag 8–15.30",
+    "stikkord": [
+      "advokat",
+      "jurist",
+      "eigedomsmeklar",
+      "generasjonsskifte"
+    ],
+    "kjelde": "https://www.advokatmardal.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "advokat-oystein-hjelmeset",
+    "namn": "Advokat Øystein Hjelmeset AS",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Advokatkontor på Sandane for klientar i Nordfjord.",
+    "tilbyr": [
+      "Arv og skifte",
+      "Fast eigedom og jordskifte",
+      "Økonomisk familierett",
+      "Mekling utanfor retten",
+      "Tvisteløysing og prosedyre"
+    ],
+    "adresse": "Krånavegen 5, 6823 Sandane",
+    "telefon": "+47 91 81 84 57",
+    "nettstad": "https://www.advokathjelmeset.no",
+    "stikkord": [
+      "advokat",
+      "jurist"
+    ],
+    "kjelde": "https://www.advokathjelmeset.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "bdo-sandane",
+    "namn": "BDO Sandane",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Lokalkontor på Sandane for revisjons- og rådgjevingsselskapet BDO.",
+    "tilbyr": [
+      "Revisjon",
+      "Rekneskap og rådgjeving",
+      "Advokattenester",
+      "Teknologirådgjeving",
+      "Berekraftsrapportering"
+    ],
+    "adresse": "Sørstrandsvegen 9, 6823 Sandane",
+    "telefon": "+47 57 86 85 90",
+    "nettstad": "https://www.bdo.no/nb-no/kontorer/sandane",
+    "stikkord": [
+      "revisor",
+      "rekneskap",
+      "rådgjeving"
+    ],
+    "kjelde": "https://www.bdo.no/nb-no/kontorer/sandane",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "datainstituttet-sandane",
+    "namn": "Datainstituttet",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "IT-selskap på Sandane som tilbyr konsulenttenester, datautstyr og brukarstøtte til bedrifter og private.",
+    "tilbyr": [
+      "IT-konsulenttenester",
+      "Sal av datautstyr",
+      "Reparasjon av datamaskiner",
+      "Fjernsupport",
+      "IT-løysingar for bedrifter"
+    ],
+    "telefon": "+47 57 00 92 20",
+    "nettstad": "https://www.datainstituttet.no",
+    "stikkord": [
+      "IT",
+      "data",
+      "datamaskiner",
+      "support"
+    ],
+    "kjelde": "https://www.datainstituttet.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "firda-tidend",
+    "namn": "Firda Tidend",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Lokalavisa for Gloppen, med redaksjon på Sandane.",
+    "tilbyr": [
+      "Lokale nyheiter frå Gloppen",
+      "Papiravis og nettavis",
+      "Annonsar",
+      "Abonnement"
+    ],
+    "adresse": "Nordstrandsvegen 4, 6823 Sandane",
+    "telefon": "+47 57 86 87 81",
+    "epost": "redaksjon@firdatidend.no",
+    "nettstad": "https://www.firdatidend.no",
+    "opningstider": "Sentralbord måndag–fredag 8–15",
+    "stikkord": [
+      "avis",
+      "lokalavis",
+      "nyheiter",
+      "Avisdrift Gloppen"
+    ],
+    "kjelde": "https://www.firdatidend.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "repix",
+    "namn": "Repix AS",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Breim",
+    "kortSkildring": "Trykkeri og profilfirma i Breim.",
+    "tilbyr": [
+      "Trykk og brodering på arbeidsklede",
+      "Profilartiklar",
+      "Logodesign",
+      "Storformat, skilt og veggbilete",
+      "Trykksaker og flagg"
+    ],
+    "epost": "post@repix.no",
+    "nettstad": "https://www.repix.no",
+    "opningstider": "Måndag–fredag 8–16",
+    "stikkord": [
+      "trykkeri",
+      "profilering",
+      "arbeidsklede",
+      "skilt"
+    ],
+    "kjelde": "https://www.repix.no",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sandane-gravferdsbyra",
+    "namn": "Sandane Gravferdsbyrå",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Gravferdsbyrå på Sandane, del av Fjordane Begravelsesbyrå AS.",
+    "tilbyr": [
+      "Planlegging av gravferd og bisetjing",
+      "Rettleiing og praktisk hjelp til pårørande",
+      "Kister og urner",
+      "Gravstein",
+      "Dødsannonsar og minnesider"
+    ],
+    "adresse": "Sørstrandsvegen 4, 6823 Sandane",
+    "telefon": "+47 91 12 98 18",
+    "epost": "post@sandanegravferd.no",
+    "nettstad": "https://www.sandanegravferd.no",
+    "opningstider": "Kan kontaktast heile døgnet, alle dagar",
+    "stikkord": [
+      "begravelsesbyrå",
+      "gravferd",
+      "bisetjing"
+    ],
+    "kjelde": "https://www.sandanegravferd.no/",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "sparebank-1-sogn-og-fjordane-sandane",
+    "namn": "SpareBank 1 Sogn og Fjordane, Sandane",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Bankkontor på Sandane for privat- og bedriftskundar.",
+    "tilbyr": [
+      "Rådgjeving for privatkundar",
+      "Bedriftsrådgjeving",
+      "Lån og sparing",
+      "Forsikring",
+      "Møte etter avtale"
+    ],
+    "adresse": "Grandavegen 7, 6823 Sandane",
+    "telefon": "+47 57 82 97 00",
+    "epost": "privat@ssf.no",
+    "nettstad": "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/kontakt/sandane.html",
+    "opningstider": "Tysdag–torsdag 10–14, måndag og fredag etter avtale",
+    "stikkord": [
+      "bank",
+      "sparebank",
+      "lån"
+    ],
+    "kjelde": "https://www.sparebank1.no/nn/sogn-fjordane/privat/kundeservice/kontakt/sandane.html",
+    "sjekka": "2026-11-23"
+  },
+  {
+    "id": "oyra-assuranse",
+    "namn": "Øyra Assuranse AS",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Hestenesøyri",
+    "kortSkildring": "Forsikringsformidlar med kontor på Hestenesøyri.",
+    "tilbyr": [
+      "Forsikringsformidling",
+      "Rådgjeving om forsikring for privatpersonar"
+    ],
+    "adresse": "Eikenes 11, 6828 Hestenesøyra",
+    "stikkord": [
+      "forsikring",
+      "forsikringsrådgjevar"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/920253970",
+    "sjekka": "2026-11-23"
   }
 ]

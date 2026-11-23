@@ -1,7 +1,7 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { Router } from '@angular/router';
 import { BedriftKort } from '../components/bedrift-kort';
-import { KATEGORIAR, KategoriId, STADER, Stad } from '../models/bedrift';
+import { BedriftType, KATEGORIAR, KategoriId, STADER, Stad, TYPAR } from '../models/bedrift';
 import { BedriftService } from '../services/bedrift.service';
 
 /**
@@ -13,7 +13,7 @@ import { BedriftService } from '../services/bedrift.service';
   imports: [BedriftKort],
   template: `
     <div class="innhald seksjon">
-      <h1>Bedrifter i Gloppen</h1>
+      <h1>Butikkar og bedrifter i Gloppen</h1>
 
       <form class="filter" role="search" (submit)="$event.preventDefault()">
         <div class="felt felt-brei">
@@ -26,6 +26,15 @@ import { BedriftService } from '../services/bedrift.service';
             placeholder="Namn, vare eller teneste"
             autocomplete="off"
           />
+        </div>
+        <div class="felt">
+          <label for="type">Type</label>
+          <select id="type" (change)="oppdater({ type: $any($event.target).value })">
+            <option value="" [selected]="!typeId()">Alle typar</option>
+            @for (t of typar; track t.id) {
+              <option [value]="t.id" [selected]="t.id === typeId()">{{ t.fleirtal }}</option>
+            }
+          </select>
         </div>
         <div class="felt">
           <label for="kategori">Kategori</label>
@@ -48,7 +57,7 @@ import { BedriftService } from '../services/bedrift.service';
       </form>
 
       <p class="treff" aria-live="polite">
-        {{ resultat().length }} {{ resultat().length === 1 ? 'bedrift' : 'bedrifter' }}
+        {{ resultat().length }} treff
       </p>
 
       @if (resultat().length > 0) {
@@ -74,9 +83,16 @@ export class Bedrifter {
   readonly sok = input<string>();
   readonly kategori = input<string>();
   readonly stad = input<string>();
+  readonly type = input<string>();
 
   protected readonly kategoriar = KATEGORIAR;
   protected readonly stader = STADER;
+  protected readonly typar = TYPAR;
+
+  protected readonly typeId = computed(() => {
+    const t = this.type();
+    return TYPAR.some((x) => x.id === t) ? (t as BedriftType) : null;
+  });
 
   protected readonly kategoriId = computed(() => {
     const k = this.kategori();
@@ -89,19 +105,26 @@ export class Bedrifter {
   });
 
   protected readonly resultat = computed(() =>
-    this.service.sok({ sok: this.sok(), kategori: this.kategoriId(), stad: this.stadNamn() }),
+    this.service.sok({
+      sok: this.sok(),
+      kategori: this.kategoriId(),
+      stad: this.stadNamn(),
+      type: this.typeId(),
+    }),
   );
 
-  protected oppdater(endring: { sok?: string; kategori?: string; stad?: string }): void {
+  protected oppdater(endring: { sok?: string; kategori?: string; stad?: string; type?: string }): void {
     const neste = {
       sok: this.sok() ?? '',
       kategori: this.kategoriId() ?? '',
       stad: this.stadNamn() ?? '',
+      type: this.typeId() ?? '',
       ...endring,
     };
     this.router.navigate([], {
       queryParams: {
         sok: neste.sok.trim() || null,
+        type: neste.type || null,
         kategori: neste.kategori || null,
         stad: neste.stad || null,
       },

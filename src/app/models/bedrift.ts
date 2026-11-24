@@ -32,7 +32,7 @@ export interface Bedrift {
   tilbyr: string[];
   /**
    * Praktisk informasjon for den som skal dit, eitt punkt per tema på forma
-   * "Overskrift: tekst", t.d. "Parkering: 50 kr per dag." Unngå semikolon,
+   * "Overskrift: tekst", t.d. "Parkering: Bak bygget, ved inngangen." Unngå semikolon,
    * sidan CSV-eksporten skil punkta med det.
    */
   praktisk?: string[];
@@ -83,6 +83,7 @@ export type KategoriId =
   | 'butikk-og-handel'
   | 'helse-og-velvere'
   | 'bygg-og-handverk'
+  | 'industri'
   | 'bil-og-transport'
   | 'overnatting'
   | 'opplevingar'
@@ -101,6 +102,7 @@ export const KATEGORIAR: readonly Kategori[] = [
   { id: 'butikk-og-handel', namn: 'Butikkar og handel', ikon: '🛍️' },
   { id: 'helse-og-velvere', namn: 'Helse og velvære', ikon: '💆' },
   { id: 'bygg-og-handverk', namn: 'Bygg og handverk', ikon: '🔨' },
+  { id: 'industri', namn: 'Industri og produksjon', ikon: '🏭' },
   { id: 'bil-og-transport', namn: 'Bil og transport', ikon: '🚗' },
   { id: 'overnatting', namn: 'Overnatting', ikon: '🛏️' },
   { id: 'opplevingar', namn: 'Opplevingar og fritid', ikon: '⛰️' },
@@ -122,7 +124,7 @@ export const STADER = [
 
 export type Stad = (typeof STADER)[number];
 
-/** Delar eit praktisk punkt "Parkering: 50 kr per dag." i overskrift og tekst. */
+/** Delar eit praktisk punkt "Parkering: Bak bygget, ved inngangen." i overskrift og tekst. */
 export function delPraktisk(punkt: string): { overskrift: string; tekst: string } {
   const i = punkt.indexOf(': ');
   if (i < 0) return { overskrift: '', tekst: punkt };

@@ -5,14 +5,18 @@ import { Router, RouterLink } from '@angular/router';
 import { KATEGORIAR } from '../models/bedrift';
 import { OppslagKort } from '../components/oppslag-kort';
 import { TING_A_GJERE } from '../data/ting-a-gjere';
-import { AktivitetService } from '../services/aktivitet.service';
+import { AktivitetService, isoDato } from '../services/aktivitet.service';
 import { BedriftService } from '../services/bedrift.service';
+import { KinoService, kortDagTekst } from '../services/kino.service';
+import { KINO_BEDRIFT_ID } from '../models/kino';
 import { LokalmatService } from '../services/lokalmat.service';
 import { OppslagService } from '../services/oppslag.service';
 import { harSalskanal } from '../models/lokalmat';
 
 @Component({
   selector: 'app-heim',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [FormsModule, RouterLink, AktivitetKort, OppslagKort],
   template: `
     <section class="hero">
@@ -20,8 +24,8 @@ import { harSalskanal } from '../models/lokalmat';
         <p class="hero-merkelapp">Inst i Nordfjord</p>
         <h1>Handle lokalt i Gloppen</h1>
         <p class="ingress">
-          Finn butikkar, kafear, handverkarar og andre bedrifter i Sandane, Byrkjelo, Breim, Hyen
-          og resten av Gloppen – anten du har budd her heile livet eller nettopp har flytta hit.
+          Finn butikkar, kafear, handverkarar og andre bedrifter i Sandane, Byrkjelo, Breim, Hyen og
+          resten av Gloppen – anten du har budd her heile livet eller nettopp har flytta hit.
         </p>
         <form class="sok" role="search" (ngSubmit)="sok()">
           <label class="skjult" for="heim-sok">Søk etter bedrift eller teneste</label>
@@ -37,8 +41,12 @@ import { harSalskanal } from '../models/lokalmat';
         </form>
         <p class="snarvegar">
           <a [routerLink]="['/bedrifter']" [queryParams]="{ type: 'butikk' }">Alle butikkar →</a>
-          <a [routerLink]="['/bedrifter']" [queryParams]="{ type: 'servering' }">Kafear og restaurantar →</a>
-          <a [routerLink]="['/bedrifter']" [queryParams]="{ type: 'bedrift' }">Alle bedrifter og tenester →</a>
+          <a [routerLink]="['/bedrifter']" [queryParams]="{ type: 'servering' }"
+            >Kafear og restaurantar →</a
+          >
+          <a [routerLink]="['/bedrifter']" [queryParams]="{ type: 'bedrift' }"
+            >Alle bedrifter og tenester →</a
+          >
         </p>
       </div>
       <svg
@@ -68,6 +76,43 @@ import { harSalskanal } from '../models/lokalmat';
       </svg>
     </section>
 
+    @if (oppslag.length > 0) {
+      <section class="innhald seksjon">
+        <div class="seksjon-topp">
+          <h2>Nytt og verdt eit besøk</h2>
+          <a routerLink="/nytt">Alt som er nytt →</a>
+        </div>
+        <p class="seksjon-ingress">
+          Ny meny, ein spesialitet eller noko anna som er verdt å få med seg hos kafear,
+          restaurantar og andre bedrifter.
+        </p>
+        <ul class="kort-liste">
+          @for (o of oppslag; track o.id) {
+            <li><app-oppslag-kort [oppslag]="o" /></li>
+          }
+        </ul>
+      </section>
+    }
+
+    <section class="innhald seksjon">
+      <div class="seksjon-topp">
+        <h2>Kva skjer i Gloppen?</h2>
+        <a routerLink="/aktivitetar">Alt som skjer →</a>
+      </div>
+      @if (neste.length > 0) {
+        <ul class="kort-liste">
+          @for (a of neste; track a.id) {
+            <li><app-aktivitet-kort [aktivitet]="a" /></li>
+          }
+        </ul>
+      } @else {
+        <p>
+          Ingen arrangement er lagde inn akkurat no. Sjå
+          <a routerLink="/fritid">Trening og fritid</a> for lag, klubbar og faste treningar.
+        </p>
+      }
+    </section>
+
     <section class="innhald seksjon">
       <div class="seksjon-topp">
         <h2>Ting å gjere</h2>
@@ -78,12 +123,12 @@ import { harSalskanal } from '../models/lokalmat';
       <ul class="framheving-rutenett">
         @for (f of framhevingar; track f.bedriftId) {
           <li>
-            <a class="framheving" [routerLink]="['/bedrift', f.bedriftId]">
+            <a class="framheving" [routerLink]="f.lenkje ?? ['/bedrift', f.bedriftId]">
               <span class="framheving-ikon" aria-hidden="true">{{ f.ikon }}</span>
               <span class="framheving-tittel">{{ f.overskrift }}</span>
               <span class="framheving-tekst">{{ f.tekst }}</span>
-              @if (f.opningstider) {
-                <span class="framheving-meta">{{ f.opningstider }}</span>
+              @if (f.meta) {
+                <span class="framheving-meta">{{ f.meta }}</span>
               }
             </a>
           </li>
@@ -121,44 +166,6 @@ import { harSalskanal } from '../models/lokalmat';
       </ul>
     </section>
 
-    @if (oppslag.length > 0) {
-      <section class="innhald seksjon">
-        <div class="seksjon-topp">
-          <h2>Nytt og verdt eit besøk</h2>
-          <a routerLink="/nytt">Alt som er nytt →</a>
-        </div>
-        <p class="seksjon-ingress">
-          Ny meny, ein spesialitet eller noko anna som er verdt å få med seg hos kafear,
-          restaurantar og andre bedrifter.
-        </p>
-        <ul class="kort-liste">
-          @for (o of oppslag; track o.id) {
-            <li><app-oppslag-kort [oppslag]="o" /></li>
-          }
-        </ul>
-      </section>
-    }
-
-    <section class="innhald seksjon">
-      <div class="seksjon-topp">
-        <h2>Kva skjer i Gloppen?</h2>
-        <a routerLink="/aktivitetar">Alle aktivitetar →</a>
-      </div>
-      @if (neste.length > 0) {
-        <ul class="kort-liste">
-          @for (a of neste; track a.id) {
-            <li><app-aktivitet-kort [aktivitet]="a" /></li>
-          }
-        </ul>
-      } @else {
-        <p>
-          Ingen arrangement er lagde inn akkurat no. Sjå
-          <a [routerLink]="['/aktivitetar']" [queryParams]="{ type: 'fast' }">faste aktivitetar</a>
-          som lag, klubbar og treffpunkt.
-        </p>
-      }
-    </section>
-
     <section class="innhald seksjon">
       <h2>Kategoriar</h2>
       <ul class="kategori-rutenett">
@@ -192,8 +199,8 @@ import { harSalskanal } from '../models/lokalmat';
         </svg>
         <h2>Ny i Gloppen?</h2>
         <p>
-          Velkomen! Vi har samla nyttige lenker og tips for deg som nettopp har flytta hit, eller som
-          vurderer å gjere det.
+          Velkomen! Vi har samla nyttige lenker og tips for deg som nettopp har flytta hit, eller
+          som vurderer å gjere det.
         </p>
         <a routerLink="/ny-i-gloppen" class="knapp">Les meir</a>
       </div>
@@ -209,9 +216,14 @@ export class Heim {
   protected readonly neste = inject(AktivitetService).neste(3);
   protected readonly oppslag = this.oppslagService.aktive().slice(0, 4);
 
+  private readonly nesteFilm = inject(KinoService).neste();
   protected readonly framhevingar = TING_A_GJERE.map((f) => ({
     ...f,
-    opningstider: this.service.hent(f.bedriftId)?.opningstider,
+    // Kinokortet viser neste film i staden for opningstidene.
+    meta:
+      f.bedriftId === KINO_BEDRIFT_ID && this.nesteFilm
+        ? `Neste film: ${this.nesteFilm.film.tittel}, ${kortDagTekst(this.nesteFilm.vising.dato, isoDato())} kl. ${this.nesteFilm.vising.tid}`
+        : this.service.hent(f.bedriftId)?.opningstider,
   }));
   private readonly servering = this.service.sok({ kategori: 'mat-og-servering' });
   protected readonly talServering = this.servering.length;
@@ -221,7 +233,8 @@ export class Heim {
 
   private readonly lokalmat = inject(LokalmatService).alle();
   protected readonly talLokalmat = this.lokalmat.length;
-  protected readonly talPaGarden = this.lokalmat.filter((b) => harSalskanal(b.sal, 'gardsutsal')).length;
+  protected readonly talPaGarden = this.lokalmat.filter((b) => harSalskanal(b.sal, 'gardsutsal'))
+    .length;
 
   protected readonly kategoriar = KATEGORIAR;
   protected sokeord = '';

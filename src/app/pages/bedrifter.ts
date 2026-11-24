@@ -10,6 +10,8 @@ import { BedriftService } from '../services/bedrift.service';
  */
 @Component({
   selector: 'app-bedrifter',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [BedriftKort],
   template: `
     <div class="innhald seksjon">
@@ -56,9 +58,7 @@ import { BedriftService } from '../services/bedrift.service';
         </div>
       </form>
 
-      <p class="treff" aria-live="polite">
-        {{ resultat().length }} treff
-      </p>
+      <p class="treff" aria-live="polite">{{ resultat().length }} treff</p>
 
       @if (resultat().length > 0) {
         <ul class="kort-liste">
@@ -113,7 +113,12 @@ export class Bedrifter {
     }),
   );
 
-  protected oppdater(endring: { sok?: string; kategori?: string; stad?: string; type?: string }): void {
+  protected oppdater(endring: {
+    sok?: string;
+    kategori?: string;
+    stad?: string;
+    type?: string;
+  }): void {
     const neste = {
       sok: this.sok() ?? '',
       kategori: this.kategoriId() ?? '',

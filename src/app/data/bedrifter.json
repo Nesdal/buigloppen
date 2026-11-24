@@ -667,8 +667,11 @@
   {
     "id": "yx-breim",
     "namn": "YX Breim",
-    "type": "butikk",
+    "type": "servering",
     "kategori": "butikk-og-handel",
+    "ekstraKategoriar": [
+      "mat-og-servering"
+    ],
     "stad": "Byrkjelo",
     "kortSkildring": "Bensinstasjon med butikk, matservering og hurtiglading ved E39 på Byrkjelo.",
     "tilbyr": [
@@ -696,8 +699,11 @@
   {
     "id": "yx-sandane",
     "namn": "YX Sandane",
-    "type": "butikk",
+    "type": "servering",
     "kategori": "butikk-og-handel",
+    "ekstraKategoriar": [
+      "mat-og-servering"
+    ],
     "stad": "Sandane",
     "kortSkildring": "Bensinstasjon med butikk og matservering på Sandane.",
     "tilbyr": [
@@ -720,6 +726,50 @@
     ],
     "kjelde": "https://www.yx.no/stasjon/yx-sandane-10400563",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "al-bygg",
+    "namn": "AL-Bygg AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Handverkarfirma på Sandane med snikkar- og byggarbeid og vaktmeistertenester.",
+    "tilbyr": [
+      "Snikkar- og byggarbeid",
+      "Vaktmeistertenester"
+    ],
+    "adresse": "Nordstrandsvegen 6, 6823 Sandane",
+    "stikkord": [
+      "snikkar",
+      "snekker",
+      "vaktmeister",
+      "handverkar"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/916328931",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "all-service-breim",
+    "namn": "All Service Breim AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Breim",
+    "kortSkildring": "Byggfirma i Breim som tek på seg nybygg, rehabilitering og lokale servicejobbar.",
+    "tilbyr": [
+      "Nybygg",
+      "Rehabilitering",
+      "Lokal service og vaktmeisterjobbar"
+    ],
+    "adresse": "Breimsvegen 1361, 6827 Breim",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "snekker",
+      "handverkar"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/928573745",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "byggmester-seime",
@@ -771,6 +821,28 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "evebo-blikkenslagerverkstad",
+    "namn": "Evebø Blikkenslagerverkstad AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Blikkenslagar på Sandane med takarbeid og beslag.",
+    "tilbyr": [
+      "Blikkenslagararbeid",
+      "Takarbeid",
+      "Sal av beslag og rekvisita"
+    ],
+    "adresse": "Søreidsvegen 53, 6823 Sandane",
+    "stikkord": [
+      "blikkenslagar",
+      "blikkenslager",
+      "tak",
+      "takrenner"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/925092576",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "firda-elektro",
     "namn": "Firda Elektro AS",
     "type": "bedrift",
@@ -798,6 +870,72 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "firda-malarservice",
+    "namn": "Firda Malarservice AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Målarfirma på Sandane som òg legg golv og flis.",
+    "tilbyr": [
+      "Målararbeid",
+      "Golvlegging",
+      "Flislegging"
+    ],
+    "adresse": "Kleivedammen 16, 6823 Sandane",
+    "stikkord": [
+      "målar",
+      "maler",
+      "flislegging",
+      "golv"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/987412429",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "fjordane-elektro",
+    "namn": "Fjordane Elektro AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Lokal elektrikar på Sandane som arbeider i heile Sogn og Fjordane.",
+    "tilbyr": [
+      "Elektriske installasjonar",
+      "Oppussing og nybygg",
+      "Offshore"
+    ],
+    "adresse": "Øvre Sørstranda 78, 6823 Sandane",
+    "telefon": "+47 97 77 73 58",
+    "epost": "post@fje.no",
+    "nettstad": "https://www.fje.no",
+    "opningstider": "Måndag–fredag 8–16",
+    "stikkord": [
+      "elektrikar",
+      "elektriker"
+    ],
+    "kjelde": "https://www.fje.no",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "glass-sikring",
+    "namn": "Glass Sikring AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Glasfirma på Sandane med glasfasadar og innreiing.",
+    "tilbyr": [
+      "Glasfasadar",
+      "Glas og innreiing"
+    ],
+    "adresse": "Sørstrandsvegen 8, 6823 Sandane",
+    "stikkord": [
+      "glasmeister",
+      "glass",
+      "vindauge"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/981371216",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "henden-elektro",
     "namn": "Henden Elektro AS",
     "type": "bedrift",
@@ -822,6 +960,78 @@
     ],
     "kjelde": "https://www.hendenelektro.no",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "hyen-bygg",
+    "namn": "Hyen Bygg AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Hyen",
+    "kortSkildring": "Småentreprenør i Hyen som tek oppdrag i heile Gloppen og Eikefjord, med faste prisar.",
+    "tilbyr": [
+      "Tømring, tilbygg og påbygg",
+      "Betong og muring",
+      "Våtrom og flislegging",
+      "Måling og golv",
+      "Uavhengig kontroll av våtrom og tettleik"
+    ],
+    "adresse": "Holme, 6829 Hyen",
+    "telefon": "+47 916 81 313",
+    "epost": "post@hyenbygg.no",
+    "nettstad": "https://www.hyenbygg.no",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "bad",
+      "murar",
+      "målar"
+    ],
+    "kjelde": "https://www.hyenbygg.no",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "kandal-bygg",
+    "namn": "Kandal Bygg AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Kandal",
+    "kortSkildring": "Bygningsentreprenør i Kandal.",
+    "tilbyr": [
+      "Bygningsarbeid",
+      "Sal av byggvarer og tenester"
+    ],
+    "adresse": "Kandalsvegen 1099, 6823 Sandane",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "byggmeister",
+      "entreprenør"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/988411973",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "lote-elektro",
+    "namn": "Lote Elektro AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Elektroinstallatør på Sandane, godkjend lærebedrift.",
+    "tilbyr": [
+      "Elektriske installasjonar",
+      "Sal av elektriske artiklar",
+      "Godkjend lærebedrift"
+    ],
+    "adresse": "Sørstrandsvegen 43, 6823 Sandane",
+    "telefon": "+47 57 86 54 22",
+    "stikkord": [
+      "elektrikar",
+      "elektriker",
+      "lærebedrift"
+    ],
+    "kjelde": "https://utdanning.no/bedrift/971828099/",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "mardal-ror",
@@ -876,6 +1086,223 @@
     ],
     "kjelde": "https://hjelmeset.no",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "pebo-ror",
+    "namn": "Pebo Rør AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Røyrleggarfirma på Byrkjelo.",
+    "tilbyr": [
+      "Røyrleggararbeid"
+    ],
+    "adresse": "Fjellvegen 1, 6826 Byrkjelo",
+    "stikkord": [
+      "røyrleggar",
+      "rørlegger",
+      "VVS"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/982521645",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "re-bygg",
+    "namn": "Re-Bygg AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bygningsentreprenør på Byrkjelo, i drift sidan 1989 og sentralt godkjend som ansvarleg søkjar.",
+    "tilbyr": [
+      "Nybygg og tilbygg",
+      "Rehabilitering",
+      "Ansvarleg søkjar for byggjesaker",
+      "Godkjend lærebedrift"
+    ],
+    "adresse": "Fjellvegen 18, 6826 Byrkjelo",
+    "stikkord": [
+      "byggmeister",
+      "entreprenør",
+      "tømrar",
+      "tømrer",
+      "lærebedrift"
+    ],
+    "kjelde": "https://sgregister.dibk.no/enterprises/951962449",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "ronny-husevag-rorservice",
+    "namn": "Ronny Husevåg Rørservice AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Røyrleggarfirma på Sandane som tek dei fleste røyrleggaroppdrag.",
+    "tilbyr": [
+      "Røyrleggararbeid",
+      "Varmeanlegg",
+      "Sanitærinstallasjonar"
+    ],
+    "adresse": "Nordstrandsvegen 6, 6823 Sandane",
+    "stikkord": [
+      "røyrleggar",
+      "rørlegger",
+      "VVS",
+      "bad"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/986602321",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "snekker-jens-lorenzen",
+    "namn": "Snekker Jens Lorenzen AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Snikkarfirma på Sandane.",
+    "tilbyr": [
+      "Snikkararbeid",
+      "Sal av tilhøyrande varer"
+    ],
+    "adresse": "Åsavegen 3, 6823 Sandane",
+    "stikkord": [
+      "snikkar",
+      "snekker",
+      "tømrar",
+      "tømrer"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/929748883",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "torleiv-straume",
+    "namn": "Torleiv Straume AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Hyen",
+    "kortSkildring": "Maskinentreprenør i Hyen med sprenging og gravearbeid.",
+    "tilbyr": [
+      "Graving",
+      "Sprenging"
+    ],
+    "adresse": "Hyevegen 1973, 6829 Hyen",
+    "stikkord": [
+      "maskinentreprenør",
+      "graving",
+      "anlegg"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/912167208",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "troll-malarfirma",
+    "namn": "Troll Målarfirma ANS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Målarfirma på Sandane.",
+    "tilbyr": [
+      "Måling inne og ute",
+      "Sal av måling og tilhøyrande varer"
+    ],
+    "adresse": "Kattahamrane 2, 6823 Sandane",
+    "stikkord": [
+      "målar",
+      "maler",
+      "Troll"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/996261433",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "tomrar-egge",
+    "namn": "Tømrar Egge AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Tømrarfirma på Byrkjelo som set opp og held ved like bygningar.",
+    "tilbyr": [
+      "Tømrararbeid",
+      "Oppføring av bygningar",
+      "Vedlikehald"
+    ],
+    "adresse": "Breimsvegen 2358, 6826 Byrkjelo",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "snekker"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/935050219",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "tomrar-en-myklebust",
+    "namn": "Tømrar EN Myklebust AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Tømrarfirma på Byrkjelo med rundt ti tilsette, godkjend lærebedrift.",
+    "tilbyr": [
+      "Tømrararbeid",
+      "Nybygg, tilbygg og rehabilitering",
+      "Godkjend lærebedrift"
+    ],
+    "adresse": "Fjellvegen 26, 6826 Byrkjelo",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "snekker",
+      "byggmeister",
+      "lærebedrift",
+      "Myklebust"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/929641590",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "tomrar-flolo",
+    "namn": "Tømrar Flølo AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Tømrarfirma på Byrkjelo som set opp og held ved like bygningar.",
+    "tilbyr": [
+      "Tømrararbeid",
+      "Oppføring av bygningar",
+      "Vedlikehald"
+    ],
+    "adresse": "Bjørnarheimsura 18A, 6826 Byrkjelo",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "snekker"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/933856534",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "tomrar-solas",
+    "namn": "Tømrar Solås AS",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Sandane",
+    "kortSkildring": "Tømrarfirma på Sandane som set opp og held ved like bygningar.",
+    "tilbyr": [
+      "Tømrararbeid",
+      "Oppføring av bygningar",
+      "Vedlikehald"
+    ],
+    "adresse": "Øvre Nordstranda 361, 6823 Sandane",
+    "stikkord": [
+      "tømrar",
+      "tømrer",
+      "snikkar",
+      "snekker"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/933814548",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "asiamat-sandane",
@@ -1283,6 +1710,90 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "bano",
+    "namn": "Bano AS",
+    "type": "bedrift",
+    "kategori": "industri",
+    "stad": "Sandane",
+    "kortSkildring": "Utviklar og produserer baderom for eldre og folk med nedsett funksjonsevne, med hovudkontor og fabrikk på Sandane.",
+    "tilbyr": [
+      "Tilpassa baderom for helse og omsorg",
+      "Toalett, servantar og baderomsskap",
+      "Sal til fleire land i Europa"
+    ],
+    "adresse": "Industrivegen 22, 6823 Sandane",
+    "telefon": "+47 57 86 98 00",
+    "epost": "post@bano.no",
+    "nettstad": "https://banoconcept.no",
+    "stikkord": [
+      "industri",
+      "arbeidsplass",
+      "produksjon",
+      "bad",
+      "helse"
+    ],
+    "kjelde": "https://banoconcept.no/kontakt/",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "brodrene-aa",
+    "namn": "Brødrene Aa",
+    "type": "bedrift",
+    "kategori": "industri",
+    "stad": "Hyen",
+    "kortSkildring": "Båtverft i Hyen som byggjer energieffektive hurtigbåtar i karbonfiber for kundar i heile verda.",
+    "skildring": "Verftet vart grunnlagt i 1947 av brørne Olav og Bertel Aa. Først bygde dei fritidsbåtar i mahogni, sidan gjekk dei over til glasfiber og i 2000-åra til karbonfiber. Brødrene Aa bygde verdas første kommersielle passasjerbåt i karbonfiber. Det gamle selskapet gjekk konkurs i 2025, og drifta held fram i Brødrene Aa Hyen AS.",
+    "tilbyr": [
+      "Hurtigbåtar og passasjerbåtar i karbonfiber",
+      "Elektriske sightseeingbåtar",
+      "Ombygging og oppgradering av eldre båtar",
+      "Service og ettermarknad"
+    ],
+    "adresse": "Hyevegen 1775, 6829 Hyen",
+    "epost": "post@braa.no",
+    "nettstad": "https://www.braa.no",
+    "stikkord": [
+      "verft",
+      "båtbygging",
+      "hurtigbåt",
+      "karbonfiber",
+      "kompositt",
+      "industri",
+      "arbeidsplass",
+      "Brødrene Å",
+      "Brodrene Aa"
+    ],
+    "kjelde": "https://www.braa.no/contact-us",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "norsmaterials",
+    "namn": "NORSmaterials AS",
+    "type": "bedrift",
+    "kategori": "industri",
+    "stad": "Sandane",
+    "kortSkildring": "Støyper slitesterke polymerkomponentar til maritim næring, energi og havbruk. Tidlegare Strukturplast.",
+    "tilbyr": [
+      "NORSelast og NORSfoam",
+      "Støyping av komponentar",
+      "Materialutvikling"
+    ],
+    "adresse": "Industrivegen 20, 6823 Sandane",
+    "telefon": "+47 57 86 61 33",
+    "epost": "contact@norsmaterials.com",
+    "nettstad": "https://norsmaterials.com",
+    "stikkord": [
+      "Strukturplast",
+      "NORSelast",
+      "plast",
+      "industri",
+      "arbeidsplass",
+      "produksjon"
+    ],
+    "kjelde": "https://norsmaterials.com",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "fjellestad-gardskjoken",
     "namn": "Fjellestad Gardskjøken",
     "type": "bedrift",
@@ -1352,6 +1863,45 @@
     "sesong": "Jordbær og bringebær om sommaren, eple, plomme og grønsaker om hausten",
     "kjelde": "https://www.xn--mataml-mua.no/torgdag",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "hogt-og-vilt",
+    "namn": "Høgt og Vilt – Urter frå Devik",
+    "type": "bedrift",
+    "kategori": "lokalmat",
+    "stad": "Hestenesøyri",
+    "kortSkildring": "Gard i Devik, 100 meter over Gloppefjorden, som dyrkar økologiske te- og krydderurter og haustar ville urter.",
+    "skildring": "Garden i Devik ligg om lag 100 meter over Gloppefjorden med utsikt til fjord og fjell. Bjørg Devik Aurlien tok over garden i 1997 og byrja med å hauste viltveksande urter for sal. Etter kvart har ho utvida med økologisk dyrking av mange te- og krydderurter. Alle ingrediensane i produkta vert hausta og foredla på garden.",
+    "tilbyr": [
+      "Urtete",
+      "Urtekrydder",
+      "Urtesalt",
+      "Etande blomster til pynt på maten"
+    ],
+    "adresse": "Devik 95, 6828 Hestenesøyra",
+    "telefon": "+47 908 65 761",
+    "epost": "bjorgaur@gmail.com",
+    "nettstad": "https://hogtogvilt.no",
+    "stikkord": [
+      "urter",
+      "urtete",
+      "te",
+      "krydder",
+      "urtesalt",
+      "økologisk",
+      "ville urter",
+      "Devik"
+    ],
+    "lokalmat": [
+      "anna",
+      "drikke"
+    ],
+    "sal": [
+      "butikk"
+    ],
+    "kjopTekst": "Gloppen Camping har mellom anna produkta til sals. Ta kontakt med garden direkte om du vil kjøpe eller bestille.",
+    "kjelde": "https://bondensmarked.no/produsenter/hogt-og-vilt-urter-fra-devik",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "kandal-kjot",
@@ -1638,6 +2188,34 @@
     "kjopTekst": "Lokalmatbutikken har varer frå produsentar i Nordfjord og Sunnfjord, mellom anna ost frå Kandal Ysteri, geit- og kjeprodukt frå Kandal Kjøt og saft og syltetøy frå Påldtun, i tillegg til eige brød, knekkebrød og havrekjeks.",
     "kjelde": "https://www.bakarjon.no/",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "bistro-breim",
+    "namn": "Bistro Breim Sushi og Thaimat",
+    "type": "servering",
+    "kategori": "mat-og-servering",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Matvogn ved Coop på Byrkjelo med sushi og thaimat, både til takeaway og catering.",
+    "tilbyr": [
+      "Sushi",
+      "Thaimat",
+      "Takeaway",
+      "Catering"
+    ],
+    "adresse": "Øyavegen 1, 6826 Byrkjelo",
+    "telefon": "+47 941 43 449",
+    "nettstad": "https://www.facebook.com/Breimsvogna/",
+    "stikkord": [
+      "sushi",
+      "thaimat",
+      "matvogn",
+      "takeaway",
+      "catering",
+      "Breimsvogna",
+      "Breim Bistro"
+    ],
+    "kjelde": "https://smilefjes.mattilsynet.no/spisested/byrkjelo/bistro_breim_sushi_og_thaimat.Z2105271026141990127IMJSU/",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "forktap",
@@ -1943,7 +2521,6 @@
       "Treningsrom"
     ],
     "praktisk": [
-      "Pris: Det kostar å bade, men prisane står ikkje på nettsida. Ring resepsjonen på 90 81 96 43 om du vil vite det før du dreg.",
       "Heilag- og feriedagar: Opningstidene vert ofte endra i feriar og på heilagdagar. Sjekk Facebook-sida til Trivselshagen bad og idrett før du dreg.",
       "Parkering: Det er som regel god plass på parkeringa ved idrettsdelen av Trivselshagen.",
       "Booking av hall og bane: Bad og idrett har eigen bookingportal på gloppen.goactivebooking.com."
@@ -1975,13 +2552,12 @@
       "Kinoklubb"
     ],
     "praktisk": [
-      "Pris: Barn under 15 år 110 kr, ungdom og studentar (15–18 år) 120 kr, vaksne 150 kr. Gjeld frå 1. januar 2026. Premierar og spesialvisingar kan ha anna pris.",
-      "Billettar: Kjøp på ebillett.no, i eBillett-appen, i Trivselskafeen eller på Servicetorget i heradshuset. Billettgebyret er med i prisen, og billettar vert ikkje refunderte.",
+      "Billettar: Kjøp på ebillett.no, i eBillett-appen, i Trivselskafeen eller på Servicetorget i heradshuset. Billettar vert ikkje refunderte.",
       "Reservering: Ring Servicetorget på 57 88 38 00 kvardagar 08–15. Reserverte billettar må hentast og betalast innan 3 dagar, og seinast ein halv time før filmen om du reserverer same dag.",
       "Aldersgrense: Barn kan sjå filmen saman med ein vaksen om dei er inntil 3 år yngre enn aldersgrensa. 18-årsgrensa gjeld utan unntak.",
       "Rullestol: Plassane er på bakarste rad i Kultursalen, med flatt golv utan trapper frå hovudinngangen. Desse billettane kan ikkje kjøpast på nett, men i kafeen, på Servicetorget eller ved å reservere.",
       "Ledsagarbevis: Følgjet ditt går gratis. Vis beviset i døra eller når du kjøper billett.",
-      "Kinoklubb: Medlemskap kostar 179 kr i året og gjev halv pris på minst 12 filmar. Meld deg inn på kinoklubb.no.",
+      "Kinoklubb: Meld deg inn på kinoklubb.no.",
       "Parkering: Ved store arrangement er det ofte best plass ved idrettsdelen av Trivselshagen. Det er òg parkering ved Stilstova og i sentrum."
     ],
     "telefon": "+47 57 88 38 00",
@@ -2016,13 +2592,12 @@
       "Kjærleiksskogen, der du kan hengje opp eit hjarte"
     ],
     "praktisk": [
-      "Pris: Det er gratis å bruke området på dagtid.",
-      "Parkering: 50 kr per dag, betalt digitalt via lenkja på trivselsskogen.no/parking. Sesongkort til 300 kr vert selt hos Heime, Nordstrandsvegen 15, Sandane.",
+      "Parkering: Betal digitalt via lenkja på trivselsskogen.no/parking. Sesongkort vert selt hos Heime, Nordstrandsvegen 15, Sandane.",
       "Start: Alle stiane startar frå parkeringsplassen. Hundeparken ligg rett ved.",
       "Ikkje overnatting på parkeringa: Bubil, campingbil, campingvogn og telt kan ikkje stå der over natta.",
       "Grill og bål: Engangsgrill er forbode i heile Trivselsskogen. Bruk bålplassane.",
-      "Overnatting i TIN-Campen: 100 kr per person per natt, betalt med Vipps til 75456. Bestill på e-post til post@trivselsskogen.no med namn og kontaktinfo til den som er ansvarleg. Det er 6 gapahukar med minst 6 plassar kvar, og du kan òg sove i hengekøye, telt eller under open himmel.",
-      "Selskap og skuleleir: Bursdag, bryllaup, firmatur og skuleleir i TIN-Campen kan avtalast. Ta kontakt for pris. Campen har bakeomnar for pizza og brød.",
+      "Overnatting i TIN-Campen: Betal med Vipps til 75456. Bestill på e-post til post@trivselsskogen.no med namn og kontaktinfo til den som er ansvarleg. Det er 6 gapahukar med minst 6 plassar kvar, og du kan òg sove i hengekøye, telt eller under open himmel.",
+      "Selskap og skuleleir: Bursdag, bryllaup, firmatur og skuleleir i TIN-Campen kan avtalast. Ta kontakt. Campen har bakeomnar for pizza og brød.",
       "Lyslotto: Ta med lommelykt når det er mørkt, eller sjå godt etter på dagtid. Kupong og kart ligg på trivselsskogen.no.",
       "Treningsparken: Utstyr kan lånast frå skapet på KK-flata. Legg det attende og heng opp tauet etter bruk, så det ikkje vert vått."
     ],
@@ -2044,6 +2619,68 @@
     ],
     "kjelde": "https://www.trivselsskogen.no/general-8-7",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "holvikejekta",
+    "namn": "Holvikejekta",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Museumsbygg på Sandane med Holvikejekta, den einaste store opne klinkbygde jekta som finst att.",
+    "skildring": "Holvikejekta er ei jekt frå 1881 som frakta varer på fjorden. Ho er den einaste store opne klinkbygde jekta som er bevart, og står no i eit nytt museumsbygg like vest for sentrum på Sandane. Museet er ein del av Nordfjord Folkemuseum.",
+    "tilbyr": [
+      "Utstilling om Holvikejekta og jektefarten",
+      "Omvising for grupper etter avtale"
+    ],
+    "praktisk": [
+      "Sesong: Museet er stengt frå 1. oktober til 1. mai.",
+      "Billett: Vaksne 140 kr, honnør og studentar 110 kr, born under 18 gratis.",
+      "Grupper utanom sesong: Kan avtalast med museet. Frå 1800 kr kvardagar kl. 11–16, frå 2775 kr andre tider.",
+      "Tilgjenge: Bygget er universelt utforma, og det er HC-parkering ved inngangen."
+    ],
+    "adresse": "Utstillingsplassen 2, 6823 Sandane",
+    "telefon": "+47 48 06 32 34",
+    "epost": "nfm@misf.no",
+    "nettstad": "https://misf.no/holvikejekta",
+    "opningstider": "Stengt 1. oktober–1. mai. Grupper kan avtale besøk heile året.",
+    "stikkord": [
+      "museum",
+      "jekt",
+      "Nordfjord Folkemuseum",
+      "Holvikjekta",
+      "Øyrane",
+      "Utstillingsplassen",
+      "historie"
+    ],
+    "kjelde": "https://misf.no/holvikejekta/planlegg-besoeket-ditt",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "stallane-pa-oyrane",
+    "namn": "Stallane på Øyrane",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Gamle stallbygningar på Utstillingsplassen som skal bli ein ny møtestad for kultur og arrangement.",
+    "skildring": "Stallane på Øyrane er eit gamalt hus med nye planar. Bygningane på Utstillingsplassen skal få nytt liv og bli ein stad der folk kan møtast og ting kan skje. Første store arrangement var Jul i Stallane i november 2026, med stand, aktivitetar og førjulskos.",
+    "tilbyr": [
+      "Arrangement og marknader",
+      "Kultur og møtestad"
+    ],
+    "adresse": "Utstillingsplassen 3, 6823 Sandane",
+    "telefon": "+47 952 85 015",
+    "epost": "kristin@oncue.no",
+    "nettstad": "https://www.facebook.com/people/Stallane-p%C3%A5-%C3%98yrane/61595515705897/",
+    "stikkord": [
+      "Stallane",
+      "Øyrane",
+      "Utstillingsplassen",
+      "kulturhus",
+      "Jul i Stallane",
+      "marknad"
+    ],
+    "kjelde": "https://www.facebook.com/people/Stallane-p%C3%A5-%C3%98yrane/61595515705897/",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "byrkjelo-camping",
@@ -2150,6 +2787,43 @@
     ],
     "kjelde": "https://www.gloppenhotell.no/",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "gordon-hotel",
+    "namn": "Gordon Hotel",
+    "type": "servering",
+    "kategori": "overnatting",
+    "ekstraKategoriar": [
+      "mat-og-servering"
+    ],
+    "stad": "Breim",
+    "kortSkildring": "Historisk boutiquehotell på Reed i Breim med 13 rom i to restaurerte hus.",
+    "skildring": "Hovudbygningen vart reist rundt 1884 av Lars Johannesson Reed, og staden har teke imot reisande sidan 1800-talet, òg som landhandel og skysstasjon. Hotellet vert no restaurert av ein ny vert, og romma opnar etter kvart. Alt skal vere ferdig til den store opninga våren 2027.",
+    "tilbyr": [
+      "13 rom og suitar, alle med eige bad",
+      "Frukost, lunsj og middag kl. 19.00 i Matstova og Kaffistova",
+      "Sesongmeny med enkle rettar",
+      "Matpakke frå frukostbordet for turfolk"
+    ],
+    "praktisk": [
+      "Parkering: Gratis parkering ved hotellet.",
+      "Alder: Gjester frå 12 år.",
+      "Dyr: Ikkje hund eller andre dyr innandørs.",
+      "Opning: Romma opnar i fleire steg, full opning våren 2027."
+    ],
+    "adresse": "Kyrkjevegen 7, 6827 Breim",
+    "telefon": "+47 92 96 80 74",
+    "epost": "post@gordonhotel.no",
+    "nettstad": "https://www.gordonhotel.no",
+    "stikkord": [
+      "hotell",
+      "boutiquehotell",
+      "Reed",
+      "restaurant",
+      "historisk"
+    ],
+    "kjelde": "https://www.gordonhotel.no/",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "hjelle-panoramahytter",
@@ -2516,5 +3190,970 @@
     ],
     "kjelde": "https://virksomhet.brreg.no/nn/oppslag/enheter/920253970",
     "sjekka": "2026-11-23"
+  },
+  {
+    "id": "apex-reed",
+    "namn": "APEX Reed",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Breim",
+    "kortSkildring": "Innandørs golfsimulator og møterom på Reed Senter, open heile året.",
+    "tilbyr": [
+      "Golfsimulator med timebooking",
+      "Medlemskap",
+      "Møterom for opptil 20 personar",
+      "Sosiale kveldar for lag og bedrifter"
+    ],
+    "praktisk": [
+      "Drift: Ubemanna, med booking på nett."
+    ],
+    "adresse": "Skrøppavegen 2, 6827 Breim",
+    "telefon": "+47 91 82 78 47",
+    "epost": "post@apexreed.no",
+    "nettstad": "https://www.apexreed.no",
+    "stikkord": [
+      "golf",
+      "golfsimulator",
+      "simulator",
+      "møterom",
+      "Reed"
+    ],
+    "kjelde": "https://www.apexreed.no",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "fjordboxen",
+    "namn": "Fjordboxen",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Sandane",
+    "kortSkildring": "Treningssenter for funksjonell trening på Sandane senter, med gruppetimar og eigentrening kvar dag.",
+    "tilbyr": [
+      "Gruppetimar: WOD, HIIT og Hyrox",
+      "Eigentrening kl. 05–23 kvar dag",
+      "Stormøllene: tre store møller for rulleski",
+      "Personleg trenar",
+      "Trening før og etter fødsel"
+    ],
+    "adresse": "Sandane senter, 6823 Sandane",
+    "epost": "hei@fjordboxen.no",
+    "nettstad": "https://fjordboxen.no",
+    "opningstider": "Eigentrening kl. 05–23 kvar dag, utanom når det er gruppetimar",
+    "stikkord": [
+      "treningssenter",
+      "crossfit",
+      "funksjonell trening",
+      "hyrox",
+      "gym",
+      "PT",
+      "rulleski"
+    ],
+    "kjelde": "https://fjordboxen.no/om",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "reed-foto",
+    "namn": "Reed Foto",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Gloppen-basert fotofirma med over 35 års drift innan skule- og barnehagefotografering over heile landet.",
+    "tilbyr": [
+      "Skulefoto for grunnskular og vidaregåande skular",
+      "Barnehagefoto med portrett, gruppe- og søskenbilete",
+      "Russefoto med mobil fototribune",
+      "Skulekatalog og årbok, digitalt og på trykk",
+      "Arrangementsfoto for store arrangement"
+    ],
+    "adresse": "Nordstrandsvegen 17f, 6823 Sandane",
+    "telefon": "+47 57 86 83 33",
+    "epost": "post@reedfoto.no",
+    "nettstad": "https://reedfoto.no",
+    "opningstider": "Kundeservice på telefon kvardagar 09:00–14:00",
+    "stikkord": [
+      "fotograf",
+      "skulefoto",
+      "barnehagefoto",
+      "russefoto",
+      "årbok",
+      "Reed",
+      "Reedfoto"
+    ],
+    "kjelde": "https://reedfoto.no/kundeservice",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "nordfjord-skifer",
+    "namn": "Nordfjord Skifer",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Breim",
+    "kortSkildring": "Steinbrot ved RV 39 mellom Reed og Sandane som leverer kvartsittskifer til både prosjekt og private.",
+    "tilbyr": [
+      "Handmurstein til hagemurar",
+      "Forblendingsstein til fasadar",
+      "Hagetrapp og trinn i massiv stein",
+      "Maskinstein, plastringstein og knuste massar",
+      "Kløyving av stein og transport"
+    ],
+    "telefon": "+47 917 63 804",
+    "epost": "post@nordfjordskifer.no",
+    "nettstad": "https://www.nordfjordskifer.no",
+    "opningstider": "Steinbrotet: måndag–fredag 08:00–16:00, laurdag stengt",
+    "stikkord": [
+      "skifer",
+      "naturstein",
+      "hagemur",
+      "steintrapp",
+      "forblending",
+      "steinbrot"
+    ],
+    "kjelde": "https://www.nordfjordskifer.no/kontakt-oss",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "hole-traktor-og-maskin",
+    "namn": "Hole Traktor og Maskin",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Forhandlar av traktorar, landbruksmaskiner og utstyr på Byrkjelo.",
+    "tilbyr": [
+      "Sal av nye og brukte traktorar",
+      "Landbruks- og skogsutstyr, m.a. vedmaskiner og tømmervogner",
+      "Service og reparasjon på eige verkstad"
+    ],
+    "adresse": "Fjellvegen 265, 6826 Byrkjelo",
+    "stikkord": [
+      "traktor",
+      "landbruksmaskiner",
+      "verkstad",
+      "vedmaskin",
+      "skogsutstyr"
+    ],
+    "kjelde": "https://www.finn.no/mobility/dealer/196423083/hole-traktor-og-maskin",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "hoem-landbruksservice",
+    "namn": "Hoem Landbruksservice",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Breim",
+    "kortSkildring": "Service, vedlikehald og reparasjon av landbruksmaskiner og fôringsutstyr for bønder.",
+    "tilbyr": [
+      "Service og reparasjon av landbruksmaskiner",
+      "Vedlikehald av TKS fôrvogner og fôringssystem",
+      "Kraftfôranlegg og utstyr frå Bruvik og Mafa",
+      "Montering av landbruksutstyr og ventilasjon i driftsbygningar"
+    ],
+    "telefon": "+47 941 68 205",
+    "epost": "hl.service99@outlook.com",
+    "stikkord": [
+      "landbruk",
+      "maskinreparasjon",
+      "fôringsutstyr",
+      "TKS",
+      "ventilasjon",
+      "fjøs"
+    ],
+    "kjelde": "https://www.proff.no/selskap/hoem-landbruksservice/breim/maskiner-og-utstyr/IFIKA5X10PO",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "nyland-maskin",
+    "namn": "Nyland Maskin",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Breim",
+    "kortSkildring": "Allsidig maskin- og transportfirma i Breim som tek alt frå bilberging til rundballepressing.",
+    "tilbyr": [
+      "Bilberging",
+      "Transport og massetransport",
+      "Graving, grunnarbeid og fjellspyling",
+      "Snøbrøyting og kantklipping",
+      "Utleige av bil og vaktmeistertenester"
+    ],
+    "adresse": "Nylandsvegen 63, 6827 Breim",
+    "telefon": "+47 957 06 000",
+    "epost": "on@nylandtt.no",
+    "stikkord": [
+      "bilberging",
+      "transport",
+      "graving",
+      "brøyting",
+      "rundball",
+      "anlegg"
+    ],
+    "kjelde": "https://www.proff.no/selskap/nyland-maskin-as/breim/anleggsgartnere/IGA29IM0012",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "stian-kvellestad-mur-graving",
+    "namn": "Stian Kvellestad Mur & Graving",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Entreprenør på Byrkjelo som tek på seg grunnarbeid, graving og natursteinsmuring.",
+    "tilbyr": [
+      "Grunnarbeid",
+      "Graving og drenering",
+      "Natursteinsmuring",
+      "Uforpliktande tilbod"
+    ],
+    "adresse": "Breimsvegen 2352, 6826 Byrkjelo",
+    "telefon": "+47 902 96 222",
+    "stikkord": [
+      "graving",
+      "grunnarbeid",
+      "muring",
+      "naturstein",
+      "drenering",
+      "maskinentreprenør"
+    ],
+    "kjelde": "https://www.proff.no/selskap/stian-kvellestad-mur-graving-as/byrkjelo/maskinentrepren%C3%B8rer/IFE9IZP0110",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "dekkservice-breim",
+    "namn": "Dekkservice Breim",
+    "type": "butikk",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Dekk- og bilrekvisitaforretning ved Breimsvegen på Byrkjelo.",
+    "tilbyr": [
+      "Bildekk og dekkservice",
+      "Bildelar og bilrekvisita"
+    ],
+    "adresse": "Breimsvegen 1801, 6826 Byrkjelo",
+    "stikkord": [
+      "dekk",
+      "dekkskift",
+      "bilrekvisita",
+      "bildelar"
+    ],
+    "kjelde": "https://www.1881.no/?query=Dekkservice+Breim",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "rebakken-hagesenter",
+    "namn": "Rebakken Hagesenter",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Breim",
+    "kortSkildring": "Hagesenter og blomeforretning på Reed i Breim.",
+    "tilbyr": [
+      "Planter og blomar",
+      "Hagevarer",
+      "Gartneri og hagebruk"
+    ],
+    "adresse": "Årdalsvegen 3, 6827 Breim",
+    "nettstad": "https://www.facebook.com/rebakken/",
+    "stikkord": [
+      "hagesenter",
+      "planter",
+      "blomar",
+      "hage",
+      "gartneri",
+      "Reed"
+    ],
+    "kjelde": "https://www.1881.no/?query=Rebakken+hage+Breim",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "harek-frisorsalong",
+    "namn": "Hårek Frisørsalong",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Breim",
+    "kortSkildring": "Frisørsalong ved Breimsvegen i Breim.",
+    "tilbyr": [
+      "Hårklipp",
+      "Frisørtenester"
+    ],
+    "adresse": "Breimsvegen 1268, 6827 Breim",
+    "telefon": "+47 57 86 83 25",
+    "stikkord": [
+      "frisør",
+      "hårklipp",
+      "salong"
+    ],
+    "kjelde": "https://www.1881.no/?query=H%C3%A5rek+fris%C3%B8rsalong+Breim",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "krolltoppen-frisorsalong",
+    "namn": "Krølltoppen Frisørsalong",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Frisørsalong på Byrkjelo.",
+    "tilbyr": [
+      "Hårklipp",
+      "Frisørtenester"
+    ],
+    "stikkord": [
+      "frisør",
+      "hårklipp",
+      "salong"
+    ],
+    "kjelde": "https://www.1881.no/?query=Kr%C3%B8lltoppen+Byrkjelo",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "elvebakk-bed-and-breakfast",
+    "namn": "Elvebakk Bed & Breakfast",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Breim",
+    "kortSkildring": "Liten og koseleg B&B mellom E39 og Storelva, like utanfor Reed, med utsikt mot fjell, vatn og bre.",
+    "tilbyr": [
+      "Tre soverom for opptil 6 personar, eige bad",
+      "Kontinental frukost inkludert",
+      "Kveldsmat etter avtale",
+      "Gjesterom med kaffi/te og gratis wifi",
+      "Grillplass, hage og parkering"
+    ],
+    "epost": "elvebakkbreim@gmail.com",
+    "nettstad": "https://elvebakkbnb.com/no",
+    "stikkord": [
+      "B&B",
+      "overnatting",
+      "frukost",
+      "rom",
+      "Reed",
+      "Breimsdalen"
+    ],
+    "kjelde": "https://elvebakkbnb.com/no",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "norsk-fjordhestgard",
+    "namn": "Norsk Fjordhestgard",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Breim",
+    "kortSkildring": "Stifting og hestesenter i Breim med ridehall, stallplassar og anlegg for fjordhestar.",
+    "tilbyr": [
+      "Oppstalling av hest (21 stallplassar, paddockar)",
+      "Leige av ridehall 20 x 60 m",
+      "Utleige av kantine og uteområde",
+      "Vinterlagring av campingvogn, bubil og båt"
+    ],
+    "nettstad": "https://www.norskfjordhestgard.com",
+    "stikkord": [
+      "fjordhest",
+      "hest",
+      "ridehall",
+      "oppstalling",
+      "vinterlagring",
+      "Gloppeneventyret"
+    ],
+    "kjelde": "https://www.norskfjordhestgard.com/prisliste",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "reed-sauna",
+    "namn": "Reed Sauna",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Breim",
+    "kortSkildring": "Moderne badstove ved Breimsvatnet på Reed, med bading i vatnet rett utanfor døra.",
+    "tilbyr": [
+      "Privat badstove i 1,5 time",
+      "Drop-in i 1,5 time",
+      "Gåvekort",
+      "Bading i Breimsvatnet"
+    ],
+    "nettstad": "https://sandanefjordsauna.no/collections/reed-sauna",
+    "stikkord": [
+      "badstove",
+      "sauna",
+      "Breimsvatnet",
+      "isbading",
+      "Reed"
+    ],
+    "kjelde": "https://sandanefjordsauna.no/collections/reed-sauna",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "hjelle-gardsbryggeri",
+    "namn": "Hjelle Gardsbryggeri",
+    "type": "bedrift",
+    "kategori": "lokalmat",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Gardsbryggeri på Hjelle ved Byrkjelo.",
+    "tilbyr": [
+      "Øl brygga på garden"
+    ],
+    "lokalmat": [
+      "drikke"
+    ],
+    "adresse": "Hjellevegen 115, 6826 Byrkjelo",
+    "stikkord": [
+      "øl",
+      "bryggeri",
+      "gardsbryggeri",
+      "Hjelle"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/921241941",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "gardsfargeriet-midtbo",
+    "namn": "Gardsfargeriet Midtbø",
+    "type": "bedrift",
+    "kategori": "butikk-og-handel",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Gardsfargeri på Byrkjelo som bearbeider og fargar ull.",
+    "tilbyr": [
+      "Farga ull og garn"
+    ],
+    "stikkord": [
+      "garn",
+      "ull",
+      "farging",
+      "handverk"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/927631113",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "karin-vardals-vevstudio",
+    "namn": "Karin Vårdals Vevstudio",
+    "type": "bedrift",
+    "kategori": "butikk-og-handel",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Vevstudio på Myklebust med vevnader, garn og suvenirar.",
+    "tilbyr": [
+      "Vevnader",
+      "Garn",
+      "Suvenirar"
+    ],
+    "stikkord": [
+      "vev",
+      "vevnad",
+      "garn",
+      "suvenir",
+      "Myklebust"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/946767077",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "maries-sy",
+    "namn": "Maries Sy",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Breim",
+    "kortSkildring": "Systove i Breim som syr klede.",
+    "tilbyr": [
+      "Sying av klede"
+    ],
+    "stikkord": [
+      "sying",
+      "syerske",
+      "klede"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/999608566",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "unters-hagemobler",
+    "namn": "Unters Hagemøbler",
+    "type": "bedrift",
+    "kategori": "butikk-og-handel",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Lagar hagemøblar på Byrkjelo.",
+    "tilbyr": [
+      "Hagemøblar"
+    ],
+    "stikkord": [
+      "hagemøblar",
+      "møblar",
+      "hage"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/920157238",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "egge-lodemel",
+    "namn": "Egge-Lødemel",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Klesbutikk på Byrkjelo.",
+    "tilbyr": [
+      "Klede"
+    ],
+    "stikkord": [
+      "klede",
+      "klesbutikk"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/914087058",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "byrkjelo-bygg-og-snikkarverksemd",
+    "namn": "Byrkjelo Bygg og Snikkarverksemd",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bygg- og snikkarverksemd på Byrkjelo.",
+    "tilbyr": [
+      "Snikkararbeid",
+      "Bygningsartiklar"
+    ],
+    "stikkord": [
+      "snikkar",
+      "bygg",
+      "tømrar"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/910938347",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "bergheim-kleppe-fugle-mur-og-puss",
+    "namn": "Bergheim Kleppe Fugle Mur og Puss",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Mur- og pussarbeid frå Byrkjelo.",
+    "tilbyr": [
+      "Murarbeid",
+      "Pussarbeid"
+    ],
+    "stikkord": [
+      "murar",
+      "puss",
+      "mur"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/959684073",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "kleppe-multiservice",
+    "namn": "Kleppe Multiservice",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Maskinentreprenør på Byrkjelo.",
+    "tilbyr": [
+      "Grunnarbeid"
+    ],
+    "adresse": "Bjørnarheimsura 26, 6826 Byrkjelo",
+    "stikkord": [
+      "graving",
+      "grunnarbeid",
+      "maskinentreprenør"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/929719611",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "gasemyr-maskin-og-landbruk",
+    "namn": "Gåsemyr Maskin og Landbruk",
+    "type": "bedrift",
+    "kategori": "bygg-og-handverk",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Maskinentreprenør på Byrkjelo med grunnarbeid og landbrukstenester.",
+    "tilbyr": [
+      "Grunnarbeid",
+      "Landbrukstenester"
+    ],
+    "adresse": "Breimsvegen 2262, 6826 Byrkjelo",
+    "stikkord": [
+      "graving",
+      "grunnarbeid",
+      "landbruk",
+      "maskinentreprenør"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/934914244",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "myklebust-maskinutleige",
+    "namn": "Myklebust Maskinutleige",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Utleige av bygge- og anleggsmaskiner på Byrkjelo.",
+    "tilbyr": [
+      "Utleige av anleggsmaskiner og utstyr"
+    ],
+    "stikkord": [
+      "maskinutleige",
+      "utleige",
+      "anleggsmaskin"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/818293402",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "joar-eide-utleige",
+    "namn": "Joar Eide Utleige",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Utleige av bygge- og anleggsmaskiner på Byrkjelo.",
+    "tilbyr": [
+      "Utleige av anleggsmaskiner og utstyr"
+    ],
+    "stikkord": [
+      "maskinutleige",
+      "utleige",
+      "anleggsmaskin"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/933757765",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "breim-byggkontroll",
+    "namn": "Breim Byggkontroll",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Byggteknisk rådgjeving og kontroll.",
+    "tilbyr": [
+      "Byggteknisk rådgjeving",
+      "Kontroll av byggjearbeid"
+    ],
+    "adresse": "Bjørnarheimsura 14, 6826 Byrkjelo",
+    "stikkord": [
+      "byggkontroll",
+      "takst",
+      "rådgjeving",
+      "bygg"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/829309122",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "flotre-maskin",
+    "namn": "Fløtre Maskin",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Sal av maskiner og utstyr til jord- og skogbruk.",
+    "tilbyr": [
+      "Landbruksmaskiner",
+      "Skogsutstyr"
+    ],
+    "adresse": "Fjellvegen 22, 6826 Byrkjelo",
+    "stikkord": [
+      "traktor",
+      "landbruksmaskiner",
+      "skogsutstyr"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/997721977",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "k-skotnes",
+    "namn": "K. Skotnes",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bilforretning på Byrkjelo.",
+    "tilbyr": [
+      "Sal av bilar"
+    ],
+    "adresse": "Myklebustdalen, 6826 Byrkjelo",
+    "stikkord": [
+      "bil",
+      "bilforretning",
+      "bruktbil"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/912516806",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "byrkjelo-auto",
+    "namn": "Byrkjelo Auto",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bilverkstad på Byrkjelo, skipa i 2025.",
+    "tilbyr": [
+      "Reparasjon og vedlikehald av bilar"
+    ],
+    "adresse": "Breimsvegen 1801, 6826 Byrkjelo",
+    "stikkord": [
+      "bilverkstad",
+      "verkstad",
+      "service",
+      "EU-kontroll"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/935338034",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "breim-bilpleie",
+    "namn": "Breim Bilpleie",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Bilpleie og reparasjon av bilar på Byrkjelo.",
+    "tilbyr": [
+      "Bilpleie",
+      "Reparasjon av bilar"
+    ],
+    "stikkord": [
+      "bilpleie",
+      "vask",
+      "verkstad"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/916653190",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "byrkjelo-taxi",
+    "namn": "Byrkjelo Taxi",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Drosje med base på Byrkjelo.",
+    "tilbyr": [
+      "Drosjekøyring"
+    ],
+    "stikkord": [
+      "taxi",
+      "drosje",
+      "skyss"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/969833913",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "breim-maskin-og-transport",
+    "namn": "Breim Maskin og Transport",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Breim",
+    "kortSkildring": "Maskin- og transportfirma i Breim.",
+    "tilbyr": [
+      "Godstransport"
+    ],
+    "adresse": "Hetlebakkane 41, 6827 Breim",
+    "stikkord": [
+      "transport",
+      "lastebil",
+      "maskin"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/831377682",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "nedreberg-transport",
+    "namn": "Nedreberg Transport",
+    "type": "bedrift",
+    "kategori": "bil-og-transport",
+    "stad": "Breim",
+    "kortSkildring": "Transportfirma i Breim.",
+    "tilbyr": [
+      "Godstransport"
+    ],
+    "adresse": "Høygardsvegen 285, 6827 Breim",
+    "stikkord": [
+      "transport",
+      "lastebil"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/832090662",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "byrkjelo-miljo-og-containerservice",
+    "namn": "Byrkjelo Miljø & Containerservice",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Containerteneste på Byrkjelo.",
+    "tilbyr": [
+      "Utleige av container",
+      "Bortkøyring av avfall"
+    ],
+    "stikkord": [
+      "container",
+      "avfall",
+      "miljø"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/969410834",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "nordas-og-reed",
+    "namn": "Nordås og Reed",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Breim",
+    "kortSkildring": "Veterinærteneste i Breim.",
+    "tilbyr": [
+      "Veterinærtenester"
+    ],
+    "adresse": "Skrøppavegen 176, 6827 Breim",
+    "stikkord": [
+      "veterinær",
+      "dyrlege",
+      "dyr"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/820175212",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "veterinar-torina-bergman-forde",
+    "namn": "Veterinær Torina Bergman Førde",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Veterinærteneste på Byrkjelo.",
+    "tilbyr": [
+      "Veterinærtenester"
+    ],
+    "adresse": "Holevegen 72, 6826 Byrkjelo",
+    "stikkord": [
+      "veterinær",
+      "dyrlege",
+      "dyr"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/933660397",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "meling-guiding",
+    "namn": "Meling Guiding",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Guiding og turar frå Byrkjelo.",
+    "tilbyr": [
+      "Guida turar"
+    ],
+    "stikkord": [
+      "guide",
+      "tur",
+      "fjelltur",
+      "guiding"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/928762319",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "ridelaerar-marthe-flotre",
+    "namn": "Ridelærar Marthe Fløtre",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Ridelærar på Byrkjelo.",
+    "tilbyr": [
+      "Rideundervisning"
+    ],
+    "stikkord": [
+      "riding",
+      "ridetimar",
+      "hest"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/916712782",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "fonndesign",
+    "namn": "Fonndesign",
+    "type": "bedrift",
+    "kategori": "butikk-og-handel",
+    "stad": "Breim",
+    "kortSkildring": "Vev og handverk frå Breim.",
+    "tilbyr": [
+      "Vev og handverk"
+    ],
+    "stikkord": [
+      "vev",
+      "handverk",
+      "design"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/980027309",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "reedesign",
+    "namn": "Reedesign",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Byrkjelo",
+    "kortSkildring": "Nettsider og IT-tenester for lag og organisasjonar.",
+    "tilbyr": [
+      "Nettsider",
+      "IT-tenester"
+    ],
+    "adresse": "Bergheim, 6826 Byrkjelo",
+    "stikkord": [
+      "nettside",
+      "IT",
+      "webdesign"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/913193814",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "visit-gloppen",
+    "namn": "Visit Gloppen",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "stad": "Breim",
+    "kortSkildring": "Reisemålsselskapet for Gloppen, med oversikt over opplevingar, overnatting og arrangement.",
+    "tilbyr": [
+      "Turistinformasjon",
+      "Arrangementskalender",
+      "Tips om opplevingar og overnatting"
+    ],
+    "adresse": "Skrøppavegen 2, 6827 Breim",
+    "nettstad": "https://www.visit-gloppen.no",
+    "stikkord": [
+      "turistinformasjon",
+      "reiseliv",
+      "arrangement",
+      "opplevingar"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/937014120",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "kollbotn-gard",
+    "namn": "Kollbotn Gard",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Breim",
+    "kortSkildring": "Gard i Breim med utleige av overnatting.",
+    "tilbyr": [
+      "Overnatting"
+    ],
+    "adresse": "Høygardsvegen 334, 6827 Breim",
+    "stikkord": [
+      "overnatting",
+      "gard",
+      "utleige"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/932221926",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "breimsvatn-camping",
+    "namn": "Breimsvatn Camping",
+    "type": "bedrift",
+    "kategori": "overnatting",
+    "stad": "Breim",
+    "kortSkildring": "Campingplass ved Breimsvatnet med faste plassar heile året og nokre plassar for kortare opphald.",
+    "tilbyr": [
+      "Faste campingplassar heile året",
+      "Plassar for kortare opphald"
+    ],
+    "nettstad": "https://www.facebook.com/BreimsvatnCamping",
+    "stikkord": [
+      "camping",
+      "campingplass",
+      "Breimsvatnet",
+      "bubil"
+    ],
+    "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/930332151",
+    "sjekka": "2026-11-24"
   }
 ]

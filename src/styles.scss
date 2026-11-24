@@ -1136,7 +1136,9 @@ button,
   background: var(--flate);
   color: var(--tekst);
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
 
   &:hover {
     border-color: var(--gras);
@@ -1235,4 +1237,177 @@ button,
       margin: 0 0 0.75rem;
     }
   }
+}
+
+/* Tips for deg (/for-deg) */
+
+.alder-sok {
+  max-width: 14rem;
+  margin-block: 1.5rem 1rem;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+}
+
+.alder-snarvegar {
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+
+  .knapp {
+    padding: 0.45rem 1.1rem;
+  }
+}
+
+/* Trening og fritid (/fritid) */
+
+.gren-val {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    border: 1px solid var(--kant);
+    border-radius: 999px;
+    background: var(--flate);
+    color: var(--tekst);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--fjord-lys);
+      color: var(--fjord-mork);
+    }
+
+    &.aktiv {
+      background: var(--fjord);
+      border-color: var(--fjord);
+      color: var(--flate);
+    }
+  }
+
+  .gren-tal {
+    font-size: 0.8rem;
+    opacity: 0.75;
+  }
+}
+
+.gren-overskrift {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 1.75rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--kant);
+
+  .gren-tal {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--tekst-svak);
+  }
+}
+
+.snarvegar-liste {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 0.75rem 1.5rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+/* Lokale til leige (/lokale) */
+
+.lokale-liste {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+}
+
+/* Korta er ikkje lenkjer, så dei skal ikkje lyfte seg ved peikar. */
+.lokale-kort {
+  &:hover {
+    transform: none;
+    box-shadow: var(--skugge);
+  }
+
+  h3,
+  p,
+  ul,
+  dl {
+    margin: 0;
+  }
+
+  .brikker {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.lokale-kort .lokale-plassar {
+  margin-top: 0.35rem;
+  font-weight: 600;
+  color: var(--fjord-mork);
+}
+
+.lokale-kort .lokale-praktisk {
+  margin-top: 0.6rem;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.lokale-kort .lokale-kontakt {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2rem 0.9rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--kant);
+  font-size: 0.95rem;
+
+  dt {
+    font-weight: 600;
+    color: var(--tekst-svak);
+  }
+
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+.lokale-kort .lokale-lenkjer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.85rem;
+
+  .knapp {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.95rem;
+  }
+}
+
+.lokale-kort .lokale-kjelde {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--tekst-svak);
 }

@@ -1,33 +1,38 @@
-import { Component, computed, inject, input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, computed, effect, inject, input } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { AktivitetKort } from '../components/aktivitet-kort';
-import { AKTIVITET_KATEGORIAR, AKTIVITET_TYPAR, MALGRUPPER } from '../models/aktivitet';
+import { AKTIVITET_KATEGORIAR, MALGRUPPER, erKamp } from '../models/aktivitet';
 import { STADER } from '../models/bedrift';
 import { AktivitetService, grupperPerManad } from '../services/aktivitet.service';
 
 type Endring = {
   sok?: string;
-  type?: string;
   kategori?: string;
   stad?: string;
   malgruppe?: string;
 };
 
 /**
- * Kva skjer i Gloppen: komande arrangement og faste aktivitetar.
+ * Kva skjer i Gloppen: komande arrangement, med kampar og stemne i eigen seksjon.
+ * Faste aktivitetar og treningar ligg under «Trening og fritid» (/fritid).
  * Filtra ligg i adressa, same som på bedriftsoversikta.
  */
 @Component({
   selector: 'app-aktivitetar',
-  imports: [AktivitetKort],
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
+  imports: [AktivitetKort, RouterLink],
   template: `
     <div class="innhald seksjon">
       <h1>Kva skjer i Gloppen?</h1>
       <p class="ingress">
-        Konsertar, marknader, møte, trening, kurs og treffpunkt for deg som bur i Gloppen.
+        Konsertar, kampar, marknader, møte og kurs for deg som bur i Gloppen. Lag, klubbar og faste
+        treningar finn du under <a routerLink="/fritid">Trening og fritid</a>. Vil du ha tips ut frå
+        alder? Sjå <a routerLink="/for-deg">For deg</a>. Kva som går på kino, finn du i
+        <a routerLink="/kino">kinoprogrammet</a>.
       </p>
 
-      <form class="filter filter-4" role="search" (submit)="$event.preventDefault()">
+      <form class="filter" role="search" (submit)="$event.preventDefault()">
         <div class="felt felt-brei">
           <label for="sok">Søk</label>
           <input
@@ -35,18 +40,9 @@ type Endring = {
             type="search"
             [value]="sok() ?? ''"
             (input)="oppdater({ sok: $any($event.target).value })"
-            placeholder="T.d. konsert, fotball, kor, marknad …"
+            placeholder="T.d. konsert, kamp, marknad …"
             autocomplete="off"
           />
-        </div>
-        <div class="felt">
-          <label for="type">Vis</label>
-          <select id="type" (change)="oppdater({ type: $any($event.target).value })">
-            <option value="" [selected]="!typeId()">Alt</option>
-            @for (t of typar; track t.id) {
-              <option [value]="t.id" [selected]="t.id === typeId()">{{ t.fleirtal }}</option>
-            }
-          </select>
         </div>
         <div class="felt">
           <label for="kategori">Kategori</label>
@@ -86,6 +82,15 @@ type Endring = {
         </div>
       }
 
+      @if (kampar().length > 0) {
+        <h2>Kampar og stemne</h2>
+        <ul class="kort-liste">
+          @for (a of kampar(); track a.id) {
+            <li><app-aktivitet-kort [aktivitet]="a" /></li>
+          }
+        </ul>
+      }
+
       @if (manadar().length > 0) {
         <h2>Arrangement</h2>
         @for (g of manadar(); track g.manad) {
@@ -98,15 +103,13 @@ type Endring = {
         }
       }
 
-      @if (faste().length > 0) {
-        <h2>Faste aktivitetar</h2>
-        <p class="treff">Lag, klubbar og treffpunkt som går att gjennom året.</p>
-        <ul class="kort-liste">
-          @for (a of faste(); track a.id) {
-            <li><app-aktivitet-kort [aktivitet]="a" /></li>
-          }
-        </ul>
-      }
+      <div class="boks">
+        <h2>Trening, lag og faste aktivitetar</h2>
+        <p>
+          Fotball, handball, turn, kor, dart og anna som går att kvar veke, har fått si eiga side.
+        </p>
+        <a class="knapp knapp-sekundar" routerLink="/fritid">Gå til Trening og fritid</a>
+      </div>
 
       <div class="boks tips">
         <h2>Manglar det noko?</h2>
@@ -127,24 +130,35 @@ export class Aktivitetar {
 
   // Kjem frå query-parametrane via withComponentInputBinding().
   readonly sok = input<string>();
+  /** Gamle lenkjer til «?type=fast» vert sende vidare til /fritid. */
   readonly type = input<string>();
   readonly kategori = input<string>();
   readonly stad = input<string>();
   readonly malgruppe = input<string>();
 
-  protected readonly typar = AKTIVITET_TYPAR;
   protected readonly kategoriar = AKTIVITET_KATEGORIAR;
   protected readonly stader = STADER;
   protected readonly malgrupper = MALGRUPPER;
   protected readonly tipsLenkje =
     'https://github.com/Nesdal/buigloppen/issues/new?title=' + encodeURIComponent('Ny aktivitet: ');
 
-  protected readonly typeId = computed(() =>
-    gyldig(
-      this.type(),
-      AKTIVITET_TYPAR.map((t) => t.id),
-    ),
-  );
+  constructor() {
+    effect(() => {
+      if (this.type() === 'fast') {
+        const { sok, kategori, stad, malgruppe } = this;
+        this.router.navigate(['/fritid'], {
+          queryParams: {
+            sok: sok() || null,
+            kategori: kategori() || null,
+            stad: stad() || null,
+            malgruppe: malgruppe() || null,
+          },
+          replaceUrl: true,
+        });
+      }
+    });
+  }
+
   protected readonly kategoriId = computed(() =>
     gyldig(
       this.kategori(),
@@ -162,22 +176,21 @@ export class Aktivitetar {
   protected readonly resultat = computed(() =>
     this.service.sok({
       sok: this.sok(),
-      type: this.typeId(),
+      type: 'arrangement',
       kategori: this.kategoriId(),
       stad: this.stadNamn(),
       malgruppe: this.malgruppeId(),
     }),
   );
 
+  protected readonly kampar = computed(() => this.resultat().filter(erKamp));
   protected readonly manadar = computed(() =>
-    grupperPerManad(this.resultat().filter((a) => a.type === 'arrangement')),
+    grupperPerManad(this.resultat().filter((a) => !erKamp(a))),
   );
-  protected readonly faste = computed(() => this.resultat().filter((a) => a.type === 'fast'));
 
   protected oppdater(endring: Endring): void {
     const neste: Required<Endring> = {
       sok: this.sok() ?? '',
-      type: this.typeId() ?? '',
       kategori: this.kategoriId() ?? '',
       stad: this.stadNamn() ?? '',
       malgruppe: this.malgruppeId() ?? '',
@@ -186,7 +199,6 @@ export class Aktivitetar {
     this.router.navigate([], {
       queryParams: {
         sok: neste.sok.trim() || null,
-        type: neste.type || null,
         kategori: neste.kategori || null,
         stad: neste.stad || null,
         malgruppe: neste.malgruppe || null,

@@ -1,8 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Aktivitet, AktivitetKategoriId, AktivitetType, Malgruppe } from '../models/aktivitet';
+import {
+  Aktivitet,
+  AktivitetKategoriId,
+  AktivitetType,
+  Malgruppe,
+  malgrupperForAlder,
+} from '../models/aktivitet';
 import { Stad } from '../models/bedrift';
 import aktivitetarData from '../data/aktivitetar.json';
 import { normaliser } from './bedrift.service';
+import { nynorskDato, storForbokstav } from '../dato';
 
 export interface AktivitetFilter {
   sok?: string;
@@ -10,6 +17,8 @@ export interface AktivitetFilter {
   stad?: Stad | null;
   type?: AktivitetType | null;
   malgruppe?: Malgruppe | null;
+  /** Idrett eller hobby, t.d. "Fotball". Skil ikkje mellom store og små bokstavar. */
+  gren?: string | null;
 }
 
 /** Dagens dato som ÅÅÅÅ-MM-DD i lokal tid. */
@@ -44,6 +53,7 @@ export function filtrerAktivitetar(
       .filter((a) => !filter.type || a.type === filter.type)
       .filter((a) => !filter.kategori || a.kategori === filter.kategori)
       .filter((a) => !filter.stad || a.stad === filter.stad)
+      .filter((a) => !filter.gren || normaliser(a.gren ?? '') === normaliser(filter.gren))
       // Aktivitetar utan målgruppe er opne for alle og passar difor alle filter.
       .filter(
         (a) => !filter.malgruppe || !a.malgruppe?.length || a.malgruppe.includes(filter.malgruppe),
@@ -53,6 +63,7 @@ export function filtrerAktivitetar(
         const tekst = normaliser(
           [
             a.tittel,
+            a.gren,
             a.kortSkildring,
             a.skildring,
             a.stad,
@@ -67,6 +78,54 @@ export function filtrerAktivitetar(
       })
       .sort(samanlikn)
   );
+}
+
+export interface Tilraading {
+  /** Målgruppene alderen høyrer til. */
+  malgrupper: Malgruppe[];
+  /** Lag, nettverk og andre faste aktivitetar som er merkte for alderen. */
+  faste: Aktivitet[];
+  /** Komande arrangement som er merkte for alderen. */
+  arrangement: Aktivitet[];
+  /** Dei neste arrangementa som er opne for alle. */
+  opne: Aktivitet[];
+}
+
+/**
+ * Tilrår aktivitetar ut frå alder. Det som er merkt for målgruppa til personen, kjem først.
+ * Aktivitetar merkte for andre aldrar (t.d. berre barn) vert aldri tilrådde.
+ */
+export function tilraad(
+  aktivitetar: readonly Aktivitet[],
+  alder: number,
+  idag: string,
+  talOpne = 6,
+): Tilraading {
+  const malgrupper = malgrupperForAlder(alder);
+  const aktuelle = filtrerAktivitetar(aktivitetar, {}, idag);
+  const forDeg = aktuelle.filter((a) => a.malgruppe?.some((m) => malgrupper.includes(m)));
+  return {
+    malgrupper,
+    faste: forDeg.filter((a) => a.type === 'fast'),
+    arrangement: forDeg.filter((a) => a.type === 'arrangement'),
+    opne: aktuelle
+      .filter((a) => a.type === 'arrangement' && !a.malgruppe?.length)
+      .slice(0, talOpne),
+  };
+}
+
+/** Grenene som finst blant aktivitetane, med tal, sorterte alfabetisk. */
+export function grener(aktivitetar: readonly Aktivitet[]): { namn: string; tal: number }[] {
+  const tal = new Map<string, { namn: string; tal: number }>();
+  for (const a of aktivitetar) {
+    const namn = a.gren?.trim();
+    if (!namn) continue;
+    const nokkel = normaliser(namn);
+    const g = tal.get(nokkel) ?? { namn, tal: 0 };
+    g.tal++;
+    tal.set(nokkel, g);
+  }
+  return [...tal.values()].sort((a, b) => a.namn.localeCompare(b.namn, 'nn'));
 }
 
 function samanlikn(a: Aktivitet, b: Aktivitet): number {
@@ -88,22 +147,12 @@ function somDato(iso: string): Date {
 /** T.d. "laurdag 12. desember" eller "12.–14. desember". Tom tekst for faste aktivitetar. */
 export function datoTekst(a: Aktivitet, medAar = false): string {
   if (!a.dato) return '';
-  const fra = somDato(a.dato);
-  const aar = medAar ? { year: 'numeric' as const } : {};
   if (!a.sluttdato || a.sluttdato === a.dato) {
-    return fra.toLocaleDateString('nn-NO', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      ...aar,
-    });
+    return nynorskDato(a.dato, { vekedag: 'lang', aar: medAar });
   }
-  const til = somDato(a.sluttdato);
-  const sameManad = fra.getMonth() === til.getMonth() && fra.getFullYear() === til.getFullYear();
-  const start = sameManad
-    ? `${fra.getDate()}.`
-    : fra.toLocaleDateString('nn-NO', { day: 'numeric', month: 'long' });
-  return `${start}–${til.toLocaleDateString('nn-NO', { day: 'numeric', month: 'long', ...aar })}`;
+  const sameManad = a.dato.slice(0, 7) === a.sluttdato.slice(0, 7);
+  const start = nynorskDato(a.dato, { manad: sameManad ? false : 'lang' });
+  return `${start}–${nynorskDato(a.sluttdato, { aar: medAar })}`;
 }
 
 /** T.d. "kl. 19:00–22:00" eller "kl. 19:00". */
@@ -128,8 +177,8 @@ export function grupperPerManad(
     const nokkel = a.dato.slice(0, 7);
     let gruppe = grupper.find((g) => g.nokkel === nokkel);
     if (!gruppe) {
-      const manad = somDato(a.dato).toLocaleDateString('nn-NO', { month: 'long', year: 'numeric' });
-      gruppe = { nokkel, manad: manad.charAt(0).toUpperCase() + manad.slice(1), aktivitetar: [] };
+      const manad = nynorskDato(a.dato, { dag: false, aar: true });
+      gruppe = { nokkel, manad: storForbokstav(manad), aktivitetar: [] };
       grupper.push(gruppe);
     }
     gruppe.aktivitetar.push(a);
@@ -162,7 +211,7 @@ export function lagIcs(a: Aktivitet, url: string): string {
     // Utan sluttdato og med sluttid før starttid (t.d. julebord 18:00–02:30) sluttar det dagen etter.
     const overNatta = !a.sluttdato && !!a.sluttid && a.sluttid < a.starttid;
     const sluttDag = a.sluttdato ?? (overNatta ? nesteDag(a.dato) : a.dato);
-    slutt =`DTEND:${dato(sluttDag)}T${tid(a.sluttid ?? a.starttid)}`;
+    slutt = `DTEND:${dato(sluttDag)}T${tid(a.sluttid ?? a.starttid)}`;
   } else {
     start = `DTSTART;VALUE=DATE:${dato(a.dato)}`;
     slutt = `DTEND;VALUE=DATE:${dato(nesteDag(a.sluttdato ?? a.dato))}`;
@@ -206,6 +255,16 @@ export class AktivitetService {
   /** Dei neste arrangementa, til framsida. */
   neste(tal: number, idag = isoDato()): Aktivitet[] {
     return this.sok({ type: 'arrangement' }, idag).slice(0, tal);
+  }
+
+  /** Dei neste kampane og idrettsarrangementa. */
+  nesteKampar(tal: number, idag = isoDato()): Aktivitet[] {
+    return this.sok({ type: 'arrangement', kategori: 'idrett' }, idag).slice(0, tal);
+  }
+
+  /** Aktivitetar tilrådde ut frå alder, til «For deg»-sida. */
+  tilraad(alder: number, idag = isoDato()): Tilraading {
+    return tilraad(this.aktivitetar, alder, idag);
   }
 
   /** Aktuelle aktivitetar som ei bedrift står bak. */

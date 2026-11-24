@@ -30,6 +30,8 @@ const MELD_INN =
  */
 @Component({
   selector: 'app-lokalmat',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [RouterLink, LokalmatKort, AktivitetKort],
   template: `
     <div class="innhald seksjon">

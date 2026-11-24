@@ -5,6 +5,8 @@ import { OppslagService, sendInnLenkje } from '../services/oppslag.service';
 
 @Component({
   selector: 'app-nytt',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [RouterLink, OppslagKort],
   template: `
     <div class="innhald seksjon">

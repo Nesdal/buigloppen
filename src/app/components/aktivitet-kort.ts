@@ -2,6 +2,7 @@ import { Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Aktivitet, finnAktivitetKategori, malgruppeTekst } from '../models/aktivitet';
 import { naarTekst } from '../services/aktivitet.service';
+import { nynorskDato } from '../dato';
 
 @Component({
   selector: 'app-aktivitet-kort',
@@ -24,15 +25,10 @@ import { naarTekst } from '../services/aktivitet.service';
           }
         </span>
         <span class="kort-naar">{{ naar() }}</span>
-        <span class="kort-meta">
-          {{ kategori().namn }} · {{ stad() }}
-        </span>
+        <span class="kort-meta"> {{ aktivitet().gren ?? kategori().namn }} · {{ stad() }} </span>
         <span class="kort-tekst">{{ aktivitet().kortSkildring }}</span>
         <span class="brikker">
           <span class="brikke">{{ malgruppe() }}</span>
-          @if (aktivitet().pris; as pris) {
-            <span class="brikke">{{ pris }}</span>
-          }
         </span>
       </span>
     </a>
@@ -50,10 +46,9 @@ export class AktivitetKort {
   protected readonly dag = computed(() => {
     const dato = this.aktivitet().dato;
     if (this.aktivitet().type !== 'arrangement' || !dato) return null;
-    const d = new Date(dato + 'T12:00:00');
     return {
-      dag: d.getDate(),
-      manad: d.toLocaleDateString('nn-NO', { month: 'short' }).replace('.', ''),
+      dag: Number(dato.slice(8, 10)),
+      manad: nynorskDato(dato, { dag: false, manad: 'kort' }),
     };
   });
 }

@@ -3,5 +3,5 @@
   "framework": "angular",
   "buildCommand": "npm run build",
   "outputDirectory": "dist/buigloppen/browser",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.csr.html" }]
 }

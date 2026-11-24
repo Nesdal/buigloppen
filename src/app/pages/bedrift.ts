@@ -4,12 +4,16 @@ import { AktivitetKort } from '../components/aktivitet-kort';
 import { AktivitetService } from '../services/aktivitet.service';
 import { delPraktisk, finnKategori, typeNamn } from '../models/bedrift';
 import { finnMatslag, finnSalskanal } from '../models/lokalmat';
+import { KINO_BEDRIFT_ID } from '../models/kino';
 import { BedriftService } from '../services/bedrift.service';
 import { OppslagKort } from '../components/oppslag-kort';
 import { OppslagService, sendInnLenkje } from '../services/oppslag.service';
+import { nynorskDato } from '../dato';
 
 @Component({
   selector: 'app-bedrift',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [RouterLink, AktivitetKort, OppslagKort],
   template: `
     <div class="innhald seksjon smal">
@@ -35,6 +39,11 @@ import { OppslagService, sendInnLenkje } from '../services/oppslag.service';
                 <li><app-oppslag-kort [oppslag]="o" [visBedrift]="false" /></li>
               }
             </ul>
+          }
+          @if (b.id === kinoBedriftId) {
+            <p class="handlingar">
+              <a class="knapp" routerLink="/kino">Sjå kinoprogrammet</a>
+            </p>
           }
           @if (b.skildring) {
             <p>{{ b.skildring }}</p>
@@ -68,14 +77,18 @@ import { OppslagService, sendInnLenkje } from '../services/oppslag.service';
               <h2>Lokalmat</h2>
               <p class="lokalmat-matslag">
                 @for (m of matslag(); track m.id) {
-                  <span><span aria-hidden="true">{{ m.ikon }}</span> {{ m.namn }}</span>
+                  <span
+                    ><span aria-hidden="true">{{ m.ikon }}</span> {{ m.namn }}</span
+                  >
                 }
               </p>
               @if (sal().length) {
                 <h3>Slik får du kjøpt det</h3>
                 <ul class="lokalmat-sal">
                   @for (s of sal(); track s.id) {
-                    <li><strong>{{ s.namn }}:</strong> {{ s.forklaring }}</li>
+                    <li>
+                      <strong>{{ s.namn }}:</strong> {{ s.forklaring }}
+                    </li>
                   }
                 </ul>
               }
@@ -103,15 +116,21 @@ import { OppslagService, sendInnLenkje } from '../services/oppslag.service';
             }
             @if (b.telefon) {
               <dt>Telefon</dt>
-              <dd><a [href]="telefonlenkje()">{{ b.telefon }}</a></dd>
+              <dd>
+                <a [href]="telefonlenkje()">{{ b.telefon }}</a>
+              </dd>
             }
             @if (b.epost) {
               <dt>E-post</dt>
-              <dd><a [href]="'mailto:' + b.epost">{{ b.epost }}</a></dd>
+              <dd>
+                <a [href]="'mailto:' + b.epost">{{ b.epost }}</a>
+              </dd>
             }
             @if (b.nettstad) {
               <dt>Nettstad</dt>
-              <dd><a [href]="b.nettstad" target="_blank" rel="noopener">{{ b.nettstad }}</a></dd>
+              <dd>
+                <a [href]="b.nettstad" target="_blank" rel="noopener">{{ b.nettstad }}</a>
+              </dd>
             }
           </dl>
 
@@ -158,6 +177,7 @@ export class BedriftSide {
 
   protected readonly bedrift = computed(() => this.service.hent(this.id()));
   protected readonly aktivitetar = computed(() => this.aktivitetService.forBedrift(this.id()));
+  protected readonly kinoBedriftId = KINO_BEDRIFT_ID;
   protected readonly oppslag = computed(() => this.oppslagService.forBedrift(this.id()));
   protected readonly praktisk = computed(() => (this.bedrift()?.praktisk ?? []).map(delPraktisk));
   protected readonly sendInn = computed(() => sendInnLenkje(this.bedrift()?.namn));
@@ -174,11 +194,7 @@ export class BedriftSide {
   protected readonly datoTekst = computed(() => {
     const dato = this.bedrift()?.sjekka;
     if (!dato) return '';
-    return new Date(dato + 'T12:00:00').toLocaleDateString('nn-NO', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    });
+    return nynorskDato(dato, { aar: true });
   });
   protected readonly meldFeil = computed(
     () =>

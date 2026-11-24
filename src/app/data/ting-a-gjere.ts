@@ -5,6 +5,8 @@
  */
 export interface Framheving {
   bedriftId: string;
+  /** Eiga side kortet skal lenkje til i staden for sida til bedrifta, t.d. "/kino". */
+  lenkje?: string;
   ikon: string;
   overskrift: string;
   tekst: string;
@@ -25,8 +27,9 @@ export const TING_A_GJERE: readonly Framheving[] = [
   },
   {
     bedriftId: 'trivselshagen-kino',
+    lenkje: '/kino',
     ikon: '🎬',
-    overskrift: 'Kino',
-    tekst: 'Film for store og små i kulturhuset Trivselshagen.',
+    overskrift: 'Kino og kultursal',
+    tekst: 'Film, konsertar og teater i kulturhuset Trivselshagen.',
   },
 ];

@@ -10,7 +10,7 @@
 //   arrangementssidene og hentar dei som er endra dei siste månadene. Arrangement som alt er
 //   importerte og framleis er komande, vert alltid henta på nytt.
 // - Arrangement som er importerte før, får ny dato, tid, tittel og kort skildring frå kjelda.
-//   Felt du har retta for hand (kategori, stad, lokale, målgruppe, pris, arrangør, bedriftId,
+//   Felt du har retta for hand (kategori, stad, lokale, målgruppe, arrangør, bedriftId,
 //   stikkord, skildring, påmelding) vert ikkje overskrivne.
 // - Importerte arrangement som ikkje lenger står i sitemap (avlyste/sletta), vert fjerna.
 //   Arrangement som er over, vert fjerna. Alt anna i fila vert ikkje rørt.
@@ -139,6 +139,8 @@ const ARRANGOR = [
   ['Sølvane Gard', 'Sølvane Gard', 'solvane-gard'],
   ['Lauget', 'Lauget Kaffibar', 'lauget-kaffibar'],
   ['Nordfjord Folkemuseum', 'Nordfjord Folkemuseum', undefined],
+  ['Holvikejekta', 'Nordfjord Folkemuseum', 'holvikejekta'],
+  ['Stallane', 'Stallane på Øyrane', 'stallane-pa-oyrane'],
 ];
 
 function kategori(tittel) {
@@ -193,7 +195,6 @@ function tilAktivitet(e) {
   }
   a.starttid = start.tid;
   if (slutt && !c.endDateHidden) a.sluttid = slutt.tid;
-  if (/gratis/i.test(kort)) a.pris = 'Gratis';
   const arr = ARRANGOR.find(([k]) => namn.includes(k) || tittel.includes(k));
   if (arr) {
     a.arrangor = arr[1];
@@ -213,7 +214,6 @@ const HANDFELT = [
   'stad',
   'lokale',
   'malgruppe',
-  'pris',
   'arrangor',
   'bedriftId',
   'stikkord',
@@ -238,7 +238,6 @@ const FELTREKKJE = [
   'naar',
   'sesong',
   'malgruppe',
-  'pris',
   'arrangor',
   'bedriftId',
   'pamelding',

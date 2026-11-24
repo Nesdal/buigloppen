@@ -11,17 +11,26 @@ import {
   tidTekst,
 } from '../services/aktivitet.service';
 import { BedriftService } from '../services/bedrift.service';
+import { nynorskDato } from '../dato';
 
 @Component({
   selector: 'app-aktivitet',
+  // Innhaldet avheng av dagens dato, så det vert teikna på nytt i nettlesaren.
+  host: { ngSkipHydration: 'true' },
   imports: [RouterLink],
   template: `
     <div class="innhald seksjon smal">
-      <a routerLink="/aktivitetar" class="tilbake">← Kva skjer i Gloppen</a>
+      @if (aktivitet()?.type === 'fast') {
+        <a routerLink="/fritid" class="tilbake">← Trening og fritid</a>
+      } @else {
+        <a routerLink="/aktivitetar" class="tilbake">← Kva skjer i Gloppen</a>
+      }
 
       @if (aktivitet(); as a) {
         <article>
-          <p class="kort-meta">{{ kategori()?.ikon }} {{ kategori()?.namn }} · {{ a.stad }}</p>
+          <p class="kort-meta">
+            {{ kategori()?.ikon }} {{ a.gren ?? kategori()?.namn }} · {{ a.stad }}
+          </p>
           <h1>
             {{ a.tittel }}
             @if (a.eksempel) {
@@ -61,10 +70,6 @@ import { BedriftService } from '../services/bedrift.service';
             </dd>
             <dt>For</dt>
             <dd>{{ malgruppe() }}</dd>
-            @if (a.pris) {
-              <dt>Pris</dt>
-              <dd>{{ a.pris }}</dd>
-            }
             @if (a.arrangor || bedrift()) {
               <dt>Arrangør</dt>
               <dd>
@@ -170,11 +175,7 @@ export class AktivitetSide {
   protected readonly sjekka = computed(() => {
     const dato = this.aktivitet()?.sjekka;
     if (!dato) return '';
-    return new Date(dato + 'T12:00:00').toLocaleDateString('nn-NO', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    });
+    return nynorskDato(dato, { aar: true });
   });
   protected readonly meldFeil = computed(
     () =>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { FERSK_DAGAR, Oppslag, STANDARD_VARIGHEIT_DAGAR } from '../models/oppslag';
 import oppslagData from '../data/oppslag.json';
 import { isoDato } from './aktivitet.service';
+import { nynorskDato } from '../dato';
 
 function somDato(iso: string): Date {
   // Midt på dagen, så tidssone aldri flyttar datoen.
@@ -39,7 +40,7 @@ export function aktiveOppslag(oppslag: readonly Oppslag[], idag: string): Oppsla
 
 /** T.d. "20. november". */
 export function kortDato(iso: string): string {
-  return somDato(iso).toLocaleDateString('nn-NO', { day: 'numeric', month: 'long' });
+  return nynorskDato(iso);
 }
 
 /**

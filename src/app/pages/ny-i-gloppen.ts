@@ -43,9 +43,18 @@ import { KART_SANDANE } from '../data/kart-sandane';
       <h2>Bli kjend</h2>
       <p>
         Den beste måten å kome inn i bygda på er ofte å bli med på noko. Under
-        <a routerLink="/aktivitetar">Kva skjer</a> finn du konsertar, marknader og folkemøte, og
-        <a routerLink="/aktivitetar" [queryParams]="{ type: 'fast' }">faste aktivitetar</a> som kor,
-        idrettslag og treffpunkt.
+        <a routerLink="/aktivitetar">Kva skjer</a> finn du konsertar, kampar, marknader og
+        folkemøte. Under <a routerLink="/fritid">Trening og fritid</a> finn du idrettslag, kor,
+        klubbar og treffpunkt som møtest fast.
+      </p>
+      <p>
+        Er du under 40, er <a routerLink="/aktivitet/gloppen-u40">Gloppen U40</a> ein god stad å
+        starte. Det er eit nettverk for unge vaksne i Gloppen med treff, turar og sosiale kveldar,
+        og ein enkel måte å bli kjend med folk på når du er ny.
+      </p>
+      <p>
+        Under <a routerLink="/for-deg">For deg</a> kan du skrive inn alderen din og få tips om lag,
+        nettverk og arrangement som passar.
       </p>
 
       <h2>Opplevingar og fritid</h2>

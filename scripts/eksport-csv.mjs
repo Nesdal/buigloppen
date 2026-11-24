@@ -1,5 +1,5 @@
-// Eksporterer bedriftslista, aktivitetane og oppslaga til CSV, t.d. for import i Wix CMS (visit-gloppen.no).
-// Køyr: npm run eksport:csv  → skriv til dist/bedrifter.csv, dist/aktivitetar.csv og dist/oppslag.csv
+// Eksporterer bedriftslista, aktivitetane, oppslaga og lokala til CSV, t.d. for import i Wix CMS (visit-gloppen.no).
+// Køyr: npm run eksport:csv  → skriv til dist/bedrifter.csv, dist/aktivitetar.csv, dist/oppslag.csv og dist/lokale.csv
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -63,8 +63,8 @@ eksporter('aktivitetar', [
   'sluttid',
   'naar',
   'sesong',
+  'gren',
   'malgruppe',
-  'pris',
   'arrangor',
   'bedriftId',
   'pamelding',
@@ -77,3 +77,25 @@ eksporter('aktivitetar', [
 ]);
 
 eksporter('oppslag', ['id', 'bedriftId', 'type', 'tittel', 'tekst', 'fra', 'til', 'lenkje', 'kjelde']);
+
+eksporter('lokale', [
+  'id',
+  'namn',
+  'slag',
+  'stad',
+  'bygd',
+  'kortSkildring',
+  'plassar',
+  'plassarTekst',
+  'fasilitetar',
+  'praktisk',
+  'utleigar',
+  'kontakt',
+  'telefon',
+  'epost',
+  'nettstad',
+  'booking',
+  'adresse',
+  'kjelde',
+  'sjekka',
+]);

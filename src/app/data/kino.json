@@ -1,0 +1,282 @@
+{
+  "henta": "2026-11-24",
+  "kjelde": "https://ebillett.no/trivselshagen/events/daily",
+  "filmar": [
+    {
+      "id": "the-hunger-games-sunrise-on-the-reaping",
+      "tittel": "The Hunger Games: Sunrise on the Reaping",
+      "sjanger": "Eventyr, Action",
+      "aldersgrense": "12",
+      "lengd": 158,
+      "omtale": "HUNGER GAMES er tilbake på arenaen, der den unge Haymitch er valgt ut som Distrikt 12s deltaker til den andre Quarter Quell.\n\nSUNRISE ON THE REAPING er den nyeste forhistorien i Hunger Games-sagaen, og utspiller seg 24 år før hendelsene i Katniss Everdeens originale trilogi, noe som plasserer den omtrent fire tiår etter den siste fortellingen The Hunger Games: The Ballad of Songbirds & Snakes. Historien dreier seg om det skjebnesvangre året da Haymitch Abernathy, Katniss' og Peetas fremtidige mentor, blir valgt ut til å delta i den andre Quarter Quell, en begivenhet som drastisk endrer spillereglene for dødslekene. I motsetning til de vanlige to tributtene per distrikt skal hvert distrikt i stedet sende fire, noe som resulterer i 48 deltakere i arenaen – det største antallet i Panems historie, dobbelt så mange ofre og en enda lavere sjanse for overlevelse.",
+      "visingar": [
+        {
+          "dato": "2026-11-27",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10760"
+        },
+        {
+          "dato": "2026-12-11",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10837"
+        }
+      ]
+    },
+    {
+      "id": "hexe-det-magiske-riket",
+      "tittel": "Hexe: det magiske riket",
+      "sjanger": "Familiefilm, Eventyr, Animasjon",
+      "aldersgrense": "6",
+      "lengd": 109,
+      "omtale": "En magisk oppveksthistorie fra Walt Disney Animation Studios\n\nBillie er en impulsiv og ukonvensjonell tenåringsjente. En dag oppdager hun hemmelige magiske evner som kaster henne inn i en spektakulær reise til et enormt, magisk rike kalt Hexe.",
+      "visingar": [
+        {
+          "dato": "2026-11-29",
+          "tid": "17:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Norsk tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10743"
+        },
+        {
+          "dato": "2026-12-13",
+          "tid": "17:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Norsk tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10835"
+        }
+      ]
+    },
+    {
+      "id": "ebenezer",
+      "tittel": "Ebenezer",
+      "sjanger": "Sort komedie, Fantasy, Drama",
+      "aldersgrense": "12",
+      "lengd": 115,
+      "omtale": "En tolkning av Charles Dickens' klassiske eventyr\n\nEn spennende spøkelseshistorie basert på Charles Dickens' klassiske julefortelling om Ebenezer Scrooge. Johnny Depp gjør comeback i rollen som den sure og gniene Scrooge, hvis uskikkelige atferd blir konfrontert av tre spøkelser som representerer hans fortid, nåtid og fremtid.",
+      "visingar": [
+        {
+          "dato": "2026-11-29",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10821"
+        }
+      ]
+    },
+    {
+      "id": "wild-horse-nine",
+      "tittel": "Wild Horse Nine",
+      "sjanger": "Sort komedie, Drama",
+      "aldersgrense": "15",
+      "lengd": 116,
+      "omtale": "Wild Horse Nine er en film av Oscar-vinner Martin McDonagh (The Banshees of Inisherin, Three Billboards Outside Ebbing, Missouri).\n\nKort tid før statskuppet i Chile i 1973 blir CIA-agentene Chris (Malkovich) og Lee (Rockwell) sendt fra Santiago til Påskeøya. De mangeårige partnerne terger hverandre både med sine mørke fortider og med nye konspirasjonsteorier, mens Chris knytter bekjentskap med et par opprørske studenter (di Giralamo og Salas), noe som kan snu hele turen på hodet.",
+      "visingar": [
+        {
+          "dato": "2026-12-04",
+          "tid": "19:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10748"
+        },
+        {
+          "dato": "2026-12-06",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10750"
+        }
+      ]
+    },
+    {
+      "id": "katten-med-hatten",
+      "tittel": "Katten med hatten",
+      "sjanger": "Komedie, Familiefilm, Barnefilm, Animasjon",
+      "aldersgrense": "6",
+      "lengd": 107,
+      "omtale": "Møt Katten med hatten – som du aldri har sett ham før! Fra den magiske fantasien til Dr. Seuss kommer Katten med hatten til det store lerretet i sin første animerte kinofilm – et helt nytt, episk eventyr der rampestreker, magi og kaos råder\n\nKatten gjør det han kan best: sprer glede til barn på sin unike, morsomme og uimotståelig frekke måte, og tar publikum med på en fantastisk reise gjennom en verden de aldri har sett før.\n\nI filmen får vår helt sitt tøffeste oppdrag hittil for I.I.I.I. (Instituttet for Institusjon av Inspirasjon og Imaginasjon, AS): å muntre opp Gabby og Sebastian, et søskenpar som sliter med å tilpasse seg etter å ha flyttet til en ny by. Katten er kjent for å ta ting litt for langt – og dette kan være hans siste sjanse til å bevise hva han er god for... eller miste den magiske hatten sin!\n\nRegissert av Alessandro Carloni og Erica Rivinoja, markerer \"Katten med hatten\" Warner Bros. Pictures Animations første helaftens kinofilm. Filmen kommer på kino 4. desember, med både norsk og engelsk tale.",
+      "visingar": [
+        {
+          "dato": "2026-12-06",
+          "tid": "17:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10749"
+        }
+      ]
+    },
+    {
+      "id": "caravaggio-exhibition-on-screen",
+      "tittel": "Caravaggio (Exhibition on Screen)",
+      "lengd": 100,
+      "omtale": "Mysterium, intriger, skjønnhet, lidenskap, mord – se Caravaggio i et helt nytt lys i denne dramatiske biografien.\n\nFem år i arbeid, og dette er den mest omfattende filmen som noensinne er laget om denne revolusjonerende kunstneren. Med førstehånds vitnesbyrd fra kunstneren selv, like før hans mystiske forsvinning, avdekker filmen Caravaggio som aldri før. Med mesterverk etter mesterverk og bidrag fra ledende eksperter fra hele verden, tar Caravaggio publikum med inn i de skjulte historiene bak kunstnerens liv – og setter sammen sporene som ligger gjemt i hans utrolige kunst.\n\nCaravaggios mesterverk er blant kunsthistoriens mest gjenkjennelige. Ingen andre bruker hans signaturblanding av dramatisk lys, rå naturalisme og dristige, slående figurer. De forbløffende maleriene har fengslet publikum i århundrer. Men bak dem ligger et enda dypere mysterium – ett som fortsatt lokker oss til å grave dypere. Hva forteller disse mesterverkene om mannen bak penselen? De fascinerende selvportrettene i verkene hans – noen ganger forkledd, noen ganger i klartekst – gir et sjeldent innblikk i hans sinn og indre kamper. Bli med når vi nøster opp historien om en av historiens mest geniale, sammensatte og kontroversielle skikkelser.",
+      "visingar": [
+        {
+          "dato": "2026-12-09",
+          "tid": "11:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10703"
+        }
+      ]
+    },
+    {
+      "id": "dune-part-three",
+      "tittel": "Dune: Part Three",
+      "sjanger": "Sci-Fi, Drama, Action",
+      "aldersgrense": "15",
+      "lengd": 140,
+      "omtale": "Alt har ledet til dette øyeblikket.\n\nWarner Bros. Pictures og Legendary Pictures presenterer DUNE: PART THREE, den episke avslutningen på den Oscar-nominerte filmskaperen Denis Villeneuves prisbelønnede trilogi.\n\nDUNE: PART THREE finner sted nesten to tiår etter at Paul Atreides tok kontroll over imperiet. Som hensynsløs keiser må Paul møte konsekvensene av sitt styre, når gamle allierte vender tilbake, skremmende nye trusler dukker opp, og svik lurer i skyggene. Hjemsøkt av visjoner om imperiets kollaps og gjenkomsten av sin tapte kjærlighet, blir Paul dratt inn i en omfattende konspirasjon, med Chani i sentrum av mysteriet. Mens opprør brygger og fiender nærmer seg, må Paul konfrontere maktens sanne pris og skjebnen til dem han elsker mest.\n\nFilmen har Oscar-nominerte Timothée Chalamet, Zendaya, Jason Momoa, Oscar-nominerte Florence Pugh, Rebecca Ferguson, Isaach de Bankolé, Oscar-nominerte Charlotte Rampling, Anya Taylor-Joy og Robert Pattinson, samt Oscar-vinner Javier Bardem på rollelisten.\n\nVilleneuve regisserer etter et manus av Villeneuve og Brian K. Vaughan, basert på romanene skrevet av Frank Herbert. Filmen er produsert av Oscar-nominerte Mary Parent, Cale Boyter, Villeneuve og Tanya Lapointe, og Joe Caracciolo, og har eksekutive produsenter Joshua Grode, Thomas Tull, Herbert W. Gains, Brian Herbert, Byron Merritt, Kim Herbert, Kevin J. Anderson, Richard P. Rubinstein, John Harrison og Jessica Derhammer.\n\nBak kameraet har Villeneuve med seg den Oscar-vinnende fotografen Linus Sandgren, den Oscar-vinnende produksjonsdesigneren Patrice Vermette, den Oscar-vinnende klipperen Joe Walker, den Oscar-nominerte kostymedesigneren Jacqueline West, den Oscar-nominerte castingansvarlige Francine Maisler og den Oscar-vinnende komponisten Hans Zimmer.\n\nWarner Bros. Pictures og Legendary Pictures presenterer en film av Denis Villeneuve, DUNE: PART THREE, på kino over hele landet fra 16. desember.",
+      "visingar": [
+        {
+          "dato": "2026-12-16",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10705"
+        },
+        {
+          "dato": "2026-12-17",
+          "tid": "19:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10706"
+        },
+        {
+          "dato": "2026-12-20",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10711"
+        }
+      ]
+    },
+    {
+      "id": "avengers-doomsday",
+      "tittel": "Avengers: Doomsday",
+      "sjanger": "Eventyr, Action, Superheltfilm",
+      "lengd": 165,
+      "omtale": "I Avengers: Doomsday fra Marvel Studios må helter fra tre ulike universer samles for å stå opp mot en eksistensiell trussel ulikt noe annet.",
+      "visingar": [
+        {
+          "dato": "2026-12-18",
+          "tid": "19:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10726"
+        },
+        {
+          "dato": "2026-12-19",
+          "tid": "19:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10833"
+        }
+      ]
+    },
+    {
+      "id": "bukkene-bruse-drar-til-syden",
+      "tittel": "Bukkene Bruse drar til Syden",
+      "aldersgrense": "A",
+      "lengd": 74,
+      "omtale": "De tre Bukkene Bruse bytter ut vafler på sætra med grisefest i Syden i denne helsprø animasjonsfilmen. Storebror, Mellombror og Lillebror Bruse rømmer fra Trollet og sommerregnet for å dra på verdens beste ferie. Vel fremme i Syden venter rar mat, uforståelig språk og et hotell som faller fra hverandre.\n\nDrømmeferien ser likevel ut til å være reddet når de får et ledig rom på luksushotellet Gran Diosa. Det bukkene ikke vet, er at Trollet er hotelldirektør, og at det å bli spist er inkludert i «all inclusive»-pakka.",
+      "visingar": [
+        {
+          "dato": "2026-12-25",
+          "tid": "13:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Norsk tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10751"
+        },
+        {
+          "dato": "2026-12-25",
+          "tid": "15:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Norsk tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10752"
+        },
+        {
+          "dato": "2026-12-26",
+          "tid": "13:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Norsk tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10759"
+        }
+      ]
+    },
+    {
+      "id": "viqueens",
+      "tittel": "ViQueens",
+      "sjanger": "Familiefilm",
+      "aldersgrense": "A",
+      "lengd": 90,
+      "omtale": "\"ViQueens\" er en eventyrlig historie om mot, vennskap og at enhver generasjon er en ny begynnelse.\n\nFilmen er utviklet av Veslemøy Ruud Zwart og Harald Zwart, der Veslemøy Ruud Zwart er produsent og medforfatter, og Harald Zwart er regissør og medforfatter.\n\nI vikingriket Lofotr legger Ingrid, kongens datter, og hennes fryktløse bestevenn Hedvig ut på en vill reise for å følge en ung blindpassasjer hjem til Kina.\n\nReisen tar dem fra iskalde fjorder via Silkeveien til keiserens palass. Underveis oppdager de en større verden - og en større sannhet: Foreldrene deres er ikke heltene de trodde, men brutale plyndrere. Fast bestemt på å ikke bli som dem, vender de hjem med ny kunnskap og gaver fra venner som er mer verdifulle enn noe som kan tas med makt. Med papirdrager og fyrverkeri overrumpler de den overtroiske hæren til onkel Lars - og forandrer å «reise viking» for alltid.\n\nViQueens er et hjertevarmt, actionfylt eventyr om mot, vennskap - og at hver generasjon er en ny begynnelse.",
+      "visingar": [
+        {
+          "dato": "2026-12-25",
+          "tid": "17:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10753"
+        },
+        {
+          "dato": "2026-12-27",
+          "tid": "17:30",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10758"
+        },
+        {
+          "dato": "2026-12-28",
+          "tid": "15:00",
+          "sal": "Gloppen Kino",
+          "format": "2D",
+          "tale": "Original tale",
+          "tekst": "Norsk tekst",
+          "billett": "https://ebillett.no/trivselshagen/10834"
+        }
+      ]
+    }
+  ]
+}

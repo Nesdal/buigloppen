@@ -1,4 +1,10 @@
-import { AKTIVITET_KATEGORIAR, Aktivitet, MALGRUPPER, malgruppeTekst } from '../models/aktivitet';
+import {
+  AKTIVITET_KATEGORIAR,
+  Aktivitet,
+  MALGRUPPER,
+  malgrupperForAlder,
+  malgruppeTekst,
+} from '../models/aktivitet';
 import { STADER } from '../models/bedrift';
 import aktivitetarData from '../data/aktivitetar.json';
 import bedrifterData from '../data/bedrifter.json';
@@ -6,9 +12,11 @@ import {
   datoTekst,
   erAktuell,
   filtrerAktivitetar,
+  grener,
   grupperPerManad,
   lagIcs,
   naarTekst,
+  tilraad,
 } from './aktivitet.service';
 
 const idag = '2026-12-01';
@@ -63,6 +71,7 @@ const testdata: Aktivitet[] = [
     kortSkildring: 'Trening',
     naar: 'Kvar tysdag kl. 17',
     malgruppe: ['barn'],
+    gren: 'Fotball',
   },
   {
     id: 'kor',
@@ -121,6 +130,11 @@ describe('filtrerAktivitetar', () => {
     ).toEqual(['kor']);
   });
 
+  it('filtrerer på gren utan omsyn til store og små bokstavar', () => {
+    expect(ids(filtrerAktivitetar(testdata, { gren: 'fotball' }, idag))).toEqual(['fotball']);
+    expect(ids(filtrerAktivitetar(testdata, { gren: 'Dart' }, idag))).toEqual([]);
+  });
+
   it('søkjer i tittel, skildring og arrangør', () => {
     expect(ids(filtrerAktivitetar(testdata, { sok: 'handelslaget' }, idag))).toEqual(['marknad']);
     expect(ids(filtrerAktivitetar(testdata, { sok: 'JULEKONSERT sandane' }, idag))).toEqual([
@@ -129,11 +143,65 @@ describe('filtrerAktivitetar', () => {
   });
 });
 
+describe('malgrupperForAlder', () => {
+  it('gjev overlappande målgrupper', () => {
+    expect(malgrupperForAlder(8)).toEqual(['barn']);
+    expect(malgrupperForAlder(16)).toEqual(['ungdom']);
+    expect(malgrupperForAlder(19)).toEqual(['ungdom', 'unge-vaksne', 'vaksne']);
+    expect(malgrupperForAlder(30)).toEqual(['unge-vaksne', 'vaksne']);
+    expect(malgrupperForAlder(40)).toEqual(['vaksne']);
+    expect(malgrupperForAlder(70)).toEqual(['vaksne', 'seniorar']);
+  });
+});
+
+describe('tilraad', () => {
+  const ekstra: Aktivitet[] = [
+    ...testdata,
+    {
+      id: 'u40',
+      tittel: 'U40-nettverk',
+      type: 'fast',
+      kategori: 'sosialt',
+      stad: 'Sandane',
+      kortSkildring: 'Nettverk',
+      naar: 'Gjennom året',
+      malgruppe: ['unge-vaksne'],
+    },
+    {
+      id: 'smaking',
+      tittel: 'Smaking',
+      type: 'arrangement',
+      kategori: 'sosialt',
+      stad: 'Sandane',
+      kortSkildring: 'Smaking',
+      dato: '2026-12-10',
+      malgruppe: ['unge-vaksne'],
+    },
+  ];
+
+  it('tek med det som er merkt for alderen, og opne arrangement for seg', () => {
+    const t = tilraad(ekstra, 30, idag);
+    expect(t.malgrupper).toEqual(['unge-vaksne', 'vaksne']);
+    expect(ids(t.faste)).toEqual(['u40']);
+    expect(ids(t.arrangement)).toEqual(['smaking']);
+    expect(ids(t.opne)).toEqual(['festival', 'marknad', 'konsert']);
+  });
+
+  it('tilrår ikkje aktivitetar merkte for andre aldrar', () => {
+    const barn = tilraad(ekstra, 9, idag);
+    expect(ids(barn.faste)).toEqual(['fotball']);
+    expect(barn.arrangement).toEqual([]);
+
+    const senior = tilraad(ekstra, 70, idag);
+    expect(senior.faste).toEqual([]);
+    expect(senior.arrangement).toEqual([]);
+  });
+});
+
 describe('tekstar', () => {
   it('lagar dato- og tidstekst', () => {
     const [konsert, , , festival, fotball] = testdata;
-    // Vekedagen kjem frå nettlesaren, som kan skrive anten søndag eller sundag.
-    expect(naarTekst(konsert)).toMatch(/^(søndag|sundag) 13\. desember, kl\. 18:00–19:30$/);
+    expect(naarTekst(konsert)).toBe('søndag 13. desember, kl. 18:00–19:30');
     expect(datoTekst(festival)).toBe('29. november–1. desember');
     expect(naarTekst(fotball)).toBe('Kvar tysdag kl. 17');
   });
@@ -184,6 +252,20 @@ describe('lagIcs', () => {
   });
 });
 
+describe('grener', () => {
+  it('tel grenene og slår saman ulik skrivemåte', () => {
+    const ekstra: Aktivitet[] = [
+      ...testdata,
+      { ...testdata[4], id: 'fotball-2', gren: 'fotball ' },
+      { ...testdata[5], id: 'dart', gren: 'Dart' },
+    ];
+    expect(grener(ekstra)).toEqual([
+      { namn: 'Dart', tal: 1 },
+      { namn: 'Fotball', tal: 2 },
+    ]);
+  });
+});
+
 describe('aktivitetar.json', () => {
   const aktivitetar = aktivitetarData as Aktivitet[];
   const bedriftIds = (bedrifterData as { id: string }[]).map((b) => b.id);
@@ -210,6 +292,10 @@ describe('aktivitetar.json', () => {
       if (a.starttid) expect(a.starttid, kva).toMatch(tid);
       if (a.sluttid) expect(a.sluttid, kva).toMatch(tid);
       if (a.bedriftId) expect(bedriftIds, kva).toContain(a.bedriftId);
+      if (a.gren !== undefined) {
+        expect(a.gren.trim(), kva).not.toBe('');
+        expect(a.gren.charAt(0), kva).toBe(a.gren.charAt(0).toLocaleUpperCase('nn'));
+      }
       for (const url of [a.pamelding, a.nettstad]) if (url) expect(url, kva).toMatch(/^https:\/\//);
     }
   });

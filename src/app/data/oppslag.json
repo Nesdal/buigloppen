@@ -1,5 +1,15 @@
 [
   {
+    "id": "apex-reed-nyopna",
+    "bedriftId": "apex-reed",
+    "type": "nyopna",
+    "tittel": "Ny golfsimulator på Reed",
+    "tekst": "APEX Reed har opna innandørs golfsimulator på Reed Senter, open heile året for både nybyrjarar og erfarne golfarar. Ubemanna drift med booking på nett, og moglegheit for medlemskap. Møterom for opptil 20 personar kan òg leigast.",
+    "fra": "2026-11-24",
+    "lenkje": "https://www.apexreed.no",
+    "kjelde": "https://www.apexreed.no"
+  },
+  {
     "id": "gloppen-hotell-ny-meny",
     "bedriftId": "gloppen-hotell",
     "type": "ny-meny",

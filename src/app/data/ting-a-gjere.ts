@@ -32,4 +32,10 @@ export const TING_A_GJERE: readonly Framheving[] = [
     overskrift: 'Kino og kultursal',
     tekst: 'Film, konsertar og teater i kulturhuset Trivselshagen.',
   },
+  {
+    bedriftId: 'gloppen-folkebibliotek',
+    ikon: '📚',
+    overskrift: 'Biblioteket',
+    tekst: 'Lån bøker og film gratis. Med meirope bibliotek kjem du inn kvar dag 07–23.',
+  },
 ];

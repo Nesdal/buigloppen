@@ -446,6 +446,37 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "heime-sandane",
+    "namn": "Heime",
+    "type": "butikk",
+    "kategori": "butikk-og-handel",
+    "ekstraKategoriar": [
+      "helse-og-velvere"
+    ],
+    "stad": "Sandane",
+    "kortSkildring": "Minivarehus i to etasjar midt i Sandane med interiør, kjøkkenutstyr, småmøblar og helsekost.",
+    "skildring": "Heime heitte tidlegare Sandane Glassmagasin.",
+    "tilbyr": [
+      "Interiør",
+      "Kjøkkenutstyr",
+      "Dekketøy",
+      "Småmøblar",
+      "Helsekost"
+    ],
+    "adresse": "Nordstrandsvegen 15, 6823 Sandane",
+    "nettstad": "https://www.instagram.com/heime_sandane/",
+    "opningstider": "Måndag–fredag 10–16.30",
+    "stikkord": [
+      "Sandane Glassmagasin",
+      "interiørbutikk",
+      "kjøkkenbutikk",
+      "gåver",
+      "servise"
+    ],
+    "kjelde": "https://www.instagram.com/heime_sandane/",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "norli-sandane",
     "namn": "Norli Sandane",
     "type": "butikk",
@@ -941,13 +972,15 @@
     "type": "bedrift",
     "kategori": "bygg-og-handverk",
     "stad": "Sandane",
-    "kortSkildring": "Elektroentreprenør på Sandane, del av ElteraGruppen.",
+    "kortSkildring": "Elektroentreprenør på Sandane og Vassenden, del av ElteraGruppen.",
     "tilbyr": [
       "Elektro i nybygg og rehabilitering",
-      "Elbilladar for private",
-      "Utelys",
+      "Elbilladar og ladeanlegg",
+      "Belysning, varmepumper og smarthus",
+      "Brannalarm og tryggleikssystem",
+      "Fiber, data og EKOM",
       "Elektrotenester for næring og landbruk",
-      "Serviceavtale og internkontroll"
+      "Serviceavtale, internkontroll og termografering"
     ],
     "adresse": "Sørstrandsvegen 6, 6823 Sandane",
     "telefon": "+47 57 88 46 10",
@@ -956,10 +989,15 @@
     "stikkord": [
       "elektrikar",
       "elektriker",
-      "Eltera"
+      "Eltera",
+      "varmepumpe",
+      "brannalarm"
     ],
-    "kjelde": "https://www.hendenelektro.no",
-    "sjekka": "2026-11-23"
+    "kjelde": "https://www.hendenelektro.no/om-oss",
+    "sjekka": "2026-11-24",
+    "praktisk": [
+      "Vakttelefon: 488 69 666"
+    ]
   },
   {
     "id": "hyen-bygg",
@@ -1017,20 +1055,34 @@
     "type": "bedrift",
     "kategori": "bygg-og-handverk",
     "stad": "Sandane",
-    "kortSkildring": "Elektroinstallatør på Sandane, godkjend lærebedrift.",
+    "kortSkildring": "Elektroinstallatør på Sandane med seks tilsette, tek oppdrag i heile Nordfjord og Sunnfjord.",
     "tilbyr": [
-      "Elektriske installasjonar",
-      "Sal av elektriske artiklar",
-      "Godkjend lærebedrift"
+      "Sterkstraum- og svakstrauminstallasjonar",
+      "Elbilladar",
+      "Varmepumper (Panasonic-forhandlar)",
+      "Solceller og batteri",
+      "Smarthus",
+      "Brann- og naudlysanlegg",
+      "Tele- og datanettverk",
+      "Elkontroll, prosjektering og rådgjeving",
+      "Elektro i landbruket"
+    ],
+    "praktisk": [
+      "Befaring: Gratis videobefaring kan bestillast på nettstaden."
     ],
     "adresse": "Sørstrandsvegen 43, 6823 Sandane",
     "telefon": "+47 57 86 54 22",
+    "epost": "post@loteelektro.no",
+    "nettstad": "https://www.loteelektro.no",
     "stikkord": [
       "elektrikar",
       "elektriker",
-      "lærebedrift"
+      "Lothe Elektro",
+      "lærebedrift",
+      "El-Proffen",
+      "varmepumpe"
     ],
-    "kjelde": "https://utdanning.no/bedrift/971828099/",
+    "kjelde": "https://www.loteelektro.no/om-oss",
     "sjekka": "2026-11-24"
   },
   {
@@ -1460,6 +1512,36 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "bodhi-pilates",
+    "namn": "Bodhi Pilates",
+    "type": "bedrift",
+    "kategori": "helse-og-velvere",
+    "stad": "Sandane",
+    "kortSkildring": "Pilatesstudio på Sandane med mattetrening, apparattrening, klassar og privattimar.",
+    "skildring": "Bodhi Pilates held til ved Gloppen Camping og Fritidssenter på Sandane. Instruktør Leela Anita Kjårvik er utdanna ved Body Control Pilates i London, og studioet samarbeider med dei om utdanning av pilatesinstruktørar. Du treng ikkje vere i god form for å byrje, treninga vert tilpassa nivået ditt.",
+    "tilbyr": [
+      "Mattetrening i grupper",
+      "Apparattrening",
+      "Privattimar",
+      "Nybyrjarklasse",
+      "Herreklasse",
+      "Instruktørutdanning"
+    ],
+    "adresse": "Sageveien 5, 6823 Sandane",
+    "telefon": "+47 995 30 636",
+    "epost": "leela@bodhipilates.no",
+    "nettstad": "https://www.bodhipilates.no",
+    "opningstider": "Mattetimar måndag–torsdag, både dag og kveld. Privattimar etter avtale, også fredagar",
+    "stikkord": [
+      "pilates",
+      "trening",
+      "Body Control Pilates",
+      "Gloppen Camping"
+    ],
+    "kjelde": "https://gymlink.no/pilates/bodhi-pilates.html",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "din-frisor-sandane",
     "namn": "Din Frisør",
     "type": "bedrift",
@@ -1733,6 +1815,40 @@
       "helse"
     ],
     "kjelde": "https://banoconcept.no/kontakt/",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "bolseth-glass",
+    "namn": "Bolseth Glass AS",
+    "type": "bedrift",
+    "kategori": "industri",
+    "stad": "Sandane",
+    "kortSkildring": "Ein av dei leiande fasadeentreprenørane i Noreg, med produksjon på Sandane. Leverer glassfasadar til store bygg over heile landet.",
+    "skildring": "Bolseth Glass prosjekterer, produserer og monterer elementfasadar, plassbygde glassfasadar, glastak, dører og vindauge i aluminium og stål, i tillegg til brannklassifiserte produkt. Bedrifta har levert fasadar til kontorbygg, sjukehus, kulturbygg, skular, hotell og bustader, mellom anna Construction City i Oslo, som er Noregs største kontorbygg. Bolseth Glass har kring 40 tilsette.",
+    "tilbyr": [
+      "Elementfasadar",
+      "Plassbygde glassfasadar (curtainwall)",
+      "Glastak",
+      "Dører og vindauge i aluminium",
+      "Brann- og tryggleiksprodukt",
+      "Solskjerming",
+      "Spesialkonstruksjonar"
+    ],
+    "adresse": "Industrivegen 4, 6823 Sandane",
+    "telefon": "+47 57 86 80 00",
+    "epost": "firmapost@bolseth.no",
+    "nettstad": "https://www.bolseth.no",
+    "stikkord": [
+      "glas",
+      "glass",
+      "fasade",
+      "aluminium",
+      "industri",
+      "arbeidsplass",
+      "produksjon",
+      "Bolseth"
+    ],
+    "kjelde": "https://www.bolseth.no",
     "sjekka": "2026-11-24"
   },
   {
@@ -2405,6 +2521,49 @@
     "sjekka": "2026-11-23"
   },
   {
+    "id": "gloppen-folkebibliotek",
+    "namn": "Gloppen folkebibliotek",
+    "type": "bedrift",
+    "kategori": "opplevingar",
+    "ekstraKategoriar": [
+      "tenester"
+    ],
+    "stad": "Sandane",
+    "kortSkildring": "Folkebiblioteket i kulturhuset Trivselshagen på Sandane. Med meirope bibliotek kan du kome inn kvar dag 07–23.",
+    "skildring": "Biblioteket er òg skulebibliotek for Firda vgs, og har arrangement som Datahjelpa og Tekst og te.",
+    "tilbyr": [
+      "Gratis lån av bøker, lydbøker og film",
+      "E-bøker, aviser og Filmoteket",
+      "Fjernlån frå andre bibliotek",
+      "Meirope bibliotek kvar dag 07–23",
+      "Utskrift, kopiering og skanning",
+      "Lokalhistorie og Frøbiblioteket",
+      "Arrangement for barn og vaksne"
+    ],
+    "praktisk": [
+      "Lånekort: Gratis. Ta med gyldig legitimasjon til biblioteket, eller registrer deg på bibliotekkortet.no og hent kortet der. Barn under 15 år må ha samtykke frå foreldra.",
+      "Meirope bibliotek: Skriv kontrakt med biblioteket, så låser du opp døra med lånekortet og PIN-koden. Gjeld registrerte lånarar som er ferdige med grunnskulen, og under 18 år må føresette skrive under. Barn kan kome inn saman med ein vaksen som har tilgang.",
+      "Lånetid: Vanleg lånetid er 4 veker, film 1 veke. Lån kan fornyast to gongar på Mine sider.",
+      "Betaling: Vipps til Gloppen folkebibliotek, nummer 130292."
+    ],
+    "adresse": "Firdavegen 21, 6823 Sandane",
+    "telefon": "+47 400 33 721",
+    "epost": "bibliotek@gloppen.kommune.no",
+    "nettstad": "https://gloppenbibliotek.no",
+    "opningstider": "Betent: måndag og fredag 10–15, tysdag–torsdag 10–18. Meirope: alle dagar 07–23",
+    "stikkord": [
+      "bibliotek",
+      "bøker",
+      "lånekort",
+      "meirope",
+      "Trivselshagen",
+      "lesing",
+      "utskrift"
+    ],
+    "kjelde": "https://gloppenbibliotek.no/opningstider/",
+    "sjekka": "2026-11-24"
+  },
+  {
     "id": "myklebust-gard",
     "namn": "Myklebust Gard",
     "type": "bedrift",
@@ -2760,19 +2919,21 @@
     "id": "gloppen-hotell",
     "namn": "Gloppen Hotell",
     "type": "servering",
-    "kategori": "overnatting",
+    "kategori": "mat-og-servering",
     "ekstraKategoriar": [
-      "mat-og-servering"
+      "overnatting"
     ],
     "stad": "Sandane",
-    "kortSkildring": "Familiedrive hotell i Sandane sentrum med rom frå tre ulike tidsepokar, restaurant og selskapslokale.",
+    "kortSkildring": "Samlingsplass midt i Sandane, med restaurant, pub og selskapslokale. Her et ein middag, tek ein øl med vener eller feirar store dagar.",
+    "skildring": "For mange i Gloppen er Gloppen Hotell meir enn eit hotell. Det er staden ein går for å ete godt, ta ein pils i baren etter jobb eller møtast før og etter arrangement i sentrum. Restaurant Stovene lagar heimelaga mat av lokale råvarer, og i sommarhalvåret er det uteservering. I dei historiske stovene og selskapslokala vert det halde julebord, konfirmasjonar, bryllaup, minnesamvær, kurs og møte, og kjøkenet lagar maten. Hotellet har òg rom, så har du besøk som treng ein stad å sove, er det kort veg.",
     "tilbyr": [
-      "60 hotellrom",
-      "Restaurant Stovene med lokal mat",
-      "Bar og uteservering",
-      "Konferanse- og selskapslokale",
-      "Julebord",
-      "Fiske- og friluftspakkar"
+      "Restaurant Stovene med heimelaga, lokal mat",
+      "Pub og bar",
+      "Uteservering",
+      "Selskapslokale til konfirmasjon, bryllaup og minnesamvær",
+      "Julebord og andre arrangement",
+      "Kurs- og møterom",
+      "60 hotellrom til besøkande"
     ],
     "adresse": "Sørstrandsvegen 16, 6823 Sandane",
     "telefon": "+47 57 86 53 33",
@@ -2782,6 +2943,12 @@
       "hotell",
       "restaurant",
       "Stovene",
+      "pub",
+      "bar",
+      "selskap",
+      "konfirmasjon",
+      "bryllaup",
+      "minnesamvær",
       "konferanse",
       "julebord"
     ],
@@ -2943,13 +3110,14 @@
     "type": "bedrift",
     "kategori": "overnatting",
     "stad": "Kandal",
-    "kortSkildring": "Gard i Kandal med suiter i Kandal Klyngetun, restaurant og konsertar i Operalåven.",
+    "kortSkildring": "Gard i Kandal med suiter i Kandal Klyngetun, restaurant, konsertar i Operalåven og gardsbutikk med spekemat og kjøt frå bygda.",
     "tilbyr": [
       "Rom og suiter i Kandal Klyngetun",
       "Restaurant",
       "Konsertar og vinkveldar",
       "Møte og selskap",
-      "Støylshytter og leilegheiter"
+      "Støylshytter og leilegheiter",
+      "Gardsbutikk med spekemat, pinnekjøt, pølser, ferskt kjøt og skinn"
     ],
     "adresse": "Kandalsvegen 1340, 6823 Sandane",
     "epost": "booking@solvanegard.no",
@@ -2959,10 +3127,26 @@
       "Kandal",
       "suite",
       "restaurant",
-      "konsert"
+      "konsert",
+      "spekemat",
+      "pinnekjøt",
+      "lam",
+      "geit",
+      "gardsbutikk"
     ],
-    "kjelde": "https://www.solvanegard.no/",
-    "sjekka": "2026-11-23"
+    "lokalmat": [
+      "kjot"
+    ],
+    "sal": [
+      "gardsutsal",
+      "bestilling",
+      "reko",
+      "marknad"
+    ],
+    "kjopTekst": "Kjøt frå sau, lam og geit frå gardar i Kandal, selt under merkevara Sølvane Gard. Kjøp spekemat, pinnekjøt, pølser og ferskt kjøt i gardsbutikken på veg inn til låven, eller bestill julemat på nettsida og få det sendt i posten. Sølvane Gard står òg på Bondens marknad og REKO-ringar i Sogn og Fjordane på utvalde datoar.",
+    "sesong": "Pinnekjøt og spekemat vert sendt når kjøtet er ferdig tørka i november og desember",
+    "kjelde": "https://www.solvanegard.no/omoss.html",
+    "sjekka": "2026-11-24"
   },
   {
     "id": "advokat-jan-erik-mardal",
@@ -4091,6 +4275,36 @@
       "webdesign"
     ],
     "kjelde": "https://virksomhet.brreg.no/nb/oppslag/enheter/913193814",
+    "sjekka": "2026-11-24"
+  },
+  {
+    "id": "gf-design",
+    "namn": "GF Design AS",
+    "type": "bedrift",
+    "kategori": "tenester",
+    "stad": "Sandane",
+    "kortSkildring": "Einmannsbedrift på Sandane som teiknar belysningsprodukt og tilbyr lysdesign i heile landet.",
+    "skildring": "GF Design er etablert av Gunnar Fjellestad, som har bakgrunn som elektroinstallatør med lysplanlegging som ei av hovudoppgåvene. Sidan 2010 har han vore med i oppussingsprogrammet Tid for hjem på TV 2. Lysdesigntenesta er landsdekkande, og befaring er ikkje alltid naudsynt.",
+    "tilbyr": [
+      "Lysdesign og lysplanlegging",
+      "Produktdesign av belysning",
+      "Eigne lampar (Owi, Squary, Tubo, Blocky)"
+    ],
+    "praktisk": [
+      "Kjøp: Produkta vert selde gjennom Lyskomponenter AS."
+    ],
+    "adresse": "Kleivedammen 11, 6823 Sandane",
+    "telefon": "+47 458 38 935",
+    "epost": "gunnar@gfdesign.no",
+    "nettstad": "https://gfdesign.no",
+    "stikkord": [
+      "lysdesign",
+      "belysning",
+      "lampar",
+      "Tid for hjem",
+      "Gunnar Fjellestad"
+    ],
+    "kjelde": "https://gfdesign.no/om/",
     "sjekka": "2026-11-24"
   },
   {
